@@ -1,0 +1,87 @@
+#insta {
+   background:#fff; 
+   
+   article {
+        width:100%; 
+        
+         ul {
+            &::after {content:""; display:block; clear:both;}
+
+            li {
+                float:left; height:200px; position:relative; filter:grayscale(0.8); border:6px solid #fff; transition:1s 0.3s; transform:translateX(0%); opacity:1;
+
+               a {
+                  position:absolute; top:0; left:0; text-align:center; transition:0.5s; opacity:0;
+               
+                  &::after {
+                     content:'GO'; font-size:$TitleFont; line-height:200px; color:#fff;
+                  }
+               }
+
+               &:hover {
+                  filter:grayscale(0);
+                  a {opacity:1;}
+               }
+
+               &:nth-of-type(1) {width:30%;}
+               &:nth-of-type(2) {width:15%;}
+               &:nth-of-type(3) {width:20%;}
+               &:nth-of-type(4) {width:20%;}
+               &:nth-of-type(5) {width:15%;}
+
+               &:nth-of-type(6) {width:15%;}
+               &:nth-of-type(7) {width:20%;}
+               &:nth-of-type(8) {width:20%;}
+               &:nth-of-type(9) {width:15%;}
+               &:nth-of-type(10) {width:30%;}
+            }
+         }
+   }
+
+   &.on {
+      article {
+         ul {
+            li {transform:translateX(0%); opacity:1;}
+         }
+      }
+   }
+}
+
+
+/* tablet */ 
+@include rwd(959px){
+   #insta {  
+      article { 
+         width:100%;  
+         ul {            
+            li {
+               width:(100%/5); border:2px solid #fff;}
+         }
+      }
+   }
+}
+
+/* mobile */ 
+@include rwd(539px){
+   #insta {  
+      article {   
+         ul {            
+            li {
+               border:1px solid #fff;
+
+               &:nth-of-type(1) {width:50%;}
+               &:nth-of-type(2) {width:50%;}
+               &:nth-of-type(3) {width:50%;}
+               &:nth-of-type(4) {width:50%;}
+               &:nth-of-type(5) {width:50%;}
+
+               &:nth-of-type(6) {width:50%;}
+               &:nth-of-type(7) {width:50%;}
+               &:nth-of-type(8) {width:50%;}
+               &:nth-of-type(9) {width:50%;}
+               &:nth-of-type(10) {width:50%;}
+            }
+         }
+      }
+    }
+}

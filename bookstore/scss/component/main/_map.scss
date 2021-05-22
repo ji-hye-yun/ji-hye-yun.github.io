@@ -1,0 +1,33 @@
+#map {
+   padding:50px 0 0 0;
+
+   article {
+      width:100%; 
+
+      #map_wrap {
+         width:100%; height:500px; background:#000; filter:grayscale(0.9); transition:0.5s;
+
+         &:hover {filter:grayscale(0);}
+      }
+   }
+}
+
+
+/* tablet */ 
+@include rwd(959px){
+   #map {
+      padding:50px 2% 2%;
+
+      article {
+         #map_wrap {
+            height:400px; 
+         }
+      }
+   }
+}
+
+/* mobile */ 
+@include rwd(539px){
+
+   
+}

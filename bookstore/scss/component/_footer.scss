@@ -1,0 +1,93 @@
+$ftBg : #333;
+$ftColor : #666;
+$ftWei : 100;
+$tinyFont : 12px;
+$midFont : 24px;
+$koFont : 'noto sans KR';
+
+footer {
+    width:100%; background:$ftBg; position:relative; z-index:2; font-family:$koFont; height:240px;
+
+    article {
+        width:940px; margin:0 auto; height:240px;
+        
+        &::after {content:""; display:block; clear:both;}
+
+        &>div.ft_left {
+            float:left; width:80%; padding-top:50px; height:240px;
+
+            h3 {
+                &>div {font-size:0; width:40px; height:20px; background:url(../img/default/ftlogo.png); background-size:100% 100%;}
+            }
+            
+            ul{
+                &::after {content:''; display:block; clear:both;}
+                
+                li {
+                    float:left; width:(100%/5); padding:20px 0; font-size:$tinyFont; 
+
+                    &>a {color:$ftColor; font-weight:$ftWei;}
+                }
+            }
+
+            address {color:$ftColor; font-style:normal; font-size:$tinyFont; font-weight:$ftWei;}
+            p {color:$ftColor; font-size:$tinyFont; font-weight:$ftWei; padding-top:10px;}
+        }
+
+        &>div.ft_right {
+            float:left; width:20%; position:relative; height:240px;
+
+            div.back_to_top {display:inline-block; position:absolute; right:0; width:40px; height:40px; background:#000; text-align:center; font-size:$midFont; color:#eee; cursor:pointer;}
+            
+            div.sns_wrap {
+                width:100%; height:100px; position:absolute; top:40px; text-align:right; padding-top:40px;
+
+                span {display:inline-block; width:(100%/3); width:30px; height:30px; border-radius:15px; margin-left:10px; color:$ftColor; font-size:20px;}
+            }
+        }
+
+        
+    }
+}
+
+
+/* tablet */ 
+@include rwd(959px){
+    footer {
+        height:300px;
+
+        article {
+            width:100%; padding:0 2%; height:300px;
+            
+            &>div.ft_left {
+                width:100%; position:absolute; top:60px;
+
+                address {
+                    padding:0 2% 0 0;
+                    a { text-decoration:none; color:#eee; }
+                }
+            }
+    
+            &>div.ft_right {width:100%; position:absolute; top:0; right:5%;}
+        }
+    }
+}
+
+/* mobile */ 
+@include rwd(539px){
+    footer {
+        height:360px;
+
+        article {
+            height:360px;
+
+            &>div.ft_left {
+                ul{
+                    padding:10px 0;
+                    
+                    li {width:(100%/2); font-size:11px; padding:5px 0;}
+                }
+            }
+        }
+    }
+}

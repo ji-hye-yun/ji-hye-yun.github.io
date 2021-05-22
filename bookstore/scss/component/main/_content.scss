@@ -1,0 +1,67 @@
+$tinyFont : 12px;
+$smallFont : 14px;
+$BasicFont : 16px;
+$midFont : 24px;
+$biggerFont : 30px;
+$TitleFont : 50px;
+$koFont : 'noto sans KR';
+$h3TitleWei : 400;
+$basicBorder : 1px solid #eee;
+
+
+/*common*/
+section {
+    width:100%; position:relative; padding:200px 0; z-index:2;
+    
+    article {
+        width:940px; margin:0 auto; position:relative; 
+    
+        &>h2 {font-size:$TitleFont; font-weight:200; color:#555; text-align:center; padding:0 0 50px; margin-bottom:50px;}
+    }
+}
+
+#vertical_navi {
+    position:fixed; top:50%; left:20px; transform:translateY(-50%); z-index:7; 
+
+    li {
+        margin-bottom:10px;
+
+        a {display:inline-block; width:10px; height:10px; border:1px solid #111; transition:0.5s;}
+        span {display:none; transform:rotate(90deg);}
+
+        &.on > a {height:40px; background:#000;}
+        &.on > span {display:inline-block; color:#460146; font-size:$BasicFont; font-weight:100;}
+    }
+}
+
+
+@import 'book_list';
+@import 'search';
+@import 'icon';
+@import 'box';
+@import 'notice';
+@import 'info';
+@import 'insta';
+@import 'map';
+
+
+/* tablet */ 
+@include rwd(959px){
+    /*common*/
+    section {
+        padding:80px 2%; 
+    
+        article {
+            width:100%;
+    
+            &>h2 {font-size:$midFont;}
+        }
+    } 
+
+    #vertical_navi {display:none;}
+}
+
+/* mobile */ 
+@include rwd(539px){
+    
+}

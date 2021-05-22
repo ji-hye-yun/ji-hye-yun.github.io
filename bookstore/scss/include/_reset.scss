@@ -1,0 +1,10 @@
+/* reset */
+* {margin:0px; padding:0px; box-sizing:border-box;}
+ul,ol,li {list-style:none;}
+a {outline:1; text-decoration:none;}
+body,input {color:#333; font-size:14px; font-family:"interbureau", "Noto Sans KR","Bree Serif",dotum,sans-serif;} 
+.skip {width:1px; height:1px; overflow:hidden; visibility:hidden; line-height:0; font-size:0; position:absolute; left:-999px;}
+fieldset {border:none;}
+button:focus {outline:none;} 
+input:focus {outline:none;}
+html,body {overflow-x:hidden;}

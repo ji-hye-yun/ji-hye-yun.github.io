@@ -1,0 +1,193 @@
+#lnb_company {
+   width:100%; padding:2%; transition:0.5s; 
+    ul {
+      width:940px; overflow:hidden; margin:0 auto;
+      li {
+         float:left; width:(100%/5); padding-left:1%;
+         
+         a {
+            display:block; width:100%; height:40px; line-height:40px; border-bottom:1px solid #000; margin-bottom:10px; font-size:$smallFont; color:#333;
+
+            &:hover {border-bottom:2px solid #10105e; color:#10105e; font-weight:bold;}
+         }
+      }
+    }
+
+    #mo_lnb_company {display:none;}
+}
+
+main {
+   section {
+      #content_wrap {
+            .body_txt {
+                .img_box_com {background-image:url(../img/sub/company/books.png); }
+            }
+
+            .company_info {
+                width:100%; transition:2s;
+
+                &::after {content:""; display:block; clear:both;}
+
+                div:nth-of-type(1) {
+                    width:76%; float:left; padding:2%;
+                    
+                    &>h3 {padding:40px 0 20px;}
+                    &>p {padding:20px 0; font-size:$BasicFont; color:#10105e;}    
+                    &>div {padding:20px 0; }
+                }
+
+                div:nth-of-type(2) {
+                    width:24%; float:left; padding-top:30px;
+                
+                    &>ul {
+                        &>li {
+                            width:200px; position:relative;
+
+                            &>div {
+                                width:200px; height:200px; border-radius:100px; margin:20px auto; border:1px solid #fff; transition:0.5s 0.5s; opacity:0; background-position:center center; background-size:cover; 
+
+                                &>div {
+                                    width:150px; height:40px; background:rgba(16, 16, 94, 0.9); text-align:center; position:absolute; bottom:10%; right:-5%; overflow:hidden;
+
+                                    &::after {display:block; height:100%; line-height:0; color:#fff;}  
+                                }
+                            }
+                            
+                            &:nth-of-type(1) {
+                                &>div {
+                                    transition-delay:0.5s; transform:translateY(100%); background-image:url(../img/sub/company/com_info_li_1.jpg);
+                                    div {
+                                        &::after {content:"#creative";}
+                                    }
+                                }
+                            }
+                            
+                            &:nth-of-type(2) {
+                                &>div {
+                                    transition-delay:1s; transform:translateY(100%); background-image:url(../img/sub/company/com_info_li_2.jpg);
+                                    div {
+                                        &::after {content:"#intelligence";}
+                                    }
+                                }
+                            }
+                            
+                            &:nth-of-type(3) {
+                                &>div {
+                                    transition-delay:1.5s; transform:translateY(100%); background-image:url(../img/sub/company/com_info_li_3.jpg);
+                                    div {
+                                        &::after {content:"#collaboration";}
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.on {
+                    margin-top:-350px;
+
+                    div:nth-of-type(2) {
+                        &>ul>li>div {transform:translateY(0%); opacity:1;}
+                    }
+                }
+            }
+            
+            
+        }
+    }
+
+}
+
+/* tablet */
+@include rwd(959px){
+    #lnb_company {
+        &>ul {
+            width:100%;
+            li {width:(100%/2); }
+        }
+    }
+
+    main {
+        section {
+            #content_wrap {
+                .company_info {
+                    div:nth-of-type(1) {width:100%;}
+
+                    div:nth-of-type(2) {
+                        width:100%; padding-top:0px; height:620px; 
+
+                        &>ul {
+                            width:100%; height:100%; 
+
+                            &::after {content:""; display:block; clear:both;}
+
+                            &>li {
+                                float:left; width:100%; padding:0 2%; height:200px; overflow:hidden; margin-bottom:10px; 
+
+                                &>div {
+                                    width:200px; height:200px; border-radius:100px; margin:0; margin-left:35%;
+                                    &>div {bottom:20%; right:-5%;}
+                                }
+                            
+                                &:nth-of-type(1) {
+                                    &>div {transition-delay:0.5s; transform:translateY(100%); background-image:url(../img/sub/company/com_info_li_1.jpg);}
+                                }
+                            
+                                &:nth-of-type(2) {
+                                    &>div {transition-delay:1s; transform:translateY(100%); background-image:url(../img/sub/company/com_info_li_2.jpg);}
+                                }
+
+                                &:nth-of-type(3) {
+                                    &>div {transition-delay:1.5s; transform:translateY(100%); background-image:url(../img/sub/company/com_info_li_3.jpg);}
+                                }
+                            }
+                        }
+                    }
+
+                    &.on {
+                        margin-top:-280px;
+
+                        div:nth-of-type(2) {
+                            &>ul>li>div {transform:translateY(0%); opacity:1;}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* mobile */
+@include rwd(539px){
+    #lnb_company {
+        &>ul {display:none;}
+
+        #mo_lnb_company {display:block; width:100%; 
+        
+            select {width:100%; height:50px; border:none; border-bottom:2px solid #10105e; font-family:$koFont; font-size:$BasicFont; padding-left:2%; -webkit-appearance:none; border-radius:0; }
+        }
+    }
+
+    main {
+        section {
+            #content_wrap {
+                .company_info {
+                    div:nth-of-type(2) {
+                        height:380px; 
+
+                        &>ul {
+                            &>li {
+                                height:120px; 
+
+                                &>div {
+                                    width:120px; height:120px; border-radius:60px; margin-left:15%;
+                                    &>div {right:-80%;}
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
