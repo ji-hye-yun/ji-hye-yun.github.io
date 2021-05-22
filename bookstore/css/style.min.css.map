@@ -20,5 +20,5 @@
         "../scss/component/_footer.scss"
     ],
     "names": [],
-    "file": "style.css"
+    "file": "style.min.css"
 }
