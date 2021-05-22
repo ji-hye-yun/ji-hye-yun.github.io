@@ -326,7 +326,7 @@ header article #web_menu #gnb > li:nth-of-type(2) > div > .depth2_right > div {
   float: left;
   margin: 0 10px 0 20px;
   background: url(../img/default/66013.png);
-  background-size: 100% 100%;
+  background-size: contain;
 }
 
 header article #web_menu #gnb > li:nth-of-type(3) > div > .depth2_right > div:nth-of-type(1) {
@@ -1737,7 +1737,7 @@ section article > h2 {
 }
 
 #icon {
-  background: #f9f9f9;
+  background: #e2e5f1;
   padding: 120px 0 200px 0;
 }
 
@@ -1803,7 +1803,7 @@ section article > h2 {
 
 #icon article ul li:hover > div > a {
   background: #2e282d;
-  color: #f9f9f9;
+  color: #e2e5f1;
   border: none;
   -webkit-box-shadow: 5px 5px 20px rgba(146, 137, 143, 0.5);
           box-shadow: 5px 5px 20px rgba(146, 137, 143, 0.5);
@@ -2073,7 +2073,7 @@ section article > h2 {
 }
 
 #notice {
-  background: #f9f9f9;
+  background: #e2e5f1;
 }
 
 #notice article > ul {
