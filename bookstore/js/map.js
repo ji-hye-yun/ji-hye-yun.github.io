@@ -20,7 +20,7 @@ window.onload = function(){
         }
    ] 
 
-    var imageSrc = 'img/default/pin.png';
+    var imageSrc = './img/default/pin.png';
    
     for (var i = 0; i < positions.length; i ++) {
     
