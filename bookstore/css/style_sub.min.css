@@ -152,7 +152,7 @@ header article #web_menu #gnb > li > a {
   line-height: 1;
   font-weight: lighter;
   color: #666;
-  padding: 30px 40px;
+  padding: 29px 40px;
 }
 
 header article #web_menu #gnb > li > a:hover {
@@ -163,6 +163,7 @@ header article #web_menu #gnb > li > a:hover {
 header article #web_menu #gnb > li > a.on {
   background: #fff;
   color: #ca99c0;
+  border-bottom: 2px solid #333;
 }
 
 header article #web_menu #gnb > li > div {
@@ -191,7 +192,7 @@ header article #web_menu #gnb > li > div .depth2_left > h2 {
 }
 
 header article #web_menu #gnb > li > div .depth2_left > h2::before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 30px;
   height: 1px;
@@ -218,7 +219,7 @@ header article #web_menu #gnb > li > div .depth2_right > h3 {
 }
 
 header article #web_menu #gnb > li > div .depth2_right > h3::before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 30px;
   height: 1px;
