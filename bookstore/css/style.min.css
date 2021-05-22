@@ -327,7 +327,7 @@ header article #web_menu #gnb > li:nth-of-type(2) > div > .depth2_right > div {
   height: 150px;
   float: left;
   margin: 0 10px 0 20px;
-  background: url(../img/default/66013.png);
+  background: url(../img/default/66013.png) no-repeat;
   background-size: contain;
 }
 
