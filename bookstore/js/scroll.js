@@ -25,8 +25,7 @@ $(document).ready(function(){
       pos2 = $navi.eq(1).offset().top+base_line;
       pos3 = $navi.eq(2).offset().top+base_line;
       pos4 = $navi.eq(3).offset().top+base_line;
-      pos5 = $navi.eq(4).offset().top+base_line;
-      pos6 = $navi.eq(5).offset().top+base_line;    
+      pos5 = $navi.eq(4).offset().top+base_line;  
    }
 
    $(window).on('scroll',function(){
@@ -49,18 +48,10 @@ $(document).ready(function(){
          $btns.eq(3).addClass('on');
          $navi.eq(3).addClass('on');
       }
-      if(scroll>=pos5 && scroll<pos6){
+      if(scroll>=pos5){
          $btns.eq(4).addClass('on');
          $navi.eq(4).addClass('on');
-      }
-      if(scroll>=pos6 && scroll<pos7){
-         $btns.eq(5).addClass('on');
-         $navi.eq(5).addClass('on');
          $('.deco2').css({width : 400+scroll});
-      }
-      if(scroll>=pos7){
-         $btns.eq(6).addClass('on');
-         $navi.eq(6).addClass('on');
       }
    });  
 

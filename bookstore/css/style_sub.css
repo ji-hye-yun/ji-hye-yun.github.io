@@ -103,6 +103,8 @@ header.on {
 header.on article > #web_menu > #gnb > li > div {
   background: #fff;
   border-bottom: 1px solid #eee;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 header article {
@@ -1011,7 +1013,7 @@ main section #content_wrap .join_wrap {
 }
 
 main section #content_wrap .join_wrap::after {
-  content: '';
+  content: "";
   display: block;
   clear: both;
 }
@@ -1032,7 +1034,7 @@ main section #content_wrap .join_wrap .join_terms .join_allcheck {
   padding: 30px 0;
 }
 
-main section #content_wrap .join_wrap .join_terms .join_allcheck > input[type=checkbox] {
+main section #content_wrap .join_wrap .join_terms .join_allcheck > input[type="checkbox"] {
   border-radius: 0;
 }
 
@@ -1058,7 +1060,7 @@ main section #content_wrap .join_wrap .join_terms .join_check_wrap dl dt > span 
   vertical-align: bottom;
 }
 
-main section #content_wrap .join_wrap .join_terms .join_check_wrap dl dt > span > input[type=checkbox] {
+main section #content_wrap .join_wrap .join_terms .join_check_wrap dl dt > span > input[type="checkbox"] {
   border-radius: 0;
   width: 12px;
   height: 12px;
@@ -1176,6 +1178,7 @@ main section #content_wrap .join_wrap .join_form .join_input_wrap select.in_4 {
   border: none;
   border-bottom: 1px solid #888;
   border-radius: 0;
+  vertical-align: top;
 }
 
 main section #content_wrap .join_wrap .join_form .join_input_wrap select.in_6 {
@@ -1185,6 +1188,7 @@ main section #content_wrap .join_wrap .join_form .join_input_wrap select.in_6 {
   border: none;
   border-bottom: 1px solid #888;
   border-radius: 0;
+  vertical-align: top;
 }
 
 main section #content_wrap .join_wrap .join_form .join_input_wrap .join_chk_btn {
@@ -1204,7 +1208,7 @@ main section #content_wrap .join_wrap .join_form button.join_btn {
   width: 100%;
   height: 40px;
   border: none;
-  background: #755c75;
+  background: #333;
   color: #fff;
   margin-top: 30px;
 }
@@ -1262,19 +1266,17 @@ main section #content_wrap .join_wrap .join_form button.join_btn {
     width: 99%;
   }
   main section #content_wrap .join_wrap .join_form .join_input_wrap .input_txt.in_7 {
-    width: 99%;
-    margin-bottom: 2%;
+    width: 60%;
   }
   main section #content_wrap .join_wrap .join_form .join_input_wrap select.in_4 {
     width: 60%;
-    margin-top: 2%;
   }
   main section #content_wrap .join_wrap .join_form .join_input_wrap select.in_6 {
-    width: 30%;
-    margin-top: 2%;
+    width: 39%;
   }
   main section #content_wrap .join_wrap .join_form .join_input_wrap .join_chk_btn {
     width: 30%;
+    margin-top: 4%;
   }
 }
 
@@ -1964,4 +1966,3 @@ footer article > div.ft_right div.sns_wrap span {
     padding: 5px 0;
   }
 }
-/*# sourceMappingURL=style_sub.css.map */

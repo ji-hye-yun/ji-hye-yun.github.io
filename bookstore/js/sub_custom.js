@@ -5,6 +5,7 @@ $(document).ready(function(){
    var $box_p = $('.body_txt > .quote');
    var $com_info = $('.company_info')
    var $brand_intro = $('#brand_intro');
+   var $chkall = $('.join_allcheck label')
    var $join_dt = $('.join_check_wrap dl dt');
    var $commu_info = $('#commu_info');
 
@@ -30,6 +31,14 @@ $(document).ready(function(){
          $commu_info.removeClass('on');
       }
       console.log(scroll);
+   });
+
+   $chkall.on('click', function(){
+      if ( $chkall.children('input[type=checkbox]').prop("checked") ) { 
+         $("input[type=checkbox]").prop("checked",true); 
+      }else { 
+         $("input[type=checkbox]").prop("checked",false); 
+      }
    });
 
    $join_dt.on('click', function(){

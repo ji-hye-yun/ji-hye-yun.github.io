@@ -1,170 +1,340 @@
-$input_border : 1px solid #888;
+$input_border: 1px solid #888;
 
 #lnb_books {
-   width:100%; padding:2%; transition:0.5s; 
+  width: 100%;
+  padding: 2%;
+  transition: 0.5s;
 
-   &>ul {
-      width:940px; overflow:hidden; margin:0 auto;
+  & > ul {
+    width: 940px;
+    overflow: hidden;
+    margin: 0 auto;
 
-      li {
-         float:left; width:(100%/3); padding-left:1%;
-         
-         a {
-            display:block; width:100%; height:40px; line-height:40px; border-bottom:1px solid #000; margin-bottom:10px; font-size:$smallFont; color:#333;
+    li {
+      float: left;
+      width: (100%/3);
+      padding-left: 1%;
 
-            &:hover {border-bottom:2px solid #10105e; color:#10105e; font-weight:bold;}
-         }
+      a {
+        display: block;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px solid #000;
+        margin-bottom: 10px;
+        font-size: $smallFont;
+        color: #333;
+
+        &:hover {
+          border-bottom: 2px solid #10105e;
+          color: #10105e;
+          font-weight: bold;
+        }
       }
-   }
+    }
+  }
 
-   #mo_lnb_books {display:none;}
+  #mo_lnb_books {
+    display: none;
+  }
 }
 
 main {
-   section {
-      #content_wrap {
-         
-         .join_wrap {
-               width:100%; margin:0 auto 100px;
+  section {
+    #content_wrap {
+      .join_wrap {
+        width: 100%;
+        margin: 0 auto 100px;
 
-               &::after {content:''; display:block; clear:both;}
-               
-               .join_terms {
-                  float:left; width:35%; 
-
-                  &>span {display:inline-block; padding:20px 0; color:#10105e; font-size:$BasicFont;}
-                  
-                  .join_allcheck {
-                     padding:30px 0;
-                     &>input[type=checkbox] { border-radius:0; }
-                     &>label {padding-left:10px;}
-                  }
-
-                  .join_check_wrap {
-                     border:$input_border;
-
-                     dl {
-                        dt {
-                           position:relative; padding:20px; border-top:$input_border;
-
-                           &>span {
-                              display:inline-block; width:15px; height:15px; overflow:hidden; vertical-align:bottom;
-                              &>input[type=checkbox] { border-radius:0; width:12px; height:12px; display:block; }
-                           }
-                           &>button {
-                              border:none; width:90%; text-align:left; cursor:pointer; background:#fff;
-                              
-                              &::after {content:""; display:inline-block; width:15px; height:15px; position:absolute; top:20px; right:4%; background:url(../img/sub/books/arrow.png) 0px -30px no-repeat;}
-                           }
-
-                           &.open {
-                              &>button {
-                                 &::after {background-position:0px -2px;}
-                              }
-                           }
-                        }
-                        dd {
-                           overflow:hidden; padding:20px; border-top:$input_border; display:none; color:#555; 
-                           .join_cont {
-                                 overflow-y:auto; height:120px; font-size:11px; color:#555; padding-right:10px;
-                           }
-                        }
-
-                        &:nth-of-type(1) {
-                           dt {border:none;}
-                        }
-                     }
-                  }
-               }
-
-               .join_form {
-                  float:left; width:65%; padding:0 0 0 6%;
-
-                  &>span {display:inline-block; padding:20px 0; color:#10105e; font-size:$BasicFont;}
-
-                  .join_input_wrap {
-                     margin:30px 0 20px; 
-
-                     .input_title {display:block; color:#888; font-size:11px; margin-bottom:5px;}
-                     .input_txt {
-                        border:none; border-bottom:$input_border; height:30px; padding-left:5px; font-family:$koFont; width:100%; border-radius:0;
-                        
-                        &.in_1 {width:25%; display:inline-block;}
-                        &.in_2 {width:5%; display:inline-block;}
-                        &.in_3 {width:30%; display:inline-block;}
-                        &.in_5 {width:79%; display:inline-block; height:30px;}
-                        &.in_7 {width:84%; display:inline-block; height:30px;}
-                     }
-                     select.in_4 {width:25%; display:inline-block; height:30px; border:none; border-bottom:$input_border; border-radius:0;}
-                     select.in_6 {width:20%; display:inline-block; height:30px; border:none; border-bottom:$input_border; border-radius:0;}
-                     .join_chk_btn {width:15%; display:inline-block; height:30px; border:$input_border; background:#fff; font-size:11px; font-weight:100; cursor:pointer; border-radius:0; -webkit-appearance:none; }
-                  }
-
-                  button.join_btn {width:100%; height:40px; border:none; background:rgb(117, 92, 117); color:#fff; margin-top:30px;}
-               }
-            }
+        &::after {
+          content: "";
+          display: block;
+          clear: both;
         }
-    }
 
+        .join_terms {
+          float: left;
+          width: 35%;
+
+          & > span {
+            display: inline-block;
+            padding: 20px 0;
+            color: #10105e;
+            font-size: $BasicFont;
+          }
+
+          .join_allcheck {
+            padding: 30px 0;
+            & > input[type="checkbox"] {
+              border-radius: 0;
+            }
+            & > label {
+              padding-left: 10px;
+            }
+          }
+
+          .join_check_wrap {
+            border: $input_border;
+
+            dl {
+              dt {
+                position: relative;
+                padding: 20px;
+                border-top: $input_border;
+
+                & > span {
+                  display: inline-block;
+                  width: 15px;
+                  height: 15px;
+                  overflow: hidden;
+                  vertical-align: bottom;
+                  & > input[type="checkbox"] {
+                    border-radius: 0;
+                    width: 12px;
+                    height: 12px;
+                    display: block;
+                  }
+                }
+                & > button {
+                  border: none;
+                  width: 90%;
+                  text-align: left;
+                  cursor: pointer;
+                  background: #fff;
+
+                  &::after {
+                    content: "";
+                    display: inline-block;
+                    width: 15px;
+                    height: 15px;
+                    position: absolute;
+                    top: 20px;
+                    right: 4%;
+                    background: url(../img/sub/books/arrow.png) 0px -30px no-repeat;
+                  }
+                }
+
+                &.open {
+                  & > button {
+                    &::after {
+                      background-position: 0px -2px;
+                    }
+                  }
+                }
+              }
+              dd {
+                overflow: hidden;
+                padding: 20px;
+                border-top: $input_border;
+                display: none;
+                color: #555;
+                .join_cont {
+                  overflow-y: auto;
+                  height: 120px;
+                  font-size: 11px;
+                  color: #555;
+                  padding-right: 10px;
+                }
+              }
+
+              &:nth-of-type(1) {
+                dt {
+                  border: none;
+                }
+              }
+            }
+          }
+        }
+
+        .join_form {
+          float: left;
+          width: 65%;
+          padding: 0 0 0 6%;
+
+          & > span {
+            display: inline-block;
+            padding: 20px 0;
+            color: #10105e;
+            font-size: $BasicFont;
+          }
+
+          .join_input_wrap {
+            margin: 30px 0 20px;
+
+            .input_title {
+              display: block;
+              color: #888;
+              font-size: 11px;
+              margin-bottom: 5px;
+            }
+            .input_txt {
+              border: none;
+              border-bottom: $input_border;
+              height: 30px;
+              padding-left: 5px;
+              font-family: $koFont;
+              width: 100%;
+              border-radius: 0;
+
+              &.in_1 {
+                width: 25%;
+                display: inline-block;
+              }
+              &.in_2 {
+                width: 5%;
+                display: inline-block;
+              }
+              &.in_3 {
+                width: 30%;
+                display: inline-block;
+              }
+              &.in_5 {
+                width: 79%;
+                display: inline-block;
+                height: 30px;
+              }
+              &.in_7 {
+                width: 84%;
+                display: inline-block;
+                height: 30px;
+              }
+            }
+            select.in_4 {
+              width: 25%;
+              display: inline-block;
+              height: 30px;
+              border: none;
+              border-bottom: $input_border;
+              border-radius: 0;
+              vertical-align: top;
+            }
+            select.in_6 {
+              width: 20%;
+              display: inline-block;
+              height: 30px;
+              border: none;
+              border-bottom: $input_border;
+              border-radius: 0;
+              vertical-align: top;
+            }
+            .join_chk_btn {
+              width: 15%;
+              display: inline-block;
+              height: 30px;
+              border: $input_border;
+              background: #fff;
+              font-size: 11px;
+              font-weight: 100;
+              cursor: pointer;
+              border-radius: 0;
+              -webkit-appearance: none;
+            }
+          }
+
+          button.join_btn {
+            width: 100%;
+            height: 40px;
+            border: none;
+            background: #333;
+            color: #fff;
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+  }
 }
 
 /* tablet */
-@include rwd(959px){
-   #lnb_books {
-      &>ul {
-         width:100%;
-      }
-   }
-
-main {
-   section {
-      #content_wrap {
-         .join_wrap {
-               padding:0 2%;
-
-               .join_terms {width:100%;}
-               .join_form {width:100%; padding:50px 0;}
-            }
-        }
+@include rwd(959px) {
+  #lnb_books {
+    & > ul {
+      width: 100%;
     }
+  }
 
-}
-     
+  main {
+    section {
+      #content_wrap {
+        .join_wrap {
+          padding: 0 2%;
+
+          .join_terms {
+            width: 100%;
+          }
+          .join_form {
+            width: 100%;
+            padding: 50px 0;
+          }
+        }
+      }
+    }
+  }
 }
 
 /* mobile */
-@include rwd(539px){
-    #lnb_books {
-        &>ul {display:none;}
-
-        #mo_lnb_books {display:block; width:100%; 
-        
-            select {width:100%; height:50px; border:none; border-bottom:2px solid #10105e; font-family:$koFont; font-size:$BasicFont; padding-left:2%; -webkit-appearance:none; border-radius:0; }
-        }
+@include rwd(539px) {
+  #lnb_books {
+    & > ul {
+      display: none;
     }
 
-main {
-   section {
+    #mo_lnb_books {
+      display: block;
+      width: 100%;
+
+      select {
+        width: 100%;
+        height: 50px;
+        border: none;
+        border-bottom: 2px solid #10105e;
+        font-family: $koFont;
+        font-size: $BasicFont;
+        padding-left: 2%;
+        -webkit-appearance: none;
+        border-radius: 0;
+      }
+    }
+  }
+
+  main {
+    section {
       #content_wrap {
-         .join_wrap {
-            margin:0 0 30px 0;
-               .join_form {
-                  .join_input_wrap {
-                     .input_txt {
-                        &.in_1 {width:40%;}
-                        &.in_2 {width:5%;}
-                        &.in_3 {width:53%;}
-                        &.in_5 {width:99%;}
-                        &.in_7 {width:99%; margin-bottom:2%;}
-                     }
-                     select.in_4 {width:60%; margin-top:2%;}
-                     select.in_6 {width:30%; margin-top:2%;}
-                     .join_chk_btn {width:30%}
-                  }
-               }
+        .join_wrap {
+          margin: 0 0 30px 0;
+          .join_form {
+            .join_input_wrap {
+              .input_txt {
+                &.in_1 {
+                  width: 40%;
+                }
+                &.in_2 {
+                  width: 5%;
+                }
+                &.in_3 {
+                  width: 53%;
+                }
+                &.in_5 {
+                  width: 99%;
+                }
+                &.in_7 {
+                  width: 60%;
+                }
+              }
+              select.in_4 {
+                width: 60%;
+              }
+              select.in_6 {
+                width: 39%;
+              }
+              .join_chk_btn {
+                width: 30%;
+                margin-top: 4%;
+              }
             }
+          }
         }
+      }
     }
-
-}
+  }
 }
