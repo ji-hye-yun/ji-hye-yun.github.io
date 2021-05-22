@@ -35,31 +35,31 @@
     
     <main>
         <section>
-           <div id="content_wrap">
-               <div class="body_txt">
-                   <div class="img_box_bg"></div>
-                   <div class="img_box img_box_commu"></div>
-                   <p class="quote quote_commu">“Reading is an exercise in empathy an exercise<br/>in walking in someone else’s shoes for a while.”<br/><span>Malorie Blackman</span></p>
-               </div>
+            <div id="content_wrap">
+                <div class="body_txt">
+                    <div class="img_box_bg"></div>
+                    <div class="img_box img_box_commu"></div>
+                    <p class="quote quote_commu">“Reading is an exercise in empathy an exercise<br/>in walking in someone else’s shoes for a while.”<br/><span>Malorie Blackman</span></p>
+                </div>
 
-               <div id="commu_info">
-                   <div class="commu_title">
-                       <h3>Community Notice</h3>
-                       <div>
-                           <div class="commu_total">게시글<em>562</em>건</div>
-                           <div class="commu_search">
-                               <select name="commu_search" title="검색구분">
-                                   <option value="제목">제목</option>
-                                   <option value="내용">내용</option>
-                                   <option value="작성자">작성자</option>
-                               </select>
-                               <input type="text" class="commu_searchbar" title="검색어입력" placeholder="검색어를 입력하세요" />
-                               <input type="button" class="commu_search_btn" value="찾기" />
-                           </div>
-                       </div>
-                   </div>
+                <div id="commu_info">
+                    <div class="commu_title">
+                        <h3>Community Notice</h3>
+                        <div>
+                            <div class="commu_total">게시글<em>562</em>건</div>
+                            <div class="commu_search">
+                                <select name="commu_search" title="검색구분">
+                                    <option value="제목">제목</option>
+                                    <option value="내용">내용</option>
+                                    <option value="작성자">작성자</option>
+                                </select>
+                                <input type="text" class="commu_searchbar" title="검색어입력" placeholder="검색어를 입력하세요" />
+                                <input type="button" class="commu_search_btn" value="찾기" />
+                            </div>
+                        </div>
+                    </div>
 
-                   <div class="commu_table_wrap">
+                    <div class="commu_table_wrap">
                         <table class="commu_table">
 		                    <caption class="skip">번호, 내용, 작성자, 등록일, 조회수를 기록한 문학동네 커뮤니티 공지사항 리스트</caption>
 		                    <thead>
