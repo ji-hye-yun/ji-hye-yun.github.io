@@ -55,7 +55,9 @@ header {
       nav {
         border-top: 1px solid #000;
         border-bottom: 1px solid #000;
+        background: #fff;
         overflow: hidden;
+        position: relative;
         ul {
           width: 980px;
           margin: 0 auto;
@@ -75,6 +77,12 @@ header {
               letter-spacing: 0.2rem;
             }
           }
+        }
+        &.fix {
+          position: fixed;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
         }
       }
     }

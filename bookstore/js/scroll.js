@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-   console.log('test3');
+   console.log('test');
 
    var winH, pos1,pos2,pos3,pos4,pos5,pos6,pos7;
    var $visual = $('figure');
