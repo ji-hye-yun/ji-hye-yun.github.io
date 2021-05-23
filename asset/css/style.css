@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand");
 @import url("https://fonts.googleapis.com/css?family=Orbitron");
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700,900&subset=korean");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
 /* reset */
 * {
   margin: 0px;
@@ -78,24 +79,31 @@ body {
 }
 
 header {
+  width: 100%;
   text-align: center;
+  background: #fff;
 }
 
 header > div:nth-child(1) p {
   width: 980px;
   margin: 0 auto;
   padding: 60px 0 0;
+  font-family: "Raleway", sans-serif;
   font-size: 24px;
-  font-weight: 300;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.8rem;
   text-transform: uppercase;
 }
 
 header > div:nth-child(2) h2 {
   width: 980px;
   margin: 0 auto;
-  padding: 20px 0 40px;
+  padding: 1.2rem 0 4rem;
   font-size: 5.4rem;
+  letter-spacing: 0.8rem;
+}
+
+header > div:nth-child(2) h2 p {
+  font-family: "Raleway", sans-serif;
 }
 
 header > div:nth-child(3) nav {
@@ -131,11 +139,15 @@ header > div:nth-child(3) nav ul li a {
 }
 
 header > div:nth-child(3) nav.fix {
+  width: 100%;
   position: fixed;
   top: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  margin-left: -7px;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 1;
 }
 
 main {
@@ -147,19 +159,125 @@ main {
 main .section {
   width: 100%;
   height: 100%;
+  padding: 8rem 1rem 0;
   position: relative;
 }
 
 main .section:nth-of-type(1) {
   min-height: 640px;
   height: 100vh;
-  background: olive;
+}
+
+main .section:nth-of-type(1) .about > div {
+  max-width: 980px;
+  margin: 0 auto;
+  position: relative;
+}
+
+main .section:nth-of-type(1) .about > div span {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  width: 36%;
+  height: 60px;
+  line-height: 60px;
+  background: #fff;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 0.6rem;
+  text-transform: uppercase;
+  border: 1px solid #000;
+}
+
+main .section:nth-of-type(1) .about figure {
+  max-width: 980px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid #000;
+  background: #fff;
+}
+
+main .section:nth-of-type(1) .about figure div {
+  float: left;
+  width: 50%;
+  height: 56vh;
+  text-align: center;
+  overflow: hidden;
+}
+
+main .section:nth-of-type(1) .about figure div img {
+  width: auto;
+  height: 100%;
+}
+
+main .section:nth-of-type(1) .about figure figcaption {
+  float: left;
+  width: 50%;
+}
+
+main .section:nth-of-type(1) .about figure figcaption p {
+  padding: 7rem 2rem 0;
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: right;
+  letter-spacing: -0.9px;
+}
+
+main .section:nth-of-type(1) .about figure figcaption p a {
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+
+main .section:nth-of-type(1) .about figure figcaption p a span {
+  padding: 0 0.3rem;
+  vertical-align: text-bottom;
 }
 
 main .section:nth-child(2) {
   min-height: 640px;
   height: 100vh;
   background: #caacc9;
+}
+
+main .section:nth-child(2) .work .work_box ul {
+  width: 100%;
+  overflow: hidden;
+}
+
+main .section:nth-child(2) .work .work_box ul li {
+  float: left;
+  width: 16.6%;
+}
+
+main .section:nth-child(2) .work .work_box ul li div.box {
+  padding: 1rem;
+  border-right: 1px solid #000;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+main .section:nth-child(2) .work .work_box ul li div.box div:nth-of-type(1) {
+  display: inline-block;
+  width: 40%;
+  background: #999;
+}
+
+main .section:nth-child(2) .work .work_box ul li div.box a {
+  display: none;
+  width: 50%;
+}
+
+main .section:nth-child(2) .work .work_box ul li div.box div:nth-of-type(2) {
+  display: inline-block;
+  width: 9%;
+}
+
+main .section:nth-child(2) .work .work_box ul li.on {
+  width: 50%;
+}
+
+main .section:nth-child(2) .work .work_box ul li:nth-of-type(1) {
+  border-left: 1px solid #000;
 }
 
 main .section:nth-child(3) {
@@ -170,156 +288,13 @@ main .section:nth-child(3) {
 
 footer {
   width: 100%;
-  background: #333;
+  background: #666;
   position: relative;
-  z-index: 2;
-  font-family: "noto sans KR";
-  height: 240px;
-}
-
-footer article {
-  width: 940px;
-  margin: 0 auto;
-  height: 240px;
-}
-
-footer article::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-footer article > div.ft_left {
-  float: left;
-  width: 80%;
-  padding-top: 50px;
-  height: 240px;
-}
-
-footer article > div.ft_left h3 > div {
-  font-size: 0;
-  width: 40px;
-  height: 20px;
-  background: url(../img/default/ftlogo.png);
-  background-size: 100% 100%;
-}
-
-footer article > div.ft_left ul::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-footer article > div.ft_left ul li {
-  float: left;
-  width: 20%;
-  padding: 20px 0;
-  font-size: 12px;
-}
-
-footer article > div.ft_left ul li > a {
-  color: #666;
-  font-weight: 100;
-}
-
-footer article > div.ft_left address {
-  color: #666;
-  font-style: normal;
-  font-size: 12px;
-  font-weight: 100;
-}
-
-footer article > div.ft_left p {
-  color: #666;
-  font-size: 12px;
-  font-weight: 100;
-  padding-top: 10px;
-}
-
-footer article > div.ft_right {
-  float: left;
-  width: 20%;
-  position: relative;
-  height: 240px;
-}
-
-footer article > div.ft_right div.back_to_top {
-  display: inline-block;
-  position: absolute;
-  right: 0;
-  width: 40px;
-  height: 40px;
-  background: #000;
-  text-align: center;
-  font-size: 24px;
-  color: #eee;
-  cursor: pointer;
-}
-
-footer article > div.ft_right div.sns_wrap {
-  width: 100%;
   height: 100px;
-  position: absolute;
-  top: 40px;
-  text-align: right;
-  padding-top: 40px;
-}
-
-footer article > div.ft_right div.sns_wrap span {
-  display: inline-block;
-  width: 33.33333%;
-  width: 30px;
-  height: 30px;
-  border-radius: 15px;
-  margin-left: 10px;
-  color: #666;
-  font-size: 20px;
+  padding: 2rem;
+  text-align: center;
+  color: #fff;
 }
 
 /* tablet */
-@media screen and (max-width: 959px) {
-  footer {
-    height: 300px;
-  }
-  footer article {
-    width: 100%;
-    padding: 0 2%;
-    height: 300px;
-  }
-  footer article > div.ft_left {
-    width: 100%;
-    position: absolute;
-    top: 60px;
-  }
-  footer article > div.ft_left address {
-    padding: 0 2% 0 0;
-  }
-  footer article > div.ft_left address a {
-    text-decoration: none;
-    color: #eee;
-  }
-  footer article > div.ft_right {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    right: 5%;
-  }
-}
-
 /* mobile */
-@media screen and (max-width: 539px) {
-  footer {
-    height: 360px;
-  }
-  footer article {
-    height: 360px;
-  }
-  footer article > div.ft_left ul {
-    padding: 10px 0;
-  }
-  footer article > div.ft_left ul li {
-    width: 50%;
-    font-size: 11px;
-    padding: 5px 0;
-  }
-}

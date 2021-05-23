@@ -1,10 +1,10 @@
 $koFont: "noto sans KR";
 $smallFont: 12px;
 $BasicFont: 14px;
-$midFont: 24px;
+$midFont: 18px;
 $biggerFont: 30px;
 $TitleFont: 36px;
-$BasicBorder: 1px solid #eee;
+$border: 1px solid #000;
 
 main {
   position: relative;
@@ -14,17 +14,123 @@ main {
   .section {
     width: 100%;
     height: 100%;
+    padding: 8rem 1rem 0;
     position: relative;
 
     &:nth-of-type(1) {
       min-height: 640px;
       height: 100vh;
-      background: olive;
+
+      .about {
+        & > div {
+          max-width: 980px;
+          margin: 0 auto;
+          position: relative;
+
+          span {
+            position: absolute;
+            top: -30px;
+            right: 0;
+            width: 36%;
+            height: 60px;
+            line-height: 60px;
+            background: #fff;
+            text-align: center;
+            font-size: $midFont;
+            letter-spacing: 0.6rem;
+            text-transform: uppercase;
+            border: $border;
+          }
+        }
+        figure {
+          max-width: 980px;
+          margin: 0 auto;
+          overflow: hidden;
+          border: $border;
+          background: #fff;
+
+          div {
+            float: left;
+            width: 50%;
+            height: 56vh;
+            text-align: center;
+            overflow: hidden;
+
+            img {
+              width: auto;
+              height: 100%;
+            }
+          }
+
+          figcaption {
+            float: left;
+            width: 50%;
+
+            p {
+              padding: 7rem 2rem 0;
+              font-size: $midFont;
+              line-height: 1.8;
+              text-align: right;
+              letter-spacing: -0.9px;
+
+              a {
+                color: #000;
+                border-bottom: $border;
+                span {
+                  padding: 0 0.3rem;
+                  vertical-align: text-bottom;
+                }
+              }
+            }
+          }
+        }
+      }
     }
     &:nth-child(2) {
       min-height: 640px;
       height: 100vh;
       background: rgb(202, 172, 201);
+
+      .work {
+        .work_box {
+          ul {
+            width: 100%;
+            overflow: hidden;
+            li {
+              float: left;
+              width: 16.6%;
+
+              div.box {
+                padding: 1rem;
+                border-right: 1px solid #000;
+                border-top: 1px solid #000;
+                border-bottom: 1px solid #000;
+
+                div:nth-of-type(1) {
+                  display: inline-block;
+                  width: 40%;
+                  background: #999;
+                }
+                a {
+                  display: none;
+                  width: 50%;
+                }
+                div:nth-of-type(2) {
+                  display: inline-block;
+                  width: 9%;
+                }
+              }
+
+              &.on {
+                width: 50%;
+              }
+              &:nth-of-type(1) {
+                border-left: 1px solid #000;
+              }
+            }
+          }
+        }
+      }
     }
     &:nth-child(3) {
       min-height: 640px;

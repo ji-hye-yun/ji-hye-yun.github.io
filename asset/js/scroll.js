@@ -1,13 +1,26 @@
 $(document).ready(function(){
-    $('html').css('display', 'red');
-/*
-    $('#wrap').on('scroll', function(){
+    
+    var $nav = $('header nav');
+    var $nav_pos = $nav.offset().top;
+
+    $('html, body').on('scroll', function(){
         var scroll = $(this).scrollTop();
         
-        console.log(scroll)
-        
-        if ( scroll > 0 ) {
-            $('html').css('display', 'red')
+        if ( scroll > $nav_pos ) {
+            $nav.addClass('fix');
+        }else{
+            $nav.removeClass('fix');
         }
-    });*/
+    });
+    /*
+    $('html, body').on('touchmove mousewheel',function(){
+        var wheel = e.originalEvent.wheelDelta;
+        
+        if(wheel>0){
+            
+        }else{
+            
+        }	
+    });
+    */
 });
