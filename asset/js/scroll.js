@@ -1,6 +1,8 @@
 $(document).ready(function(){
     
     var $nav = $('header nav');
+    var $nav_a = $('header nav li a');
+    var $sec = $('.section');
     var $nav_pos = $nav.offset().top;
 
     $('html, body').on('scroll', function(){
@@ -13,14 +15,16 @@ $(document).ready(function(){
         }
     });
     /*
-    $('html, body').on('touchmove mousewheel',function(){
-        var wheel = e.originalEvent.wheelDelta;
-        
-        if(wheel>0){
-            
-        }else{
-            
-        }	
+    $nav_a.on('click', function(){
+        var scrollPos = $($(this).attr("data-target")).offset().top;
+
+        console.log(scrollPos)
+    
+        $('html, body').animate({
+            scrollTop: scrollPos
+        }, 900);
+        return false;
     });
-    */
+*/
+
 });

@@ -1,5 +1,6 @@
 $(document).ready(function(){
     var $skip_a = $('#skip_navi > li > a');
+    var $work_li = $('.work_box li');
 
     $skip_a.on('focusin', function(){
         $(this).addClass('on');
@@ -12,26 +13,14 @@ $(document).ready(function(){
 
 
     // main .work
-    $('.work_box li').each(function(i){
-        var $thisbox = $('.work_box li.on');
+    $work_li.on('click', function(){
+        //var $thisindex = $(this).index();
+        //console.log($thisindex)
 
-        $('.work_box li').removeClass('on');
-        $('.work_box li').css('width', '25%');
-
-        $(this).click(function(e){
-            e.preventDefault();
-            if( !$(this).hasClass('on') ){
-                $('.work_box li').removeClass('on');
-                $('.work_box li').not(this).css('width', '16.6%');
-                $('.work_box li').not(this).find('a').hide();
-                $(this).addClass('on');
-                $(this).css('width', '50%');
-                $(this).find('a').css('display', 'inline-block');
-            }else{
-                $(this).removeClass('on');
-                $('.work_box li').not(this).find('a').hide();
-            }
-            
-        })
+        $work_li.removeClass('on');
+        $(this).addClass('on');
     });
+
+
+
 });
