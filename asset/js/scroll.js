@@ -14,17 +14,12 @@ $(document).ready(function(){
             $nav.removeClass('fix');
         }
     });
-    /*
-    $nav_a.on('click', function(){
-        var scrollPos = $($(this).attr("data-target")).offset().top;
-
-        console.log(scrollPos)
     
-        $('html, body').animate({
-            scrollTop: scrollPos
-        }, 900);
-        return false;
-    });
-*/
+    /* Back To Top */
+	$('.back').on('click', function(e){  
+		e.preventDefault();  
+		$('html,body').animate({scrollTop:0}, 1500);
+		return false;  
+	}); 
 
 });

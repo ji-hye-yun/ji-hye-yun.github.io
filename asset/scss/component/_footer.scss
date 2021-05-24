@@ -1,4 +1,4 @@
-$ftColor: #666;
+$ftColor: #455155;
 
 footer {
   width: 100%;
@@ -8,6 +8,21 @@ footer {
   padding: 2rem;
   text-align: center;
   color: #fff;
+  letter-spacing: 0.1rem;
+
+  .back {
+    display: block;
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    background: #455155;
+    text-align: center;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 /* tablet */

@@ -25,7 +25,7 @@ body,
 input {
   color: #333;
   font-size: 14px;
-  font-family: "interbureau", "Noto Sans KR", "Bree Serif", dotum, sans-serif;
+  font-family: "Noto Sans KR", "Bree Serif", dotum, sans-serif;
 }
 
 .skip {
@@ -171,6 +171,7 @@ main .section {
 main .section:nth-of-type(1) {
   min-height: 640px;
   height: 100vh;
+  background: #fff;
 }
 
 main .section:nth-of-type(1) .about > div {
@@ -248,16 +249,17 @@ main .section:nth-child(2) .work .work_box > p:nth-child(1) {
   font-family: "Raleway", sans-serif;
   font-size: 36px;
   font-weight: bold;
+  letter-spacing: 1rem;
 }
 
 main .section:nth-child(2) .work .work_box > p:nth-child(2) {
-  font-size: 18px;
+  font-size: 14px;
   padding: 1rem 0 0 0;
 }
 
 main .section:nth-child(2) .work .work_box > p:nth-child(3) {
-  font-size: 18px;
-  padding: 1rem 0 2rem;
+  font-size: 14px;
+  padding: 0.4rem 0 2rem;
 }
 
 main .section:nth-child(2) .work .work_box ul {
@@ -269,12 +271,13 @@ main .section:nth-child(2) .work .work_box ul li {
   float: left;
   width: 10%;
   height: 64vh;
-  border-right: 1px solid #000;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
+  border-right: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
   overflow: hidden;
   -webkit-transition: 1s;
   transition: 1s;
+  color: #aaa;
 }
 
 main .section:nth-child(2) .work .work_box ul li div.box {
@@ -293,12 +296,16 @@ main .section:nth-child(2) .work .work_box ul li div.box div p.box_p_1 {
   font-size: 30px;
   font-weight: bold;
   letter-spacing: 3px;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 main .section:nth-child(2) .work .work_box ul li div.box div p.box_p_2 {
   font-size: 18px;
   font-weight: bold;
   padding: 1rem 0;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 main .section:nth-child(2) .work .work_box ul li div.box div p.box_p_3 {
@@ -338,8 +345,21 @@ main .section:nth-child(2) .work .work_box ul li div.box a img {
   height: 100%;
 }
 
+main .section:nth-child(2) .work .work_box ul li:hover {
+  border-right: 1px solid #000;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+  color: #111;
+}
+
 main .section:nth-child(2) .work .work_box ul li.on {
   width: 70%;
+  border-right: 1px solid #000;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000 !important;
+  color: #111;
 }
 
 main .section:nth-child(2) .work .work_box ul li.on div.box div {
@@ -374,23 +394,284 @@ main .section:nth-child(2) .work .work_box ul li.on div.box a {
 }
 
 main .section:nth-child(2) .work .work_box ul li:nth-of-type(1) {
-  border-left: 1px solid #000;
+  border-left: 1px solid #ccc;
 }
 
 main .section:nth-child(3) {
   min-height: 640px;
   height: 100vh;
-  background: gray;
+  background: #fff;
+}
+
+main .section:nth-child(3) .portfolio .portfolio_box > p > span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: bottom;
+}
+
+main .section:nth-child(3) .portfolio .portfolio_box > p:nth-child(1) {
+  font-family: "Raleway", sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 1rem;
+}
+
+main .section:nth-child(3) .portfolio .portfolio_box > p:nth-child(2) {
+  font-size: 14px;
+  padding: 1rem 0 0 0;
+}
+
+main .section:nth-child(3) .portfolio .portfolio_box > p:nth-child(2) > span {
+  background: url("../img/portfolio/html5.png") no-repeat;
+  background-size: cover;
+}
+
+main .section:nth-child(3) .portfolio .portfolio_box > p:nth-child(3) {
+  font-size: 14px;
+  padding: 0.4rem 0 0 0;
+}
+
+main .section:nth-child(3) .portfolio .portfolio_box > p:nth-child(3) > span:nth-child(1) {
+  background: url("../img/portfolio/css.png") no-repeat;
+  background-size: contain;
+}
+
+main .section:nth-child(3) .portfolio .portfolio_box > p:nth-child(3) > span:nth-child(2) {
+  background: url("../img/portfolio/sass.png") no-repeat;
+  background-size: cover;
+}
+
+main .section:nth-child(3) .portfolio .portfolio_box > p:nth-child(4) {
+  font-size: 14px;
+  padding: 0.4rem 0 0 0;
+}
+
+main .section:nth-child(3) .portfolio .portfolio_box > p:nth-child(4) > span {
+  background: url("../img/portfolio/js.png") no-repeat;
+  background-size: contain;
+}
+
+main .section:nth-child(3) .portfolio .portfolio_box > p:nth-child(5) {
+  font-size: 14px;
+  padding: 0.4rem 0 2rem;
+}
+
+main .section:nth-child(3) .portfolio .portfolio_box > ul {
+  width: 100%;
+  overflow: hidden;
+}
+
+main .section:nth-child(3) .portfolio .portfolio_box > ul > li {
+  float: left;
+  width: 5%;
+  height: 64vh;
+  border-right: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  overflow: hidden;
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: #aaa;
+}
+
+main .section:nth-child(3) .portfolio .portfolio_box > ul > li div.box {
+  padding: 1rem;
+}
+
+main .section:nth-child(3) .portfolio .portfolio_box > ul > li div.box div {
+  display: inline-block;
+  width: 100%;
+  padding: 4rem 0 0 0;
+  font-size: 18px;
+}
+
+main .section:nth-child(3) .portfolio .portfolio_box > ul > li div.box div p.box_p_1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+main .section:nth-child(3) .portfolio .portfolio_box > ul > li div.box div p.box_p_2 {
+  width: 200px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 1rem 0;
+  -webkit-transform: translateX(-3rem) translateY(6rem) rotate(90deg);
+          transform: translateX(-3rem) translateY(6rem) rotate(90deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+main .section:nth-child(3) .portfolio .portfolio_box > ul > li div.box div p.box_p_3 {
+  font-size: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main .section:nth-child(3) .portfolio .portfolio_box > ul > li div.box div p.box_p_4 {
+  font-size: 0;
+  padding: 0.5rem 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main .section:nth-child(3) .portfolio .portfolio_box > ul > li div.box div p.box_p_4 span.browsericon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main .section:nth-child(3) .portfolio .portfolio_box > ul > li div.box div p.box_p_4 span.browsericon:nth-child(1) {
+  background: url("../img/portfolio/browser_001.png") no-repeat;
+  background-size: cover;
+}
+
+main .section:nth-child(3) .portfolio .portfolio_box > ul > li div.box div p.box_p_4 span.browsericon:nth-child(2) {
+  background: url("../img/portfolio/browser_002.png") no-repeat;
+  background-size: cover;
+}
+
+main .section:nth-child(3) .portfolio .portfolio_box > ul > li div.box div p.box_p_4 span.browsericon:nth-child(3) {
+  background: url("../img/portfolio/browser_003.svg") no-repeat;
+  background-size: cover;
+}
+
+main .section:nth-child(3) .portfolio .portfolio_box > ul > li div.box div p.box_p_4 span.browsericon:nth-child(4) {
+  background: url("../img/portfolio/browser_004.png") no-repeat;
+  background-size: cover;
+}
+
+main .section:nth-child(3) .portfolio .portfolio_box > ul > li div.box div p.box_p_4 span.browsericon:nth-child(5) {
+  background: url("../img/portfolio/browser_005.png") no-repeat;
+  background-size: cover;
+}
+
+main .section:nth-child(3) .portfolio .portfolio_box > ul > li div.box div p.box_p_5 {
+  font-size: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main .section:nth-child(3) .portfolio .portfolio_box > ul > li div.box a {
+  display: none;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  opacity: 0;
+  -webkit-transition: linear 1s;
+  transition: linear 1s;
+  width: 80%;
+  overflow: hidden;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 11px 10px 20px;
+          box-shadow: rgba(0, 0, 0, 0.3) 11px 10px 20px;
+}
+
+main .section:nth-child(3) .portfolio .portfolio_box > ul > li div.box a img {
+  width: 100%;
+  height: 100%;
+}
+
+main .section:nth-child(3) .portfolio .portfolio_box > ul > li:hover {
+  border-right: 1px solid #000;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+  color: #111;
+}
+
+main .section:nth-child(3) .portfolio .portfolio_box > ul > li.on {
+  width: 75%;
+  border-right: 1px solid #000;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000 !important;
+  color: #111;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+main .section:nth-child(3) .portfolio .portfolio_box > ul > li.on div.box div {
+  width: 20%;
+  float: left;
+}
+
+main .section:nth-child(3) .portfolio .portfolio_box > ul > li.on div.box div p.box_p_2 {
+  font-size: 1.5rem;
+  -webkit-transform: translateX(0rem) translateY(0rem) rotate(0deg);
+          transform: translateX(0rem) translateY(0rem) rotate(0deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+main .section:nth-child(3) .portfolio .portfolio_box > ul > li.on div.box div p.box_p_3 {
+  font-size: 18px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+main .section:nth-child(3) .portfolio .portfolio_box > ul > li.on div.box div p.box_p_4 span.browsericon {
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main .section:nth-child(3) .portfolio .portfolio_box > ul > li.on div.box div p.box_p_5 {
+  font-size: 14px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+main .section:nth-child(3) .portfolio .portfolio_box > ul > li.on div.box a {
+  display: inline-block;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  opacity: 1;
+  -webkit-transition: 1s;
+  transition: 1s;
+  width: 80%;
+}
+
+main .section:nth-child(3) .portfolio .portfolio_box > ul > li:nth-of-type(1) {
+  border-left: 1px solid #ccc;
+}
+
+main .section:nth-child(4) {
+  min-height: 540px;
+  height: 100vh;
+  background: #e8f9ff;
 }
 
 footer {
   width: 100%;
-  background: #666;
+  background: #455155;
   position: relative;
   height: 100px;
   padding: 2rem;
   text-align: center;
   color: #fff;
+  letter-spacing: 0.1rem;
+}
+
+footer .back {
+  display: block;
+  width: 180px;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  background: #455155;
+  text-align: center;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 /* tablet */

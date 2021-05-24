@@ -20,6 +20,7 @@ main {
     &:nth-of-type(1) {
       min-height: 640px;
       height: 100vh;
+      background: #fff;
 
       .about {
         & > div {
@@ -98,14 +99,15 @@ main {
               font-family: "Raleway", sans-serif;
               font-size: $TitleFont;
               font-weight: bold;
+              letter-spacing: 1rem;
             }
             &:nth-child(2) {
-              font-size: $midFont;
+              font-size: $BasicFont;
               padding: 1rem 0 0 0;
             }
             &:nth-child(3) {
-              font-size: $midFont;
-              padding: 1rem 0 2rem;
+              font-size: $BasicFont;
+              padding: 0.4rem 0 2rem;
             }
           }
 
@@ -116,11 +118,12 @@ main {
               float: left;
               width: 10%;
               height: 64vh;
-              border-right: 1px solid #000;
-              border-top: 1px solid #000;
-              border-bottom: 1px solid #000;
+              border-right: 1px solid #ccc;
+              border-top: 1px solid #ccc;
+              border-bottom: 1px solid #ccc;
               overflow: hidden;
               transition: 1s;
+              color: #aaa;
 
               div.box {
                 padding: 1rem;
@@ -136,11 +139,13 @@ main {
                     font-size: $biggerFont;
                     font-weight: bold;
                     letter-spacing: 3px;
+                    transition: 1s;
                   }
                   p.box_p_2 {
                     font-size: $midFont;
                     font-weight: bold;
                     padding: 1rem 0;
+                    transition: 1s;
                   }
                   p.box_p_3 {
                     font-size: 0;
@@ -172,6 +177,13 @@ main {
                 }
               }
 
+              &:hover {
+                border-right: $border;
+                border-top: $border;
+                border-bottom: $border;
+                border-left: $border;
+                color: #111;
+              }
               &.on {
                 width: 70%;
                 div.box {
@@ -200,9 +212,14 @@ main {
                     width: 80%;
                   }
                 }
+                border-right: $border;
+                border-top: $border;
+                border-bottom: $border;
+                border-left: $border !important;
+                color: #111;
               }
               &:nth-of-type(1) {
-                border-left: 1px solid #000;
+                border-left: 1px solid #ccc;
               }
             }
           }
@@ -212,7 +229,223 @@ main {
     &:nth-child(3) {
       min-height: 640px;
       height: 100vh;
-      background: gray;
+      background: #fff;
+
+      .portfolio {
+        .portfolio_box {
+          & > p {
+            & > span {
+              display: inline-block;
+              width: 20px;
+              height: 20px;
+              vertical-align: bottom;
+            }
+            &:nth-child(1) {
+              font-family: "Raleway", sans-serif;
+              font-size: $TitleFont;
+              font-weight: bold;
+              letter-spacing: 1rem;
+            }
+            &:nth-child(2) {
+              font-size: $BasicFont;
+              padding: 1rem 0 0 0;
+              & > span {
+                background: url("../img/portfolio/html5.png") no-repeat;
+                background-size: cover;
+              }
+            }
+            &:nth-child(3) {
+              font-size: $BasicFont;
+              padding: 0.4rem 0 0 0;
+              & > span:nth-child(1) {
+                background: url("../img/portfolio/css.png") no-repeat;
+                background-size: contain;
+              }
+              & > span:nth-child(2) {
+                background: url("../img/portfolio/sass.png") no-repeat;
+                background-size: cover;
+              }
+            }
+            &:nth-child(4) {
+              font-size: $BasicFont;
+              padding: 0.4rem 0 0 0;
+              & > span {
+                background: url("../img/portfolio/js.png") no-repeat;
+                background-size: contain;
+              }
+            }
+            &:nth-child(5) {
+              font-size: $BasicFont;
+              padding: 0.4rem 0 2rem;
+            }
+          }
+          & > ul {
+            width: 100%;
+            overflow: hidden;
+            & > li {
+              float: left;
+              width: 5%;
+              height: 64vh;
+              border-right: 1px solid #ccc;
+              border-top: 1px solid #ccc;
+              border-bottom: 1px solid #ccc;
+              overflow: hidden;
+              transition: 1s;
+              color: #aaa;
+
+              div.box {
+                padding: 1rem;
+
+                div {
+                  display: inline-block;
+                  width: 100%;
+                  padding: 4rem 0 0 0;
+                  font-size: $midFont;
+
+                  p.box_p_1 {
+                    font-family: "Raleway", sans-serif;
+                    font-size: $biggerFont;
+                    font-weight: bold;
+                    letter-spacing: 3px;
+                    transition: 0.6s;
+                  }
+                  p.box_p_2 {
+                    width: 200px;
+                    font-size: $midFont;
+                    font-weight: bold;
+                    padding: 1rem 0;
+                    transform: translateX(-3rem) translateY(6rem) rotate(90deg);
+                    transition: 1s;
+                  }
+                  p.box_p_3 {
+                    font-size: 0;
+                    transition: 0.3s;
+                  }
+                  p.box_p_4 {
+                    font-size: 0;
+                    padding: 0.5rem 0;
+                    transition: 0.3s;
+                    span.browsericon {
+                      display: inline-block;
+                      width: 20px;
+                      height: 20px;
+                      margin-right: 5px;
+                      opacity: 0;
+                      transition: 0.3s;
+
+                      &:nth-child(1) {
+                        background: url("../img/portfolio/browser_001.png")
+                          no-repeat;
+                        background-size: cover;
+                      }
+                      &:nth-child(2) {
+                        background: url("../img/portfolio/browser_002.png")
+                          no-repeat;
+                        background-size: cover;
+                      }
+                      &:nth-child(3) {
+                        background: url("../img/portfolio/browser_003.svg")
+                          no-repeat;
+                        background-size: cover;
+                      }
+                      &:nth-child(4) {
+                        background: url("../img/portfolio/browser_004.png")
+                          no-repeat;
+                        background-size: cover;
+                      }
+                      &:nth-child(5) {
+                        background: url("../img/portfolio/browser_005.png")
+                          no-repeat;
+                        background-size: cover;
+                      }
+                    }
+                  }
+                  p.box_p_5 {
+                    font-size: 0;
+                    transition: 0.3s;
+                  }
+                }
+                a {
+                  display: none;
+                  transform: scaleX(0);
+                  opacity: 0;
+                  transition: linear 1s;
+                  width: 80%;
+                  overflow: hidden;
+                  box-shadow: rgba(0, 0, 0, 0.3) 11px 10px 20px;
+
+                  img {
+                    width: 100%;
+                    height: 100%;
+                  }
+                }
+              }
+
+              &:hover {
+                border-right: $border;
+                border-top: $border;
+                border-bottom: $border;
+                border-left: $border;
+                color: #111;
+              }
+              &.on {
+                width: 75%;
+                border-right: $border;
+                border-top: $border;
+                border-bottom: $border;
+                border-left: $border !important;
+                color: #111;
+                transition: 1s;
+
+                div.box {
+                  div {
+                    width: 20%;
+                    float: left;
+
+                    p.box_p_2 {
+                      font-size: 1.5rem;
+                      transform: translateX(0rem) translateY(0rem) rotate(0deg);
+                      transition: 1s;
+                    }
+                    p.box_p_3 {
+                      font-size: $midFont;
+                      transition: 0.6s;
+                    }
+                    p.box_p_4 {
+                      span.browsericon {
+                        opacity: 1;
+                        transition: 0.3s;
+                      }
+                    }
+                    p.box_p_5 {
+                      font-size: $BasicFont;
+                      transition: 0.6s;
+                    }
+                  }
+                  a {
+                    display: inline-block;
+                    transform: scaleX(1);
+                    opacity: 1;
+                    transition: 1s;
+                    width: 80%;
+                  }
+                }
+              }
+              &:nth-of-type(1) {
+                border-left: 1px solid #ccc;
+              }
+            }
+          }
+        }
+      }
+    }
+    &:nth-child(4) {
+      min-height: 540px;
+      height: 100vh;
+      background: #e8f9ff;
+
+      .contact {
+      }
     }
   }
 }

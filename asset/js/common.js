@@ -1,6 +1,7 @@
 $(document).ready(function(){
     var $skip_a = $('#skip_navi > li > a');
     var $work_li = $('.work_box li');
+    var $portfolio_li = $('.portfolio_box li');
 
     $skip_a.on('focusin', function(){
         $(this).addClass('on');
@@ -18,6 +19,13 @@ $(document).ready(function(){
         //console.log($thisindex)
 
         $work_li.removeClass('on');
+        $(this).addClass('on');
+    });
+
+    // main .portfolio
+    $portfolio_li.on('click', function(){
+
+        $portfolio_li.removeClass('on');
         $(this).addClass('on');
     });
 
