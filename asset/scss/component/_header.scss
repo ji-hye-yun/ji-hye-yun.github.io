@@ -26,6 +26,10 @@ $border: 1px solid #000;
   }
 }
 
+#wrap {
+  position: relative;
+}
+
 header {
   width: 100%;
   text-align: center;
@@ -85,7 +89,7 @@ header {
 
               &:hover {
                 color: #63b2ca;
-                border-bottom: $border;
+                border-bottom: 2px solid #000;
               }
             }
           }
@@ -96,7 +100,7 @@ header {
           top: 0;
           left: 50%;
           transform: translateX(-50%);
-          margin-left: -7px;
+          margin-left: -8px;
           background: rgba(255, 255, 255, 0.5);
           z-index: 1;
         }
