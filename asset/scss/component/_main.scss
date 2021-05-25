@@ -787,13 +787,16 @@ main {
       display: none;
     }
     .section {
+      &:nth-child(1) {
+        height: auto;
+      }
       &:nth-child(2) {
         .work {
           .work_box {
             ul {
               li {
                 width: 50%;
-                height: 50vh;
+                height: 56vh;
                 div.box {
                   padding: 2rem;
                   text-align: center;
@@ -847,7 +850,7 @@ main {
             & > ul {
               & > li {
                 width: 50%;
-                height: 57vh;
+                height: 62vh;
                 div.box {
                   padding: 2rem;
                   text-align: center;
