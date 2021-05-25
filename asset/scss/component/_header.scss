@@ -35,6 +35,10 @@ header {
   text-align: center;
   background: #fff;
 
+  .m {
+    display: none;
+  }
+
   & > div {
     &:nth-child(1) {
       p {
@@ -114,6 +118,86 @@ header {
         nav {
           &.fix {
             margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include rwd(959px) {
+  header {
+    & > div {
+      &:nth-child(1) {
+        p {
+          width: 100%;
+          font-size: 18px;
+        }
+      }
+      &:nth-child(2) {
+        h2 {
+          width: 100%;
+          padding: 1.2rem 0 2rem;
+          font-size: 4rem;
+        }
+      }
+      &:nth-child(3) {
+        nav {
+          &.fix {
+            margin-left: 0;
+          }
+        }
+      }
+      &:nth-child(3) {
+        nav {
+          ul {
+            width: 100%;
+            li {
+              float: left;
+              width: 20%;
+              border-right: $border;
+              &:nth-child(1) {
+                border-left: none;
+              }
+              &:nth-child(5) {
+                border-right: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include rwd(539px) {
+  header {
+    .m {
+      display: block;
+    }
+    & > div {
+      &:nth-child(1) {
+        p {
+          font-size: $BasicFont;
+          padding: 2rem 0 0;
+          letter-spacing: 0.5rem;
+          line-height: 1.5;
+        }
+      }
+      &:nth-child(2) {
+        h2 {
+          font-size: 2rem;
+          letter-spacing: 0.4rem;
+        }
+      }
+      &:nth-child(3) {
+        nav {
+          ul {
+            li {
+              a {
+                letter-spacing: 0;
+              }
+            }
           }
         }
       }

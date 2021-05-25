@@ -35,6 +35,7 @@ $(document).ready(function(){
         e.preventDefault();
         $('.dim').css('display', 'block');
         $('#resume').css('display', 'block');
+        $('html,body').animate({scrollTop:0}, 1000);
     });
     $resume_close.on('click', function(e){
         e.preventDefault();

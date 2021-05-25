@@ -25,14 +25,11 @@ footer {
   }
 }
 
-/* tablet */
-@include rwd(959px) {
-  footer {
-  }
-}
-
 /* mobile */
 @include rwd(539px) {
   footer {
+    .back {
+      display: none;
+    }
   }
 }

@@ -88,6 +88,10 @@ header {
   background: #fff;
 }
 
+header .m {
+  display: none;
+}
+
 header > div:nth-child(1) p {
   width: 980px;
   margin: 0 auto;
@@ -160,6 +164,54 @@ header > div:nth-child(3) nav.fix {
 @media screen and (max-width: 1400px) {
   header > div:nth-child(3) nav.fix {
     margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  header > div:nth-child(1) p {
+    width: 100%;
+    font-size: 18px;
+  }
+  header > div:nth-child(2) h2 {
+    width: 100%;
+    padding: 1.2rem 0 2rem;
+    font-size: 4rem;
+  }
+  header > div:nth-child(3) nav.fix {
+    margin-left: 0;
+  }
+  header > div:nth-child(3) nav ul {
+    width: 100%;
+  }
+  header > div:nth-child(3) nav ul li {
+    float: left;
+    width: 20%;
+    border-right: 1px solid #000;
+  }
+  header > div:nth-child(3) nav ul li:nth-child(1) {
+    border-left: none;
+  }
+  header > div:nth-child(3) nav ul li:nth-child(5) {
+    border-right: none;
+  }
+}
+
+@media screen and (max-width: 539px) {
+  header .m {
+    display: block;
+  }
+  header > div:nth-child(1) p {
+    font-size: 14px;
+    padding: 2rem 0 0;
+    letter-spacing: 0.5rem;
+    line-height: 1.5;
+  }
+  header > div:nth-child(2) h2 {
+    font-size: 2rem;
+    letter-spacing: 0.4rem;
+  }
+  header > div:nth-child(3) nav ul li a {
+    letter-spacing: 0;
   }
 }
 
@@ -250,6 +302,10 @@ main .section:nth-child(1) .about figure figcaption p a span {
 main .section:nth-child(2) {
   min-height: 640px;
   background: #fff;
+}
+
+main .section:nth-child(2) .moback {
+  display: none;
 }
 
 main .section:nth-child(2) .work .work_box > p:nth-child(1) {
@@ -522,7 +578,6 @@ main .section:nth-child(3) .portfolio .portfolio_box > ul > li div.box {
 main .section:nth-child(3) .portfolio .portfolio_box > ul > li div.box div:nth-child(1) {
   display: inline-block;
   width: 100%;
-  float: left;
   padding: 4rem 1rem 0 0;
   font-size: 18px;
 }
@@ -977,8 +1032,6 @@ main .section:nth-child(4) .contact .email_wrap .email_btn {
 
 #resume {
   display: none;
-  width: 500px;
-  height: 500px;
   position: absolute;
   top: 5%;
   left: 50%;
@@ -988,8 +1041,12 @@ main .section:nth-child(4) .contact .email_wrap .email_btn {
 }
 
 #resume .resume_con {
-  background-color: #fefefe;
-  padding: 4rem;
+  overflow: hidden;
+}
+
+#resume .resume_con img {
+  width: 100%;
+  height: auto;
 }
 
 #resume .resume_close {
@@ -998,13 +1055,44 @@ main .section:nth-child(4) .contact .email_wrap .email_btn {
   position: absolute;
   right: 0;
   top: 0;
-  border: 1px solid #000;
 }
 
 #resume .resume_close a {
   display: inline-block;
   width: 100%;
   height: 100%;
+}
+
+#resume .resume_close a span:nth-child(1) {
+  top: 23px;
+  left: 12px;
+  width: 23px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  display: block;
+  position: absolute;
+  left: 8px;
+  width: 24px;
+  height: 1px;
+  background: #000;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+#resume .resume_close a span:nth-child(2) {
+  top: 23px;
+  left: 12px;
+  width: 23px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  display: block;
+  position: absolute;
+  left: 8px;
+  width: 24px;
+  height: 1px;
+  background: #000;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
 }
 
 @media screen and (max-width: 1920px) {
@@ -1252,22 +1340,96 @@ main .section:nth-child(4) .contact .email_wrap .email_btn {
     padding: 1rem;
     text-align: left;
   }
+  main .section:nth-child(2) .moback {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 25px;
+    color: #fff;
+    background: url(../img/common/planet-earth.png) no-repeat;
+    background-size: cover;
+    z-index: 1;
+    -webkit-box-shadow: #ccc 5px 7px 12px 7px;
+            box-shadow: #ccc 5px 7px 12px 7px;
+  }
+  main .section:nth-child(2) .moback span {
+    position: relative;
+    z-index: 2;
+  }
+  main .section:nth-child(2) .moback::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 25px;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  main .section:nth-child(2) .work .work_box ul li {
+    width: 100%;
+    height: 53vh;
+  }
+  main .section:nth-child(2) .work .work_box ul li:nth-of-type(2) {
+    border-left: 1px solid #ccc;
+  }
+  main .section:nth-child(2) .work .work_box ul li:nth-of-type(4) {
+    border-left: 1px solid #ccc;
+  }
+  main .section:nth-child(2) .work .work_box ul li.on {
+    width: 100%;
+  }
+  main .section:nth-child(3) {
+    padding: 8rem 1rem;
+  }
+  main .section:nth-child(3) .portfolio .portfolio_box > ul > li {
+    width: 100%;
+    height: 58vh;
+  }
+  main .section:nth-child(3) .portfolio .portfolio_box > ul > li div.box div:nth-child(2) {
+    width: 100%;
+  }
+  main .section:nth-child(3) .portfolio .portfolio_box > ul > li:nth-of-type(2) {
+    border-left: 1px solid #ccc;
+  }
+  main .section:nth-child(3) .portfolio .portfolio_box > ul > li:nth-of-type(4) {
+    border-left: 1px solid #ccc;
+  }
+  main .section:nth-child(3) .portfolio .portfolio_box > ul > li:nth-of-type(6) {
+    border-left: 1px solid #ccc;
+  }
+  main .section:nth-child(3) .portfolio .portfolio_box > ul > li.on {
+    width: 100%;
+    height: 58vh;
+  }
+  main .section:nth-child(3) .portfolio .portfolio_box > ul > li.on div.box div:nth-child(2) {
+    width: 100%;
+  }
+  main .section:nth-child(4) {
+    padding: 4rem 1rem;
+  }
+  main .section:nth-child(4) .contact {
+    width: 90%;
+  }
+  main .section:nth-child(4) .contact .info_wrap {
+    display: none;
+  }
+  main .section:nth-child(4) .contact .email_wrap {
+    width: 100%;
+    padding: 4rem 2rem 0;
+  }
+  main .section:nth-child(4) .contact .email_wrap h3 {
+    padding-bottom: 1rem;
+  }
   #resume {
     width: 100%;
     height: 100%;
     top: 0;
-  }
-  #resume .resume_con {
-    background-color: #ddd;
-    padding: 1rem;
-  }
-  #resume .resume_close {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    border: 1px solid #000;
   }
 }
 
@@ -1297,5 +1459,9 @@ footer .back {
           transform: translateX(-50%);
 }
 
-/* tablet */
 /* mobile */
+@media screen and (max-width: 539px) {
+  footer .back {
+    display: none;
+  }
+}
