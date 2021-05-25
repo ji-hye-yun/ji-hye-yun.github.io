@@ -58,8 +58,8 @@ main {
             overflow: hidden;
 
             img {
-              width: auto;
-              height: 100%;
+              width: 112%;
+              height: auto;
             }
           }
 
@@ -789,6 +789,15 @@ main {
     .section {
       &:nth-child(1) {
         height: auto;
+        .about {
+          figure {
+            div {
+              img {
+                width: 122%;
+              }
+            }
+          }
+        }
       }
       &:nth-child(2) {
         .work {
@@ -950,6 +959,25 @@ main {
   }
 }
 
+@include rwd(1024px) {
+  main {
+    .section {
+      &:nth-child(1) {
+        height: auto;
+        .about {
+          figure {
+            div {
+              img {
+                width: 122%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @include rwd(959px) {
   main {
     .wm {
@@ -971,7 +999,7 @@ main {
               height: 360px;
               img {
                 width: 100%;
-                height: auto;
+                margin-top: -43%;
               }
             }
             figcaption {
@@ -1071,6 +1099,9 @@ main {
             height: auto;
             div {
               height: 300px;
+              img {
+                margin-top: -13%;
+              }
             }
             figcaption {
               p {

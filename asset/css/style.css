@@ -272,8 +272,8 @@ main .section:nth-child(1) .about figure div {
 }
 
 main .section:nth-child(1) .about figure div img {
-  width: auto;
-  height: 100%;
+  width: 112%;
+  height: auto;
 }
 
 main .section:nth-child(1) .about figure figcaption {
@@ -1126,6 +1126,9 @@ main .section:nth-child(4) .contact .email_wrap .email_btn {
   main .section:nth-child(1) {
     height: auto;
   }
+  main .section:nth-child(1) .about figure div img {
+    width: 122%;
+  }
   main .section:nth-child(2) .work .work_box ul li {
     width: 50%;
     height: 56vh;
@@ -1272,6 +1275,15 @@ main .section:nth-child(4) .contact .email_wrap .email_btn {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  main .section:nth-child(1) {
+    height: auto;
+  }
+  main .section:nth-child(1) .about figure div img {
+    width: 122%;
+  }
+}
+
 @media screen and (max-width: 959px) {
   main .wm {
     display: none;
@@ -1289,7 +1301,7 @@ main .section:nth-child(4) .contact .email_wrap .email_btn {
   }
   main .section:nth-child(1) .about figure div img {
     width: 100%;
-    height: auto;
+    margin-top: -43%;
   }
   main .section:nth-child(1) .about figure figcaption {
     float: none;
@@ -1352,6 +1364,9 @@ main .section:nth-child(4) .contact .email_wrap .email_btn {
   }
   main .section:nth-child(1) .about figure div {
     height: 300px;
+  }
+  main .section:nth-child(1) .about figure div img {
+    margin-top: -13%;
   }
   main .section:nth-child(1) .about figure figcaption p {
     padding: 1rem;
