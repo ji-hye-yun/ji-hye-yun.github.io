@@ -55,10 +55,7 @@ header {
         padding: 1.2rem 0 4rem;
         font-size: 5.4rem;
         letter-spacing: 0.8rem;
-
-        p {
-          font-family: "Raleway", sans-serif;
-        }
+        font-family: "Raleway", sans-serif;
       }
     }
 
@@ -86,6 +83,7 @@ header {
               padding: 16px 2px;
               font-size: $smallFont;
               letter-spacing: 0.2rem;
+              color: #000;
 
               &:hover {
                 color: #63b2ca;
@@ -103,6 +101,20 @@ header {
           margin-left: -8px;
           background: rgba(255, 255, 255, 0.5);
           z-index: 1;
+        }
+      }
+    }
+  }
+}
+
+@include rwd(1400px) {
+  header {
+    & > div {
+      &:nth-child(3) {
+        nav {
+          &.fix {
+            margin-left: 0;
+          }
         }
       }
     }
