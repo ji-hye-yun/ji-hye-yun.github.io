@@ -4,7 +4,7 @@ $(document).ready(function(){
     var $nav_a = $('header nav li a');
     var $sec = $('.section');
     var $nav_pos = $nav.offset().top;
-    var float_back = parseInt( $('.moback').css('top') ) + 280;
+    var float_back = parseInt( $('.moback').css('top') ) + 350;
 
     $('html, body').on('scroll', function(){
         var scroll = $(this).scrollTop();

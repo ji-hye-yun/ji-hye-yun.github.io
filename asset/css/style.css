@@ -208,7 +208,7 @@ header > div:nth-child(3) nav.fix {
   }
   header > div:nth-child(2) h2 {
     font-size: 2rem;
-    letter-spacing: 0.4rem;
+    letter-spacing: 0.2rem;
   }
   header > div:nth-child(3) nav ul li a {
     letter-spacing: 0;
