@@ -1149,7 +1149,7 @@ main {
             ul {
               li {
                 width: 100%;
-                height: 53vh;
+                height: 20vh;
                 &:nth-of-type(2) {
                   border-left: 1px solid #ccc;
                 }
@@ -1158,6 +1158,7 @@ main {
                 }
                 &.on {
                   width: 100%;
+                  height: 53vh;
                 }
               }
             }
@@ -1171,7 +1172,7 @@ main {
             & > ul {
               & > li {
                 width: 100%;
-                height: 58vh;
+                height: 20vh;
                 div.box {
                   div:nth-child(2) {
                     width: 100%;

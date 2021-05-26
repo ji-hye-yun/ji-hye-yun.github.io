@@ -1405,7 +1405,7 @@ main .section:nth-child(4) .contact .email_wrap .email_btn {
   }
   main .section:nth-child(2) .work .work_box ul li {
     width: 100%;
-    height: 53vh;
+    height: 20vh;
   }
   main .section:nth-child(2) .work .work_box ul li:nth-of-type(2) {
     border-left: 1px solid #ccc;
@@ -1415,13 +1415,14 @@ main .section:nth-child(4) .contact .email_wrap .email_btn {
   }
   main .section:nth-child(2) .work .work_box ul li.on {
     width: 100%;
+    height: 53vh;
   }
   main .section:nth-child(3) {
     padding: 8rem 1rem;
   }
   main .section:nth-child(3) .portfolio .portfolio_box > ul > li {
     width: 100%;
-    height: 58vh;
+    height: 20vh;
   }
   main .section:nth-child(3) .portfolio .portfolio_box > ul > li div.box div:nth-child(2) {
     width: 100%;
