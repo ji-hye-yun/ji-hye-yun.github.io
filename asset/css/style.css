@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Orbitron");
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700,900&subset=korean");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
 /* reset */
 * {
   margin: 0px;
@@ -25,7 +26,7 @@ body,
 input {
   color: #333;
   font-size: 14px;
-  font-family: "Noto Sans KR", "Bree Serif", dotum, sans-serif;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 .skip {
@@ -142,11 +143,22 @@ header > div:nth-child(3) nav ul li a {
   font-size: 12px;
   letter-spacing: 0.2rem;
   color: #000;
+  position: relative;
 }
 
 header > div:nth-child(3) nav ul li a:hover {
   color: #63b2ca;
-  border-bottom: 2px solid #000;
+}
+
+header > div:nth-child(3) nav ul li a:hover::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  bottom: 0;
+  left: 0;
 }
 
 header > div:nth-child(3) nav.fix {
@@ -157,7 +169,7 @@ header > div:nth-child(3) nav.fix {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   margin-left: -8px;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.3);
   z-index: 1;
 }
 
@@ -322,6 +334,11 @@ main .section:nth-child(2) .work .work_box > p:nth-child(2) {
 
 main .section:nth-child(2) .work .work_box > p:nth-child(3) {
   font-size: 14px;
+  padding: 0.4rem 0 0 0;
+}
+
+main .section:nth-child(2) .work .work_box > p:nth-child(4) {
+  font-size: 14px;
   padding: 0.4rem 0 2rem;
 }
 
@@ -332,7 +349,7 @@ main .section:nth-child(2) .work .work_box ul {
 
 main .section:nth-child(2) .work .work_box ul li {
   float: left;
-  width: 10%;
+  width: 7.5%;
   height: 64vh;
   border-right: 1px solid #ccc;
   border-top: 1px solid #ccc;
@@ -363,7 +380,7 @@ main .section:nth-child(2) .work .work_box ul li div.box div p.box_p_1 {
 }
 
 main .section:nth-child(2) .work .work_box ul li div.box div p.box_p_2 {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
   padding: 1rem 0;
   -webkit-transition: 1s;
@@ -378,7 +395,7 @@ main .section:nth-child(2) .work .work_box ul li div.box div p.box_p_3 {
 
 main .section:nth-child(2) .work .work_box ul li div.box div p.box_p_4 {
   font-size: 0;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -429,9 +446,9 @@ main .section:nth-child(2) .work .work_box ul li div.box span img {
 
 main .section:nth-child(2) .work .work_box ul li:hover {
   border-right: 1px solid #000;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
-  border-left: 1px solid #000;
+  border-top: 1px solid #000 !important;
+  border-bottom: 1px solid #000 !important;
+  border-left: 1px solid #000 !important;
   color: #111;
 }
 
@@ -455,19 +472,19 @@ main .section:nth-child(2) .work .work_box ul li.on div.box div {
 }
 
 main .section:nth-child(2) .work .work_box ul li.on div.box div p.box_p_2 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 main .section:nth-child(2) .work .work_box ul li.on div.box div p.box_p_3 {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 main .section:nth-child(2) .work .work_box ul li.on div.box div p.box_p_4 {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 main .section:nth-child(2) .work .work_box ul li.on div.box div p.box_p_5 {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 main .section:nth-child(2) .work .work_box ul li.on div.box a {
@@ -501,8 +518,8 @@ main .section:nth-child(3) {
 
 main .section:nth-child(3) .portfolio .portfolio_box > p > span {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   vertical-align: bottom;
 }
 
@@ -694,18 +711,18 @@ main .section:nth-child(3) .portfolio .portfolio_box > ul > li div.box div:nth-c
 }
 
 main .section:nth-child(3) .portfolio .portfolio_box > ul > li:hover {
-  border-right: 1px solid #000;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
-  border-left: 1px solid #000;
+  border-right: 1px solid #000 !important;
+  border-top: 1px solid #000 !important;
+  border-bottom: 1px solid #000 !important;
+  border-left: 1px solid #000 !important;
   color: #111;
 }
 
 main .section:nth-child(3) .portfolio .portfolio_box > ul > li.on {
   width: 75%;
-  border-right: 1px solid #000;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
+  border-right: 1px solid #000 !important;
+  border-top: 1px solid #000 !important;
+  border-bottom: 1px solid #000 !important;
   border-left: 1px solid #000 !important;
   color: #111;
   -webkit-transition: 1s;
@@ -726,7 +743,7 @@ main .section:nth-child(3) .portfolio .portfolio_box > ul > li.on div.box div:nt
 }
 
 main .section:nth-child(3) .portfolio .portfolio_box > ul > li.on div.box div:nth-child(1) p.box_p_2 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   -webkit-transform: translateX(0rem) translateY(0rem) rotate(0deg);
           transform: translateX(0rem) translateY(0rem) rotate(0deg);
   -webkit-transition: 1s;
@@ -734,7 +751,7 @@ main .section:nth-child(3) .portfolio .portfolio_box > ul > li.on div.box div:nt
 }
 
 main .section:nth-child(3) .portfolio .portfolio_box > ul > li.on div.box div:nth-child(1) p.box_p_3 {
-  font-size: 18px;
+  font-size: 14px;
   -webkit-transition: 0.6s;
   transition: 0.6s;
 }
@@ -960,7 +977,7 @@ main .section:nth-child(4) .contact .email_wrap h3 {
   font-family: "Raleway", sans-serif;
   font-size: 30px;
   letter-spacing: 0.3rem;
-  padding-bottom: 3.8rem;
+  padding-bottom: 4.85rem;
   text-align: right;
 }
 
@@ -1172,12 +1189,26 @@ main .section:nth-child(4) .contact .email_wrap .email_btn {
   main .section:nth-child(2) .work .work_box ul li.on div.box span {
     float: right;
   }
+  main .section:nth-child(2) .work .work_box ul li:nth-of-type(2) {
+    border-bottom: none;
+  }
   main .section:nth-child(2) .work .work_box ul li:nth-of-type(3) {
     border-left: 1px solid #ccc;
+  }
+  main .section:nth-child(2) .work .work_box ul li:nth-of-type(5) {
+    border-left: 1px solid #ccc;
+    border-top: none;
   }
   main .section:nth-child(3) .portfolio .portfolio_box > ul > li {
     width: 50%;
     height: 62vh;
+    border-top: none;
+  }
+  main .section:nth-child(3) .portfolio .portfolio_box > ul > li:nth-of-type(1) {
+    border-top: 1px solid #ccc;    
+  }
+  main .section:nth-child(3) .portfolio .portfolio_box > ul > li:nth-of-type(2) {
+    border-top: 1px solid #ccc;    
   }
   main .section:nth-child(3) .portfolio .portfolio_box > ul > li div.box {
     padding: 2rem;
@@ -1407,8 +1438,14 @@ main .section:nth-child(4) .contact .email_wrap .email_btn {
     width: 100%;
     height: 20vh;
   }
+  main .section:nth-child(2) .work .work_box ul li:nth-of-type(1) {
+    border-bottom: none;
+  }
   main .section:nth-child(2) .work .work_box ul li:nth-of-type(2) {
     border-left: 1px solid #ccc;
+  }
+  main .section:nth-child(2) .work .work_box ul li:nth-of-type(3) {
+    border-bottom: none;
   }
   main .section:nth-child(2) .work .work_box ul li:nth-of-type(4) {
     border-left: 1px solid #ccc;
@@ -1423,6 +1460,8 @@ main .section:nth-child(4) .contact .email_wrap .email_btn {
   main .section:nth-child(3) .portfolio .portfolio_box > ul > li {
     width: 100%;
     height: 20vh;
+    border-bottom: none;
+    border-top: 1px solid #ccc;
   }
   main .section:nth-child(3) .portfolio .portfolio_box > ul > li div.box div:nth-child(2) {
     width: 100%;
@@ -1435,6 +1474,7 @@ main .section:nth-child(4) .contact .email_wrap .email_btn {
   }
   main .section:nth-child(3) .portfolio .portfolio_box > ul > li:nth-of-type(6) {
     border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
   }
   main .section:nth-child(3) .portfolio .portfolio_box > ul > li.on {
     width: 100%;
