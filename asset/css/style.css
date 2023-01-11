@@ -585,7 +585,7 @@ main .section:nth-child(3) .portfolio .portfolio_box > ul > li {
 }
 
 main .section:nth-child(3) .portfolio .portfolio_box > ul > li div.box {
-  padding: 2rem 1rem 1rem 1rem;
+  padding: 2rem 1rem 1rem 0.5rem;
 }
 
 main .section:nth-child(3) .portfolio .portfolio_box > ul > li div.box div:nth-child(1) {
@@ -711,7 +711,7 @@ main .section:nth-child(3) .portfolio .portfolio_box > ul > li:hover {
 }
 
 main .section:nth-child(3) .portfolio .portfolio_box > ul > li.on {
-  width: 75%;
+  width: 69.7%;
   border: 1px solid #000 !important;
   color: #111;
   -webkit-transition: 1s;
