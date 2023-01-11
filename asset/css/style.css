@@ -445,10 +445,6 @@ main .section:nth-child(2) .work .work_box ul li div.box span img {
 }
 
 main .section:nth-child(2) .work .work_box ul li:hover {
-  border-right: 1px solid #000;
-  border-top: 1px solid #000 !important;
-  border-bottom: 1px solid #000 !important;
-  border-left: 1px solid #000 !important;
   color: #111;
 }
 
@@ -711,19 +707,12 @@ main .section:nth-child(3) .portfolio .portfolio_box > ul > li div.box div:nth-c
 }
 
 main .section:nth-child(3) .portfolio .portfolio_box > ul > li:hover {
-  border-right: 1px solid #000 !important;
-  border-top: 1px solid #000 !important;
-  border-bottom: 1px solid #000 !important;
-  border-left: 1px solid #000 !important;
   color: #111;
 }
 
 main .section:nth-child(3) .portfolio .portfolio_box > ul > li.on {
   width: 75%;
-  border-right: 1px solid #000 !important;
-  border-top: 1px solid #000 !important;
-  border-bottom: 1px solid #000 !important;
-  border-left: 1px solid #000 !important;
+  border: 1px solid #000 !important;
   color: #111;
   -webkit-transition: 1s;
   transition: 1s;
@@ -1177,6 +1166,7 @@ main .section:nth-child(4) .contact .email_wrap .email_btn {
   }
   main .section:nth-child(2) .work .work_box ul li.on {
     width: 50%;
+    border: 1px solid #000 !important;
   }
   main .section:nth-child(2) .work .work_box ul li.on div.box div {
     width: 100%;
@@ -1453,6 +1443,7 @@ main .section:nth-child(4) .contact .email_wrap .email_btn {
   main .section:nth-child(2) .work .work_box ul li.on {
     width: 100%;
     height: 53vh;
+    border-bottom: 1px solid #000;
   }
   main .section:nth-child(3) {
     padding: 8rem 1rem;
