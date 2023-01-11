@@ -1149,6 +1149,7 @@ main .section:nth-child(4) .contact .email_wrap .email_btn {
   }
   main .section:nth-child(2) .work .work_box ul li div.box div p.box_p_2 {
     padding: 0.5rem 0;
+    font-size: 1rem;
   }
   main .section:nth-child(2) .work .work_box ul li div.box div p.box_p_4 {
     padding: 0.1rem;
@@ -1216,6 +1217,7 @@ main .section:nth-child(4) .contact .email_wrap .email_btn {
   main .section:nth-child(3) .portfolio .portfolio_box > ul > li div.box div:nth-child(1) p.box_p_2 {
     width: 100%;
     padding: 0.5rem 0;
+    font-size: 1rem;
     -webkit-transform: translateX(0rem) translateY(0rem) rotate(0deg);
             transform: translateX(0rem) translateY(0rem) rotate(0deg);
   }
@@ -1259,14 +1261,14 @@ main .section:nth-child(4) .contact .email_wrap .email_btn {
     letter-spacing: 3px;
   }
   main .section:nth-child(3) .portfolio .portfolio_box > ul > li.on div.box div:nth-child(1) p.box_p_2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     -webkit-transform: translateX(0rem) translateY(0rem) rotate(0deg);
             transform: translateX(0rem) translateY(0rem) rotate(0deg);
     -webkit-transition: 1s;
     transition: 1s;
   }
   main .section:nth-child(3) .portfolio .portfolio_box > ul > li.on div.box div:nth-child(1) p.box_p_3 {
-    font-size: 16px;
+    font-size: 14px;
     -webkit-transition: 0.6s;
     transition: 0.6s;
   }
@@ -1291,8 +1293,11 @@ main .section:nth-child(4) .contact .email_wrap .email_btn {
   main .section:nth-child(3) .portfolio .portfolio_box > ul > li:nth-of-type(5) {
     border-left: 1px solid #ccc;
   }
+  main .section:nth-child(3) .portfolio .portfolio_box > ul > li:nth-of-type(7) {
+    border-left: 1px solid #ccc;
+  }
   main .section:nth-child(4) {
-    padding: 10rem 2rem;
+    padding: 8rem 2rem;
   }
 }
 
@@ -1453,6 +1458,10 @@ main .section:nth-child(4) .contact .email_wrap .email_btn {
     height: 20vh;
     border-bottom: none;
     border-top: 1px solid #ccc;
+  }
+  main .section:nth-child(3) .portfolio .portfolio_box > ul > li:nth-of-type(7) {
+    border-top: none;
+    border-bottom: 1px solid #ccc;
   }
   main .section:nth-child(3) .portfolio .portfolio_box > ul > li div.box div:nth-child(2) {
     width: 100%;
