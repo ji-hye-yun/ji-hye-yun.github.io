@@ -1,0 +1,3443 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>그로우 - 성장이 시작되는 곳</title>
+<meta name="Referrer" content="origin">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+<link rel="shortcut icon" href="image/img/favicon.ico">
+<link rel="apple-touch-icon" href="image/favicon_180.png">
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/swiper.css" />
+<!-- <link rel="stylesheet" type="text/css" href="css/common.css" /> -->
+<link rel="stylesheet" type="text/css" href="css/acommon.css" />
+<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/acommon.js"></script>
+</head>
+
+<body>
+<div id="wrap">
+	<!-- pc header -->
+	<header id="headerNew" class="v5">
+		<div class="header_v3_wrap">
+			<div class="inner">
+				<h1 class="logo"><a href="#"><img src="image/img/logo_82x30.png" alt="grow"></a></h1>
+				<div class="user_menu">
+					<a href="#" class="cart_go">장바구니
+						<span class="on" style="display:none"></span>
+					</a>
+					<!-- // 로그아웃 상태 --
+					로그아웃 상태 // -->
+					<a href="">로그인</a>
+					<!-- //  로그인 상태 
+					<a href="/webPc/mypage/index.do" class="btn_mypage" >
+							<span class="profile"><img src="image/img/profile_noimg.jpg" alt=""></span>
+							윤혜지혜지 님
+								<span class="mypage_open">
+									<span class="line"></span>
+									<span class="line"></span>
+								</span>
+					</a>-->
+					<div class="mypage_hidden">
+						<ul>
+							<li class="myopen_1"><a href="#">주문내역</a></li>
+							<li class="myopen_2"><a href="#">취소/환불/교환</a></li>
+							<li class="myopen_3"><a href="#">찜</a></li>
+							<li class="myopen_4"><a href="#">1:1 문의내역</a></li>
+							<li class="myopen_5"><a href="#">회원정보변경</a></li>
+							<li class="myopen_6"><a href="">로그아웃</a></li>
+						</ul>
+					</div>
+					<!-- 로그인 상태 END // --->
+					<a href="#">마이클래스</a>
+					<a href="#">파트너 지원</a>
+				</div>
+			</div>
+			<div class="inner">
+				<div class="gnb">
+					<ul>
+						<li class="bestseller">
+							<a href="#">BEST</a>
+						</li>
+						<li class="">
+							<a href="#">재테크</a>
+							<ul class="depth2">
+								<li><a href="#">전체보기</a></li>
+								<li><a href="#">국어</a></li>
+								<li><a href="#">수학</a></li>
+								<li><a href="#">영어</a></li>
+								<li><a href="#">사회</a></li>
+								<li><a href="#">과학</a></li>
+								<li><a href="#">공부법</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">취업/직무</a>
+							<ul class="depth2">
+								<li><a href="#">전체보기</a></li>
+								<li><a href="#">국어</a></li>
+								<li><a href="#">수학</a></li>
+								<li><a href="#">영어</a></li>
+								<li><a href="#">사회</a></li>
+								<li><a href="#">과학</a></li>
+								<li><a href="#">한국사</a></li>
+								<li><a href="#">입시특강</a></li>
+								<li><a href="#">종합</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">외국어</a>
+							<ul class="depth2">
+								<li><a href="#">전체보기</a></li>
+								<li><a href="#">국어</a></li>
+								<li><a href="#">수학</a></li>
+								<li><a href="#">영어</a></li>
+								<li><a href="#">사회</a></li>
+								<li><a href="#">과학</a></li>
+								<li><a href="#">한국사</a></li>
+								<li><a href="#">입시특강</a></li>
+								<li><a href="#">종합</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">취미교양</a>
+							<ul class="depth2">
+								<li><a href="#">전체보기</a></li>
+								<li><a href="#">국어</a></li>
+								<li><a href="#">수학</a></li>
+								<li><a href="#">영어</a></li>
+								<li><a href="#">사회</a></li>
+								<li><a href="#">과학</a></li>
+								<li><a href="#">한국사</a></li>
+								<li><a href="#">입시특강</a></li>
+								<li><a href="#">종합</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">중고등교육</a>
+							<ul class="depth2">
+								<li><a href="#">전체보기</a></li>
+								<li><a href="#">국어</a></li>
+								<li><a href="#">수학</a></li>
+								<li><a href="#">영어</a></li>
+								<li><a href="#">사회</a></li>
+								<li><a href="#">과학</a></li>
+								<li><a href="#">한국사</a></li>
+								<li><a href="#">입시특강</a></li>
+								<li><a href="#">종합</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">도서</a>
+							<ul class="depth2">
+								<li><a href="#">전체보기</a></li>
+								<li><a href="#">국어</a></li>
+								<li><a href="#">수학</a></li>
+								<li><a href="#">영어</a></li>
+								<li><a href="#">사회</a></li>
+								<li><a href="#">과학</a></li>
+								<li><a href="#">한국사</a></li>
+								<li><a href="#">입시특강</a></li>
+								<li><a href="#">종합</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">준비물/굿즈</a>
+							<ul class="depth2">
+								<li><a href="#">전체보기</a></li>
+								<li><a href="#">국어</a></li>
+								<li><a href="#">수학</a></li>
+								<li><a href="#">영어</a></li>
+								<li><a href="#">사회</a></li>
+								<li><a href="#">과학</a></li>
+								<li><a href="#">한국사</a></li>
+								<li><a href="#">입시특강</a></li>
+								<li><a href="#">종합</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">스터디/챌린지</a>
+							<ul class="depth2">
+								<li><a href="#">전체보기</a></li>
+								<li><a href="#">국어</a></li>
+								<li><a href="#">수학</a></li>
+								<li><a href="#">영어</a></li>
+								<li><a href="#">사회</a></li>
+								<li><a href="#">과학</a></li>
+								<li><a href="#">한국사</a></li>
+								<li><a href="#">입시특강</a></li>
+								<li><a href="#">종합</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="search">
+					<a href="javascript:;" onclick="openPopFn('#search_subject');return false;"><i class="ico_search"></i></a>
+				</div>
+				<div class="quick_menu">
+					<a href="">COUPON<strong class="emball"></strong></a>
+					<a href="">준비물 할인</a>
+					<a href="">리뷰이벤트</a>
+					<a href="">출석체크</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- //pc header -->
+	<!-- mo header -->
+	<div class="sticky_wrap mo">
+		<div class="sticky_el v5 v5_logo">			
+			<h1 class="logo"><a href=""><img src="image/img/logo_82x30.png" alt="grow" /></a></h1>
+			<ul class="menu_box">
+				<li><a href="javascript:;" class="btn_sch">검색하기</a></li>
+				<li><a href="javascript:;" class="btn_alarm">알람보기<span>5</span></a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="sticky_wrap mo">
+		<div class="sticky_el header_gnb_v3 v5 v5_gnb">
+			<div class="gnb_wrap">
+				<div>
+					<div class="bestseller"><a href="">BEST</a></div>
+					<ul>
+						<li><a href="#">재테크</a></li>
+						<li><a href="#">취업/직무</a></li>
+						<li><a href="#">외국어</a></li>
+						<li><a href="#">취미교양</a></li>
+						<li><a href="#">도서</a></li>
+						<li><a href="#">준비물/굿즈</a></li>
+						<li><a href="#">쉐도잉/스터디</a></li>
+					</ul>
+					<div class="quick_menu">
+						<a href="#">COUPON<strong class="emball"></strong></a>
+						<a href="#">준비물 할인</a>
+						<a href="#">리뷰이벤트</a>
+						<a href="#">출석체크</a>
+					</div>
+				</div>
+				<span class="gnb_left"></span>
+				<span class="gnb_right"></span>	
+			</div>
+			<div class="depth2_wrap">
+				<ul class="depth2">
+					<li><a href="#" class="active">ALL</a></li>
+					<li><a href="#">KIT 결합 클래스</a></li>
+					<li><a href="#">주식</a></li>
+					<li><a href="#">부동산</a></li>
+					<li><a href="#">자산관리/코인</a></li>
+				</ul>
+				<ul class="depth2">
+					<li><a href="#">취업직무</a></li>
+					<li><a href="#">취업직무</a></li>
+					<li><a href="#">취업직무</a></li>
+					<li><a href="#">취업직무</a></li>
+				</ul>
+				<ul class="depth2">
+					<li><a href="#">외국어</a></li>
+					<li><a href="#">외국어</a></li>
+					<li><a href="#">외국어</a></li>
+					<li><a href="#">외국어</a></li>
+					<li><a href="#">외국어</a></li>
+					<li><a href="#">외국어</a></li>
+					<li><a href="#">외국어</a></li>
+					<li><a href="#">외국어</a></li>
+					<li><a href="#">외국어</a></li>
+					<li><a href="#">외국어</a></li>
+					<li><a href="#">외국어</a></li>
+				</ul>
+				<ul class="depth2">
+					<li><a href="#">취미교양</a></li>
+					<li><a href="#">취미교양</a></li>
+					<li><a href="#">취미교양</a></li>
+					<li><a href="#">취미교양</a></li>
+					<li><a href="#">취미교양</a></li>
+					<li><a href="#">취미교양</a></li>
+					<li><a href="#">취미교양</a></li>
+				</ul>
+				<ul class="depth2">
+					<li><a href="#">도서</a></li>
+					<li><a href="#">도서</a></li>
+					<li><a href="#">도서</a></li>
+					<li><a href="#">도서</a></li>
+					<li><a href="#">도서</a></li>
+					<li><a href="#">도서</a></li>
+					<li><a href="#">도서</a></li>
+				</ul>
+				<ul class="depth2">
+					<li><a href="#">준비물굿즈</a></li>
+					<li><a href="#">준비물굿즈</a></li>
+					<li><a href="#">준비물굿즈</a></li>
+					<li><a href="#">준비물굿즈</a></li>
+					<li><a href="#">준비물굿즈</a></li>
+					<li><a href="#">준비물굿즈</a></li>
+					<li><a href="#">준비물굿즈</a></li>
+				</ul>
+				<ul class="depth2">
+					<li><a href="#">쉐도잉스터디</a></li>
+					<li><a href="#">쉐도잉스터디</a></li>
+					<li><a href="#">쉐도잉스터디</a></li>
+					<li><a href="#">쉐도잉스터디</a></li>
+					<li><a href="#">쉐도잉스터디</a></li>
+					<li><a href="#">쉐도잉스터디</a></li>
+					<li><a href="#">쉐도잉스터디</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- //mo header -->
+
+	<!-- content -->
+	<div id="content" class="v5">
+		<div class="main_wrap">
+			<div class="cont_wrap bg_black section01">
+				<div class="main_slider swiper-container type_pc">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href=""><img src="image/img/pc/slide_main_default01.png" alt="" class="pc"><img src="image/img/mo/slide_main_mo_default01.png" alt="" class="mo"><img src="image/img/mo/slide_main_ta_default01.png" alt="" class="ta"></a>
+						</div>
+						<div class="swiper-slide">
+							<a href=""><img src="image/img/pc/slide_main_default02.png" alt="" class="pc"><img src="image/img/mo/slide_main_mo_default02.png" alt="" class="mo"><img src="image/img/mo/slide_main_ta_default02.png" alt="" class="ta"></a>
+						</div>
+						<div class="swiper-slide">
+							<a href=""><img src="image/img/pc/slide_main_default03.png" alt="" class="pc"><img src="image/img/mo/slide_main_mo_default03.png" alt="" class="mo"><img src="image/img/mo/slide_main_ta_default03.png" alt="" class="ta"></a>
+						</div>
+					</div>
+					<div class="main_slider_func">
+						<div>
+							<div class="swiper-pagination pagination_default"></div>
+							<div class="swiper-button-next"></div>
+							<div class="main_pause"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+					</div>
+				</div>
+				<div class="tab_wrap">
+					<ul class="tab_menu">
+						<li><a href="#prd_main_1" class="active" onclick="commFnTab('#prd_main_1',this);return false;">MD추천<strong>10</strong></a></li>
+						<li><a href="#prd_main_2" onclick="commFnTab('#prd_main_2',this);return false;">무료강의<strong>10</strong></a></li>
+					</ul>
+					<div class="tab_cont">
+						<!-- MD추천 -->
+						<div class="cont active" id="prd_main_1">
+							<div class="prd_slider swiper-container" id="swp_prd_main_1">
+								<div class="prd_slider_nav">		
+									<div class="swiper-button-next"></div>
+									<div class="swiper-button-prev"></div>
+								</div>
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<a href="">
+											<div class="state"><span class="badge live03">VOD</span></div>
+											<div class="thumb"><img src="image/img/pc/pdt_thm_1_01.png" alt="Figma를 활용한 디지털 기획 입문"></div>
+											<p class="sort black"><span class="name">유서호</span>취미교양</p>
+											<p class="tit">Figma를 활용한 디지털 기획 입문</p>
+											<div class="prd_price pr01">
+												<div>
+													<span class="sale"><strong>16</strong>%</span>
+													<p class="grow_price"><strong>50,000</strong>원</p>
+												</div>
+												<div class="price">
+														<del><span>60,000</span>원</del>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="">
+											<div class="state"><span class="badge live03">VOD</span></div>
+											<div class="thumb"><img src="image/img/pc/pdt_thm_1_02.png" alt="[엑셀의 신] 회사에서 쓰는 엑셀 함수와 매크로 사용법"></div>
+											<p class="sort black"><span class="name">심지은</span>취업직무</p>
+											<p class="tit">[엑셀의 신] 회사에서 쓰는 엑셀 함수와 매크로 사용법</p>
+											<div class="prd_price pr01">
+												<div>
+													<span class="sale"><strong>16</strong>%</span>
+													<p class="grow_price"><strong>50,000</strong>원</p>
+												</div>
+												<div class="price">
+														<del><span>60,000</span>원</del>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="">
+											<div class="state"><span class="badge live03">VOD</span></div>
+											<div class="thumb"><img src="image/img/pc/pdt_thm_1_01.png" alt="Figma를 활용한 디지털 기획 입문"></div>
+											<p class="sort black"><span class="name">유서호</span>취미교양</p>
+											<p class="tit">Figma를 활용한 디지털 기획 입문</p>
+											<div class="prd_price pr01">
+												<div>
+													<span class="sale"><strong>16</strong>%</span>
+													<p class="grow_price"><strong>50,000</strong>원</p>
+												</div>
+												<div class="price">
+														<del><span>60,000</span>원</del>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="">
+											<div class="state"><span class="badge live03">VOD</span></div>
+											<div class="thumb"><img src="image/img/pc/pdt_thm_1_02.png" alt="[엑셀의 신] 회사에서 쓰는 엑셀 함수와 매크로 사용법"></div>
+											<p class="sort black"><span class="name">심지은</span>취업직무</p>
+											<p class="tit">[엑셀의 신] 회사에서 쓰는 엑셀 함수와 매크로 사용법</p>
+											<div class="prd_price pr01">
+												<div>
+													<span class="sale"><strong>16</strong>%</span>
+													<p class="grow_price"><strong>50,000</strong>원</p>
+												</div>
+												<div class="price">
+														<del><span>60,000</span>원</del>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="">
+											<div class="state"><span class="badge live03">VOD</span></div>
+											<div class="thumb"><img src="image/img/pc/pdt_thm_1_01.png" alt="Figma를 활용한 디지털 기획 입문"></div>
+											<p class="sort black"><span class="name">유서호</span>취미교양</p>
+											<p class="tit">Figma를 활용한 디지털 기획 입문</p>
+											<div class="prd_price pr01">
+												<div>
+													<span class="sale"><strong>16</strong>%</span>
+													<p class="grow_price"><strong>50,000</strong>원</p>
+												</div>
+												<div class="price">
+														<del><span>60,000</span>원</del>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="">
+											<div class="state"><span class="badge live03">VOD</span></div>
+											<div class="thumb"><img src="image/img/pc/pdt_thm_1_02.png" alt="[엑셀의 신] 회사에서 쓰는 엑셀 함수와 매크로 사용법"></div>
+											<p class="sort black"><span class="name">심지은</span>취업직무</p>
+											<p class="tit">[엑셀의 신] 회사에서 쓰는 엑셀 함수와 매크로 사용법</p>
+											<div class="prd_price pr01">
+												<div>
+													<span class="sale"><strong>16</strong>%</span>
+													<p class="grow_price"><strong>50,000</strong>원</p>
+												</div>
+												<div class="price">
+														<del><span>60,000</span>원</del>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //MD추천 -->
+						<!-- 무료강의 -->
+						<div class="cont" id="prd_main_2">
+							<div class="prd_slider swiper-container" id="swp_prd_main_2">
+								<div class="prd_slider_nav">		
+									<div class="swiper-button-next"></div>
+									<div class="swiper-button-prev"></div>
+								</div>
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<a href="">
+											<div class="state"><span class="badge live03">VOD</span></div>
+											<div class="thumb"><img src="image/img/pc/pdt_thm_1_03.png" alt="결국은 펀더멘탈, 이제는 변곡점이다"></div>
+											<p class="sort black"><span class="name">삼토시</span>재테크</p>
+											<p class="tit">결국은 펀더멘탈, 이제는 변곡점이다</p>
+											<div class="prd_price pr01">
+												<div>
+													<span class="sale"><strong>16</strong>%</span>
+													<p class="grow_price"><strong>50,000</strong>원</p>
+												</div>
+												<div class="price">
+														<del><span>60,000</span>원</del>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="">
+											<div class="state"><span class="badge live03">VOD</span></div>
+											<div class="thumb"><img src="image/img/pc/pdt_thm_1_03.png" alt="결국은 펀더멘탈, 이제는 변곡점이다"></div>
+											<p class="sort black"><span class="name">삼토시</span>재테크</p>
+											<p class="tit">결국은 펀더멘탈, 이제는 변곡점이다</p>
+											<div class="prd_price pr01">
+												<div>
+													<span class="sale"><strong>16</strong>%</span>
+													<p class="grow_price"><strong>50,000</strong>원</p>
+												</div>
+												<div class="price">
+														<del><span>60,000</span>원</del>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="">
+											<div class="state"><span class="badge live03">VOD</span></div>
+											<div class="thumb"><img src="image/img/pc/pdt_thm_1_03.png" alt="결국은 펀더멘탈, 이제는 변곡점이다"></div>
+											<p class="sort black"><span class="name">삼토시</span>재테크</p>
+											<p class="tit">결국은 펀더멘탈, 이제는 변곡점이다</p>
+											<div class="prd_price pr01">
+												<div>
+													<span class="sale"><strong>16</strong>%</span>
+													<p class="grow_price"><strong>50,000</strong>원</p>
+												</div>
+												<div class="price">
+														<del><span>60,000</span>원</del>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="">
+											<div class="state"><span class="badge live03">VOD</span></div>
+											<div class="thumb"><img src="image/img/pc/pdt_thm_1_03.png" alt="결국은 펀더멘탈, 이제는 변곡점이다"></div>
+											<p class="sort black"><span class="name">삼토시</span>재테크</p>
+											<p class="tit">결국은 펀더멘탈, 이제는 변곡점이다</p>
+											<div class="prd_price pr01">
+												<div>
+													<span class="sale"><strong>16</strong>%</span>
+													<p class="grow_price"><strong>50,000</strong>원</p>
+												</div>
+												<div class="price">
+														<del><span>60,000</span>원</del>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="">
+											<div class="state"><span class="badge live03">VOD</span></div>
+											<div class="thumb"><img src="image/img/pc/pdt_thm_1_03.png" alt="결국은 펀더멘탈, 이제는 변곡점이다"></div>
+											<p class="sort black"><span class="name">삼토시</span>재테크</p>
+											<p class="tit">결국은 펀더멘탈, 이제는 변곡점이다</p>
+											<div class="prd_price pr01">
+												<div>
+													<span class="sale"><strong>16</strong>%</span>
+													<p class="grow_price"><strong>50,000</strong>원</p>
+												</div>
+												<div class="price">
+														<del><span>60,000</span>원</del>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="">
+											<div class="state"><span class="badge live03">VOD</span></div>
+											<div class="thumb"><img src="image/img/pc/pdt_thm_1_03.png" alt="결국은 펀더멘탈, 이제는 변곡점이다"></div>
+											<p class="sort black"><span class="name">삼토시</span>재테크</p>
+											<p class="tit">결국은 펀더멘탈, 이제는 변곡점이다</p>
+											<div class="prd_price pr01">
+												<div>
+													<span class="sale"><strong>16</strong>%</span>
+													<p class="grow_price"><strong>50,000</strong>원</p>
+												</div>
+												<div class="price">
+														<del><span>60,000</span>원</del>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="">
+											<div class="state"><span class="badge live03">VOD</span></div>
+											<div class="thumb"><img src="image/img/pc/pdt_thm_1_03.png" alt="결국은 펀더멘탈, 이제는 변곡점이다"></div>
+											<p class="sort black"><span class="name">삼토시</span>재테크</p>
+											<p class="tit">결국은 펀더멘탈, 이제는 변곡점이다</p>
+											<div class="prd_price pr01">
+												<div>
+													<span class="sale"><strong>16</strong>%</span>
+													<p class="grow_price"><strong>50,000</strong>원</p>
+												</div>
+												<div class="price">
+														<del><span>60,000</span>원</del>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //무료강의 -->
+					</div>
+				</div>
+				<div class="box_wrap my_progress_box">
+					<div class="con_box black">
+						<p class="tit02">수강 중인 클래스</p>
+						<div class="swiper-container" id="swp_prd_main_6">
+							<div class="prd_slider_nav">		
+								<div class="swiper-button-next"></div>
+								<div class="swiper-button-prev"></div>
+							</div>
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="">
+										<div class="thumb">
+											<img src="image/img/pc/pdt_thm_2_02.png" alt="">
+											<div class="progress_bar"><div><span class="bar"></span></div><span class="txt">20%</span></div>
+										</div>
+										<p class="tit">포토샵 왕초보를 위한 감성 쇼핑몰 상세페이지 만들기 포토샵 왕초보를 위한 감성 쇼핑몰 상세페이지 만들기 포토샵 왕초보를 위한 감성 쇼핑몰 상세페이지 만들기</p>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="">
+										<div class="thumb">
+											<img src="image/img/pc/pdt_thm_2_02.png" alt="">
+											<div class="progress_bar"><div><span class="bar"></span></div><span class="txt">20%</span></div>
+										</div>
+										<p class="tit">포토샵 왕초보를 위한 감성 쇼핑몰 상세페이지 만들기 포토샵 왕초보를 위한 감성 쇼핑몰 상세페이지 만들기 포토샵 왕초보를 위한 감성 쇼핑몰 상세페이지 만들기</p>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="">
+										<div class="thumb">
+											<img src="image/img/pc/pdt_thm_2_02.png" alt="">
+											<div class="progress_bar"><div><span class="bar"></span></div><span class="txt">20%</span></div>
+										</div>
+										<p class="tit">포토샵 왕초보를 위한 감성 쇼핑몰 상세페이지 만들기 포토샵 왕초보를 위한 감성 쇼핑몰 상세페이지 만들기 포토샵 왕초보를 위한 감성 쇼핑몰 상세페이지 만들기</p>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="">
+										<div class="thumb">
+											<img src="image/img/pc/pdt_thm_2_02.png" alt="">
+											<div class="progress_bar"><div><span class="bar"></span></div><span class="txt">20%</span></div>
+										</div>
+										<p class="tit">포토샵 왕초보를 위한 감성 쇼핑몰 상세페이지 만들기 포토샵 왕초보를 위한 감성 쇼핑몰 상세페이지 만들기 포토샵 왕초보를 위한 감성 쇼핑몰 상세페이지 만들기</p>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="">
+										<div class="thumb">
+											<img src="image/img/pc/pdt_thm_2_02.png" alt="">
+											<div class="progress_bar"><div><span class="bar"></span></div><span class="txt">20%</span></div>
+										</div>
+										<p class="tit">포토샵 왕초보를 위한 감성 쇼핑몰 상세페이지 만들기 포토샵 왕초보를 위한 감성 쇼핑몰 상세페이지 만들기 포토샵 왕초보를 위한 감성 쇼핑몰 상세페이지 만들기</p>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="">
+										<div class="thumb">
+											<img src="image/img/pc/pdt_thm_2_02.png" alt="">
+											<div class="progress_bar"><div><span class="bar"></span></div><span class="txt">20%</span></div>
+										</div>
+										<p class="tit">포토샵 왕초보를 위한 감성 쇼핑몰 상세페이지 만들기 포토샵 왕초보를 위한 감성 쇼핑몰 상세페이지 만들기 포토샵 왕초보를 위한 감성 쇼핑몰 상세페이지 만들기</p>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="">
+										<div class="thumb">
+											<img src="image/img/pc/pdt_thm_2_02.png" alt="">
+											<div class="progress_bar"><div><span class="bar"></span></div><span class="txt">20%</span></div>
+										</div>
+										<p class="tit">포토샵 왕초보를 위한 감성 쇼핑몰 상세페이지 만들기 포토샵 왕초보를 위한 감성 쇼핑몰 상세페이지 만들기 포토샵 왕초보를 위한 감성 쇼핑몰 상세페이지 만들기</p>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="">
+										<div class="thumb">
+											<img src="image/img/pc/pdt_thm_2_02.png" alt="">
+											<div class="progress_bar"><div><span class="bar"></span></div><span class="txt">20%</span></div>
+										</div>
+										<p class="tit">포토샵 왕초보를 위한 감성 쇼핑몰 상세페이지 만들기 포토샵 왕초보를 위한 감성 쇼핑몰 상세페이지 만들기 포토샵 왕초보를 위한 감성 쇼핑몰 상세페이지 만들기</p>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="">
+										<div class="thumb">
+											<img src="image/img/pc/pdt_thm_2_02.png" alt="">
+											<div class="progress_bar"><div><span class="bar"></span></div><span class="txt">20%</span></div>
+										</div>
+										<p class="tit">포토샵 왕초보를 위한 감성 쇼핑몰 상세페이지 만들기 포토샵 왕초보를 위한 감성 쇼핑몰 상세페이지 만들기 포토샵 왕초보를 위한 감성 쇼핑몰 상세페이지 만들기</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sectionLive">
+				<div class="box_wrap">
+					<div class="con_box">
+						<p class="tit02">LIVE 클래스</p>
+						<div class="prd_main_5_slider swiper-container" id="swp_prd_main_5">
+							<div class="prd_slider_nav white">		
+								<div class="swiper-button-next"></div>
+								<div class="swiper-button-prev"></div>
+							</div>
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="">
+										<div class="state"><span class="badge live">LIVE</span></div>
+										<div class="thumb"><img src="image/img/pc/pdt_thm_1_04.png" alt="PPT를 활용한 전자책 제작하기"></div>
+										<p class="sort white"><span class="name">임용재</span>재테크</p>
+										<p class="tit">PPT를 활용한 전자책 제작하기</p>
+										<div class="prd_price pr02">
+											<div>
+												<span class="sale"><strong>16</strong>%</span>
+												<p class="grow_price"><strong>250,000</strong>원</p>
+											</div>
+											<div class="price">
+													<del><span>300,000</span>원</del>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="">
+										<div class="state"><span class="badge live">LIVE</span></div>
+										<div class="thumb"><img src="image/img/pc/pdt_thm_1_04.png" alt="PPT를 활용한 전자책 제작하기"></div>
+										<p class="sort white"><span class="name">임용재</span>재테크</p>
+										<p class="tit">PPT를 활용한 전자책 제작하기</p>
+										<div class="prd_price pr02">
+											<div>
+												<span class="sale"><strong>16</strong>%</span>
+												<p class="grow_price"><strong>250,000</strong>원</p>
+											</div>
+											<div class="price">
+													<del><span>300,000</span>원</del>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="">
+										<div class="state"><span class="badge live">LIVE</span></div>
+										<div class="thumb"><img src="image/img/pc/pdt_thm_1_04.png" alt="PPT를 활용한 전자책 제작하기"></div>
+										<p class="sort white"><span class="name">임용재</span>재테크</p>
+										<p class="tit">PPT를 활용한 전자책 제작하기</p>
+										<div class="prd_price pr02">
+											<div>
+												<span class="sale"><strong>16</strong>%</span>
+												<p class="grow_price"><strong>250,000</strong>원</p>
+											</div>
+											<div class="price">
+													<del><span>300,000</span>원</del>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="">
+										<div class="state"><span class="badge live">LIVE</span></div>
+										<div class="thumb"><img src="image/img/pc/pdt_thm_1_04.png" alt="PPT를 활용한 전자책 제작하기"></div>
+										<p class="sort white"><span class="name">임용재</span>재테크</p>
+										<p class="tit">PPT를 활용한 전자책 제작하기</p>
+										<div class="prd_price pr02">
+											<div>
+												<span class="sale"><strong>16</strong>%</span>
+												<p class="grow_price"><strong>250,000</strong>원</p>
+											</div>
+											<div class="price">
+													<del><span>300,000</span>원</del>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="">
+										<div class="state"><span class="badge live">LIVE</span></div>
+										<div class="thumb"><img src="image/img/pc/pdt_thm_1_04.png" alt="PPT를 활용한 전자책 제작하기"></div>
+										<p class="sort white"><span class="name">임용재</span>재테크</p>
+										<p class="tit">PPT를 활용한 전자책 제작하기</p>
+										<div class="prd_price pr02">
+											<div>
+												<span class="sale"><strong>16</strong>%</span>
+												<p class="grow_price"><strong>250,000</strong>원</p>
+											</div>
+											<div class="price">
+													<del><span>300,000</span>원</del>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section02">
+				<div class="box_wrap">
+					<div class="con_box">
+						<p class="tit02">NEW 클래스</p>
+						<div class="prd_main_3_slider swiper-container" id="swp_prd_main_3">
+							<div class="prd_slider_nav white">		
+								<div class="swiper-button-next"></div>
+								<div class="swiper-button-prev"></div>
+							</div>
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="">
+										<div class="state"><span class="badge live03">VOD</span></div>
+										<div class="thumb"><img src="image/img/pc/slide_prdm3_default.png" alt=""></div>
+										<p class="sort white"><span class="name">천자봉</span>재테크</p>
+										<p class="tit">천자봉의 부동산 실전 명도 특강</p>
+										<div class="prd_price pr02">
+											<div>
+												<span class="sale"><strong>16</strong>%</span>
+												<p class="grow_price"><strong>250,000</strong>원</p>
+											</div>
+											<div class="price">
+													<del><span>300,000</span>원</del>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="">
+										<div class="state"><span class="badge live03">VOD</span></div>
+										<div class="thumb"><img src="image/img/pc/slide_prdm3_default.png" alt=""></div>
+										<p class="sort white"><span class="name">천자봉</span>재테크</p>
+										<p class="tit">천자봉의 부동산 실전 명도 특강</p>
+										<div class="prd_price pr02">
+											<div>
+												<span class="sale"><strong>16</strong>%</span>
+												<p class="grow_price"><strong>250,000</strong>원</p>
+											</div>
+											<div class="price">
+													<del><span>300,000</span>원</del>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="">
+										<div class="state"><span class="badge live03">VOD</span></div>
+										<div class="thumb"><img src="image/img/pc/slide_prdm3_default.png" alt=""></div>
+										<p class="sort white"><span class="name">천자봉</span>재테크</p>
+										<p class="tit">천자봉의 부동산 실전 명도 특강</p>
+										<div class="prd_price pr02">
+											<div>
+												<span class="sale"><strong>16</strong>%</span>
+												<p class="grow_price"><strong>250,000</strong>원</p>
+											</div>
+											<div class="price">
+													<del><span>300,000</span>원</del>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="">
+										<div class="state"><span class="badge live03">VOD</span></div>
+										<div class="thumb"><img src="image/img/pc/slide_prdm3_default.png" alt=""></div>
+										<p class="sort white"><span class="name">천자봉</span>재테크</p>
+										<p class="tit">천자봉의 부동산 실전 명도 특강</p>
+										<div class="prd_price pr02">
+											<div>
+												<span class="sale"><strong>16</strong>%</span>
+												<p class="grow_price"><strong>250,000</strong>원</p>
+											</div>
+											<div class="price">
+													<del><span>300,000</span>원</del>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="">
+										<div class="state"><span class="badge live03">VOD</span></div>
+										<div class="thumb"><img src="image/img/pc/slide_prdm3_default.png" alt=""></div>
+										<p class="sort white"><span class="name">천자봉</span>재테크</p>
+										<p class="tit">천자봉의 부동산 실전 명도 특강</p>
+										<div class="prd_price pr02">
+											<div>
+												<span class="sale"><strong>16</strong>%</span>
+												<p class="grow_price"><strong>250,000</strong>원</p>
+											</div>
+											<div class="price">
+													<del><span>300,000</span>원</del>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="">
+										<div class="state"><span class="badge live03">VOD</span></div>
+										<div class="thumb"><img src="image/img/pc/slide_prdm3_default.png" alt=""></div>
+										<p class="sort white"><span class="name">천자봉</span>재테크</p>
+										<p class="tit">천자봉의 부동산 실전 명도 특강</p>
+										<div class="prd_price pr02">
+											<div>
+												<span class="sale"><strong>16</strong>%</span>
+												<p class="grow_price"><strong>250,000</strong>원</p>
+											</div>
+											<div class="price">
+													<del><span>300,000</span>원</del>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="">
+										<div class="state"><span class="badge live03">VOD</span></div>
+										<div class="thumb"><img src="image/img/pc/slide_prdm3_default.png" alt=""></div>
+										<p class="sort white"><span class="name">천자봉</span>재테크</p>
+										<p class="tit">천자봉의 부동산 실전 명도 특강</p>
+										<div class="prd_price pr02">
+											<div>
+												<span class="sale"><strong>16</strong>%</span>
+												<p class="grow_price"><strong>250,000</strong>원</p>
+											</div>
+											<div class="price">
+													<del><span>300,000</span>원</del>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="">
+										<div class="state"><span class="badge live03">VOD</span></div>
+										<div class="thumb"><img src="image/img/pc/slide_prdm3_default.png" alt=""></div>
+										<p class="sort white"><span class="name">천자봉</span>재테크</p>
+										<p class="tit">천자봉의 부동산 실전 명도 특강</p>
+										<div class="prd_price pr02">
+											<div>
+												<span class="sale"><strong>16</strong>%</span>
+												<p class="grow_price"><strong>250,000</strong>원</p>
+											</div>
+											<div class="price">
+													<del><span>300,000</span>원</del>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="con_box">
+						<p class="tit02">BEST 클래스</p>
+						<div class="prd_main_4_slider swiper-container"  id="swp_prd_main_4">
+							<div class="prd_slider_nav white">		
+								<div class="swiper-button-next"></div>
+								<div class="swiper-button-prev"></div>
+							</div>
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<ul class="class_list rank">
+										<li>
+											<a href="">
+												<div class="rank_num"><span>1</span></div>
+												<div class="thumb"><img src="image/img/pdt_thm_2_03.png" alt=""></div>
+												<p class="tit">24시간 내내 체지방 태우는 키토제닉 다이어트 코칭</p>
+												<div class="prd_price pr03">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>250,000</strong>원</p>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="rank_num"><span>2</span></div>
+												<div class="thumb"><img src="image/img/pdt_thm_2_03.png" alt=""></div>
+												<p class="tit">[스터디11/21~]영어쉐도잉 라라랜드</p>
+												<div class="prd_price pr03">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>250,000</strong>원</p>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="rank_num"><span>3</span></div>
+												<div class="thumb"><img src="image/img/pdt_thm_2_03.png" alt=""></div>
+												<p class="tit">말 잘한다는 소리를 들으면 소원이 없겠다</p>
+												<div class="prd_price pr03">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>250,000</strong>원</p>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="rank_num"><span>4</span></div>
+												<div class="thumb"><img src="image/img/pdt_thm_2_03.png" alt=""></div>
+												<p class="tit">[스터디11/24~]영어쉐도잉 에밀리</p>
+												<div class="prd_price pr03">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>250,000</strong>원</p>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="rank_num"><span>5</span></div>
+												<div class="thumb"><img src="image/img/pdt_thm_2_03.png" alt=""></div>
+												<p class="tit">전기차 상식사전 북토크</p>
+												<div class="prd_price pr03">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>250,000</strong>원</p>
+													</div>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="swiper-slide">
+									<ul class="class_list rank">
+										<li>
+											<a href="">
+												<div class="rank_num"><span>1</span></div>
+												<div class="thumb"><img src="image/img/pdt_thm_2_03.png" alt=""></div>
+												<p class="tit">24시간 내내 체지방 태우는 키토제닉 다이어트 코칭</p>
+												<div class="prd_price pr03">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>250,000</strong>원</p>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="rank_num"><span>2</span></div>
+												<div class="thumb"><img src="image/img/pdt_thm_2_03.png" alt=""></div>
+												<p class="tit">[스터디11/21~]영어쉐도잉 라라랜드</p>
+												<div class="prd_price pr03">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>250,000</strong>원</p>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="rank_num"><span>3</span></div>
+												<div class="thumb"><img src="image/img/pdt_thm_2_03.png" alt=""></div>
+												<p class="tit">말 잘한다는 소리를 들으면 소원이 없겠다</p>
+												<div class="prd_price pr03">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>250,000</strong>원</p>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="rank_num"><span>4</span></div>
+												<div class="thumb"><img src="image/img/pdt_thm_2_03.png" alt=""></div>
+												<p class="tit">[스터디11/24~]영어쉐도잉 에밀리</p>
+												<div class="prd_price pr03">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>250,000</strong>원</p>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="rank_num"><span>5</span></div>
+												<div class="thumb"><img src="image/img/pdt_thm_2_03.png" alt=""></div>
+												<p class="tit">전기차 상식사전 북토크</p>
+												<div class="prd_price pr03">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>250,000</strong>원</p>
+													</div>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="swiper-slide">
+									<ul class="class_list rank">
+										<li>
+											<a href="">
+												<div class="rank_num"><span>1</span></div>
+												<div class="thumb"><img src="image/img/pdt_thm_2_03.png" alt=""></div>
+												<p class="tit">24시간 내내 체지방 태우는 키토제닉 다이어트 코칭</p>
+												<div class="prd_price pr03">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>250,000</strong>원</p>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="rank_num"><span>2</span></div>
+												<div class="thumb"><img src="image/img/pdt_thm_2_03.png" alt=""></div>
+												<p class="tit">[스터디11/21~]영어쉐도잉 라라랜드</p>
+												<div class="prd_price pr03">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>250,000</strong>원</p>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="rank_num"><span>3</span></div>
+												<div class="thumb"><img src="image/img/pdt_thm_2_03.png" alt=""></div>
+												<p class="tit">말 잘한다는 소리를 들으면 소원이 없겠다</p>
+												<div class="prd_price pr03">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>250,000</strong>원</p>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="rank_num"><span>4</span></div>
+												<div class="thumb"><img src="image/img/pdt_thm_2_03.png" alt=""></div>
+												<p class="tit">[스터디11/24~]영어쉐도잉 에밀리</p>
+												<div class="prd_price pr03">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>250,000</strong>원</p>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="rank_num"><span>5</span></div>
+												<div class="thumb"><img src="image/img/pdt_thm_2_03.png" alt=""></div>
+												<p class="tit">전기차 상식사전 북토크</p>
+												<div class="prd_price pr03">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>250,000</strong>원</p>
+													</div>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="swiper-slide">
+									<ul class="class_list rank">
+										<li>
+											<a href="">
+												<div class="rank_num"><span>1</span></div>
+												<div class="thumb"><img src="image/img/pdt_thm_2_03.png" alt=""></div>
+												<p class="tit">24시간 내내 체지방 태우는 키토제닉 다이어트 코칭</p>
+												<div class="prd_price pr03">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>250,000</strong>원</p>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="rank_num"><span>2</span></div>
+												<div class="thumb"><img src="image/img/pdt_thm_2_03.png" alt=""></div>
+												<p class="tit">[스터디11/21~]영어쉐도잉 라라랜드</p>
+												<div class="prd_price pr03">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>250,000</strong>원</p>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="rank_num"><span>3</span></div>
+												<div class="thumb"><img src="image/img/pdt_thm_2_03.png" alt=""></div>
+												<p class="tit">말 잘한다는 소리를 들으면 소원이 없겠다</p>
+												<div class="prd_price pr03">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>250,000</strong>원</p>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="rank_num"><span>4</span></div>
+												<div class="thumb"><img src="image/img/pdt_thm_2_03.png" alt=""></div>
+												<p class="tit">[스터디11/24~]영어쉐도잉 에밀리</p>
+												<div class="prd_price pr03">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>250,000</strong>원</p>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="rank_num"><span>5</span></div>
+												<div class="thumb"><img src="image/img/pdt_thm_2_03.png" alt=""></div>
+												<p class="tit">전기차 상식사전 북토크</p>
+												<div class="prd_price pr03">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>250,000</strong>원</p>
+													</div>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="btn_allview btn_bestallview"><a href="">베스트 전체 보기<img src="image/img/ico_arrow_next02.png" alt=""></a></div>
+					</div>
+				</div>
+			</div>
+			<div class="section03">
+				<div class="box_wrap">
+					<div class="con_box">
+						<p class="tit02">추천 클래스</p>
+						<div class="tab_wrap">
+							<ul class="tab_menu prd_main_tab">
+								<li><a href="#cont01" class="active" onclick="commFnTab('#cont01',this);return false;">재테크</a></li>
+								<li><a href="#cont02" class="" onclick="commFnTab('#cont02',this);return false;">취업/직무</a></li>
+								<li><a href="#cont03" class="" onclick="commFnTab('#cont03',this);return false;">외국어</a></li>
+								<li><a href="#cont04" class="" onclick="commFnTab('#cont04',this);return false;">취미교양</a></li>
+								<li><a href="#cont05" class="" onclick="commFnTab('#cont05',this);return false;">도서</a></li>
+								<li><a href="#cont06" class="" onclick="commFnTab('#cont06',this);return false;">준비물/굿즈</a></li>
+								<li><a href="#cont07" class="" onclick="commFnTab('#cont07',this);return false;">쉐도잉/스터디</a></li>
+							</ul>
+						</div>
+						<div class="tab_cont">   
+							<!-- 재테크 -->
+							<div class="class_list cont active" id="cont01">
+								<ul class="class_list">
+									<li>
+										<div>
+											<a href="">
+												<div class="state"><span class="badge live03">VOD</span></div>
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_03.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white"><span class="name">멘토손오공</span>재테크</p>
+												<p class="tit">[특강] 꼬마빌딩 상가 투자 - 이렇게 하면 성공한다</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>50,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>60,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="">
+												<div class="state"><span class="badge live03">VOD</span></div>
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_03.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white"><span class="name">멘토손오공</span>재테크</p>
+												<p class="tit">[특강] 꼬마빌딩 상가 투자 - 이렇게 하면 성공한다</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>50,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>60,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="">
+												<div class="state"><span class="badge live03">VOD</span></div>
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_03.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white"><span class="name">멘토손오공</span>재테크</p>
+												<p class="tit">[특강] 꼬마빌딩 상가 투자 - 이렇게 하면 성공한다</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>50,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>60,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="">
+												<div class="state"><span class="badge live03">VOD</span></div>
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_03.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white"><span class="name">멘토손오공</span>재테크</p>
+												<p class="tit">[특강] 꼬마빌딩 상가 투자 - 이렇게 하면 성공한다</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>50,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>60,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="">
+												<div class="state"><span class="badge live03">VOD</span></div>
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_03.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white"><span class="name">멘토손오공</span>재테크</p>
+												<p class="tit">[특강] 꼬마빌딩 상가 투자 - 이렇게 하면 성공한다</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>50,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>60,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="">
+												<div class="state"><span class="badge live03">VOD</span></div>
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_03.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white"><span class="name">멘토손오공</span>재테크</p>
+												<p class="tit">[특강] 꼬마빌딩 상가 투자 - 이렇게 하면 성공한다</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>50,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>60,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="">
+												<div class="state"><span class="badge live03">VOD</span></div>
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_03.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white"><span class="name">멘토손오공</span>재테크</p>
+												<p class="tit">[특강] 꼬마빌딩 상가 투자 - 이렇게 하면 성공한다</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>50,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>60,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="">
+												<div class="state"><span class="badge live03">VOD</span></div>
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_03.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white"><span class="name">멘토손오공</span>재테크</p>
+												<p class="tit">[특강] 꼬마빌딩 상가 투자 - 이렇게 하면 성공한다</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>50,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>60,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="">
+												<div class="state"><span class="badge live03">VOD</span></div>
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_03.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white"><span class="name">멘토손오공</span>재테크</p>
+												<p class="tit">[특강] 꼬마빌딩 상가 투자 - 이렇게 하면 성공한다</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>50,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>60,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="">
+												<div class="state"><span class="badge live03">VOD</span></div>
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_03.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white"><span class="name">멘토손오공</span>재테크</p>
+												<p class="tit">[특강] 꼬마빌딩 상가 투자 - 이렇게 하면 성공한다</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>50,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>60,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="">
+												<div class="state"><span class="badge live03">VOD</span></div>
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_03.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white"><span class="name">멘토손오공</span>재테크</p>
+												<p class="tit">[특강] 꼬마빌딩 상가 투자 - 이렇게 하면 성공한다</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>50,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>60,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="">
+												<div class="state"><span class="badge live03">VOD</span></div>
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_03.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white"><span class="name">멘토손오공</span>재테크</p>
+												<p class="tit">[특강] 꼬마빌딩 상가 투자 - 이렇게 하면 성공한다</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>50,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>60,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+								</ul>
+								<div class="btn_allview btn_sec03allview">
+									<button type="button" class=""><span>재테크</span>전체 보기<img src="image/ico_arrow_next02.png" alt=""></button>
+								</div>
+							</div>
+							<!-- //재테크-->
+							<!-- 취업/직무 -->
+							<div class="class_list cont" id="cont02">
+								<ul class="class_list">
+									<li>
+										<div>
+											<a href="">
+												<div class="state"><span class="badge live03">VOD</span></div>
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_02.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white"><span class="name">박규상</span>취업/직무. 면접/취업/회사</p>
+												<p class="tit">논문 쓰기, 이것만 알면 된다! 전략적인 논문 작성법</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>50,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>60,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="">
+												<div class="state"><span class="badge live03">VOD</span></div>
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_02.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white"><span class="name">박규상</span>취업/직무. 면접/취업/회사</p>
+												<p class="tit">논문 쓰기, 이것만 알면 된다! 전략적인 논문 작성법</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>50,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>60,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="">
+												<div class="state"><span class="badge live03">VOD</span></div>
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_02.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white"><span class="name">박규상</span>취업/직무. 면접/취업/회사</p>
+												<p class="tit">논문 쓰기, 이것만 알면 된다! 전략적인 논문 작성법</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>50,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>60,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="">
+												<div class="state"><span class="badge live03">VOD</span></div>
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_02.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white"><span class="name">박규상</span>취업/직무. 면접/취업/회사</p>
+												<p class="tit">논문 쓰기, 이것만 알면 된다! 전략적인 논문 작성법</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>50,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>60,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="">
+												<div class="state"><span class="badge live03">VOD</span></div>
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_02.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white"><span class="name">박규상</span>취업/직무. 면접/취업/회사</p>
+												<p class="tit">논문 쓰기, 이것만 알면 된다! 전략적인 논문 작성법</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>50,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>60,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="">
+												<div class="state"><span class="badge live03">VOD</span></div>
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_02.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white"><span class="name">박규상</span>취업/직무. 면접/취업/회사</p>
+												<p class="tit">논문 쓰기, 이것만 알면 된다! 전략적인 논문 작성법</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>50,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>60,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+								</ul>
+								<div class="btn_allview btn_sec03allview">
+									<button type="button" class=""><span>취업/직무</span>전체 보기<img src="image/img/ico_arrow_next02.png" alt=""></button>
+								</div>
+							</div>
+							<!-- //취업/직무-->
+							<!-- 외국어 -->
+							<div class="class_list cont" id="cont03">
+								<ul class="class_list">
+									<li>
+										<div>
+											<a href="">
+												<div class="state"><span class="badge live03">VOD</span></div>
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_08.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white"><span class="name">오렌지잉글리시</span>외국어</p>
+												<p class="tit">[특강] 꼬마빌딩 상가 투자 - 이렇게 하면 성공한다</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>50,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>60,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="">
+												<div class="state"><span class="badge live03">VOD</span></div>
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_08.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white"><span class="name">멘토손오공</span>재테크</p>
+												<p class="tit">[특강] 꼬마빌딩 상가 투자 - 이렇게 하면 성공한다</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>50,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>60,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="">
+												<div class="state"><span class="badge live03">VOD</span></div>
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_08.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white"><span class="name">멘토손오공</span>재테크</p>
+												<p class="tit">[특강] 꼬마빌딩 상가 투자 - 이렇게 하면 성공한다</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>50,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>60,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="">
+												<div class="state"><span class="badge live03">VOD</span></div>
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_08.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white"><span class="name">멘토손오공</span>재테크</p>
+												<p class="tit">[특강] 꼬마빌딩 상가 투자 - 이렇게 하면 성공한다</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>50,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>60,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="">
+												<div class="state"><span class="badge live03">VOD</span></div>
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_08.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white"><span class="name">멘토손오공</span>재테크</p>
+												<p class="tit">[특강] 꼬마빌딩 상가 투자 - 이렇게 하면 성공한다</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>50,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>60,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="">
+												<div class="state"><span class="badge live03">VOD</span></div>
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_08.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white"><span class="name">멘토손오공</span>재테크</p>
+												<p class="tit">[특강] 꼬마빌딩 상가 투자 - 이렇게 하면 성공한다</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>50,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>60,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+								</ul>
+								<div class="btn_allview btn_sec03allview">
+									<button type="button" class=""><span>외국어</span>전체 보기<img src="image/img/ico_arrow_next02.png" alt=""></button>
+								</div>
+							</div>
+							<!-- //외국어-->
+							<!-- 취미교양 -->
+							<div class="class_list cont" id="cont04">
+								<ul class="class_list">
+									<li>
+										<div>
+											<a href="">
+												<div class="state"><span class="badge live03">VOD</span></div>
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_04.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white"><span class="name">민지코치</span>취미교양</p>
+												<p class="tit">[11일 완성] 쉽게 성공하는 다이어트의 비밀</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>50,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>60,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="">
+												<div class="state"><span class="badge live03">VOD</span></div>
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_04.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white"><span class="name">민지코치</span>취미교양</p>
+												<p class="tit">[11일 완성] 쉽게 성공하는 다이어트의 비밀</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>50,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>60,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="">
+												<div class="state"><span class="badge live03">VOD</span></div>
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_04.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white"><span class="name">민지코치</span>취미교양</p>
+												<p class="tit">[11일 완성] 쉽게 성공하는 다이어트의 비밀</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>50,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>60,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="">
+												<div class="state"><span class="badge live03">VOD</span></div>
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_04.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white"><span class="name">민지코치</span>취미교양</p>
+												<p class="tit">[11일 완성] 쉽게 성공하는 다이어트의 비밀</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>50,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>60,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="">
+												<div class="state"><span class="badge live03">VOD</span></div>
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_04.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white"><span class="name">민지코치</span>취미교양</p>
+												<p class="tit">[11일 완성] 쉽게 성공하는 다이어트의 비밀</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>50,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>60,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="">
+												<div class="state"><span class="badge live03">VOD</span></div>
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_04.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white"><span class="name">민지코치</span>취미교양</p>
+												<p class="tit">[11일 완성] 쉽게 성공하는 다이어트의 비밀</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>50,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>60,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+								</ul>
+								<div class="btn_allview btn_sec03allview">
+									<button type="button" class=""><span>취미교양</span>전체 보기<img src="image/img/ico_arrow_next02.png" alt=""></button>
+								</div>
+							</div>
+							<!-- //취미교양 -->
+							<!-- 도서 -->
+							<div class="class_list cont" id="cont05">
+								<ul class="class_list">
+									<li>
+										<div>
+											<a href="">
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_05.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white">도서, 베스트셀러 도서</p>
+												<p class="tit">[무료배송] 매일을 헤엄치는 법</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>50,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>60,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="">
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_05.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white">도서, 베스트셀러 도서</p>
+												<p class="tit">[무료배송] 매일을 헤엄치는 법</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>50,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>60,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="">
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_05.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white">도서, 베스트셀러 도서</p>
+												<p class="tit">[무료배송] 매일을 헤엄치는 법</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>50,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>60,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="">
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_05.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white">도서, 베스트셀러 도서</p>
+												<p class="tit">[무료배송] 매일을 헤엄치는 법</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>50,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>60,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="">
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_05.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white">도서, 베스트셀러 도서</p>
+												<p class="tit">[무료배송] 매일을 헤엄치는 법</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>50,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>60,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="">
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_05.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white">도서, 베스트셀러 도서</p>
+												<p class="tit">[무료배송] 매일을 헤엄치는 법</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>16</strong>%</span>
+														<p class="grow_price"><strong>50,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>60,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+								</ul>
+								<div class="btn_allview btn_sec03allview">
+									<button type="button" class=""><span>도서</span>전체 보기<img src="image/img/ico_arrow_next02.png" alt=""></button>
+								</div>
+							</div>
+							<!-- //도서 -->
+							<!-- 준비물/굿즈 -->
+							<div class="class_list cont" id="cont06">
+								<ul class="class_list">
+									<li>
+										<div>
+											<a href="">
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_06.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white">준비물, 굿즈. 노트북, 태블릿</p>
+												<p class="tit">[스페이스그레이] 에어5세대 10.9형 WIFI 64G</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>9</strong>%</span>
+														<p class="grow_price"><strong>950,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>1,050,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="">
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_06.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white">준비물, 굿즈. 노트북, 태블릿</p>
+												<p class="tit">[스페이스그레이] 에어5세대 10.9형 WIFI 64G</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>9</strong>%</span>
+														<p class="grow_price"><strong>950,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>1,050,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="">
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_06.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white">준비물, 굿즈. 노트북, 태블릿</p>
+												<p class="tit">[스페이스그레이] 에어5세대 10.9형 WIFI 64G</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>9</strong>%</span>
+														<p class="grow_price"><strong>950,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>1,050,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="">
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_06.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white">준비물, 굿즈. 노트북, 태블릿</p>
+												<p class="tit">[스페이스그레이] 에어5세대 10.9형 WIFI 64G</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>9</strong>%</span>
+														<p class="grow_price"><strong>950,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>1,050,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="">
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_06.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white">준비물, 굿즈. 노트북, 태블릿</p>
+												<p class="tit">[스페이스그레이] 에어5세대 10.9형 WIFI 64G</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>9</strong>%</span>
+														<p class="grow_price"><strong>950,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>1,050,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="">
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_06.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white">준비물, 굿즈. 노트북, 태블릿</p>
+												<p class="tit">[스페이스그레이] 에어5세대 10.9형 WIFI 64G</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>9</strong>%</span>
+														<p class="grow_price"><strong>950,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>1,050,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+								</ul>
+								<div class="btn_allview btn_sec03allview">
+									<button type="button" class=""><span>준비물/굿즈</span>전체 보기<img src="image/img/ico_arrow_next02.png" alt=""></button>
+								</div>
+							</div>
+							<!-- //준비물/굿즈 -->
+							<!-- 쉐도잉/스터디 -->
+							<div class="class_list cont" id="cont07">
+								<ul class="class_list">
+									<li>
+										<div>
+											<a href="">
+												<div class="state"><span class="badge live03">VOD</span></div>
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_07.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white"><span class="name">Lina</span>쉐도잉/스터디 </p>
+												<p class="tit">[스터디12/19~]영어쉐도잉 굿플레이스</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>58</strong>%</span>
+														<p class="grow_price"><strong>50,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>120,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="">
+												<div class="state"><span class="badge live03">VOD</span></div>
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_07.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white"><span class="name">Lina</span>쉐도잉/스터디 </p>
+												<p class="tit">[스터디12/19~]영어쉐도잉 굿플레이스</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>58</strong>%</span>
+														<p class="grow_price"><strong>50,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>120,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="">
+												<div class="state"><span class="badge live03">VOD</span></div>
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_07.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white"><span class="name">Lina</span>쉐도잉/스터디 </p>
+												<p class="tit">[스터디12/19~]영어쉐도잉 굿플레이스</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>58</strong>%</span>
+														<p class="grow_price"><strong>50,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>120,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="">
+												<div class="state"><span class="badge live03">VOD</span></div>
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_07.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white"><span class="name">Lina</span>쉐도잉/스터디 </p>
+												<p class="tit">[스터디12/19~]영어쉐도잉 굿플레이스</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>58</strong>%</span>
+														<p class="grow_price"><strong>50,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>120,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="">
+												<div class="state"><span class="badge live03">VOD</span></div>
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_07.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white"><span class="name">Lina</span>쉐도잉/스터디 </p>
+												<p class="tit">[스터디12/19~]영어쉐도잉 굿플레이스</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>58</strong>%</span>
+														<p class="grow_price"><strong>50,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>120,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href="">
+												<div class="state"><span class="badge live03">VOD</span></div>
+												<div class="thumb">
+													<img src="image/img/pdt_thm_2_07.png" alt="">
+													<p class="state">판매마감 <strong class="col_red">D-32</strong></p>
+												</div>
+												<p class="sort white"><span class="name">Lina</span>쉐도잉/스터디 </p>
+												<p class="tit">[스터디12/19~]영어쉐도잉 굿플레이스</p>
+												<div class="prd_price pr01">
+													<div>
+														<span class="sale"><strong>58</strong>%</span>
+														<p class="grow_price"><strong>50,000</strong>원</p>
+													</div>
+													<div class="price">
+															<del><span>120,000</span>원</del>
+													</div>
+												</div>
+											</a>
+										</div>
+									</li>
+								</ul>
+								<div class="btn_allview btn_sec03allview">
+									<button type="button" class=""><span>쉐도잉/스터디 </span>전체 보기<img src="image/img/ico_arrow_next02.png" alt=""></button>
+								</div>
+							</div>
+							<!-- //쉐도잉/스터디  -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="v5_border"></div>
+			<div class="banner_box">
+				<a href="">
+					<div><span><img src="image/img/ico_mainbanner.png" alt=""></span><strong>GROW에서 강의 도전!</strong></div>
+					<div><span>LIVE로 강의를 진행하세요</span></div>
+				</a>
+			</div>
+			<div class="v5_border"></div>
+		</div> <!-- main_wrap  END //  -->
+	</div>
+	<!-- //content -->
+
+	<!-- footer -->
+	<footer id="footer" class="v5">
+		<div class="footer_wrap" class="v5">
+			<div class="f_inner">
+				<div class="f_menu_wrap">
+					<ul class="f_menu">
+						<li><a href="#">이용약관</a></li>
+						<li><a href="#">개인정보처리방침</a></li>
+						<li><a href="#">청소년보호정책</a></li>
+						<li><a href="#">파트너지원</a></li>
+						<li><a href="#" target="_blank">회사소개</a></li>
+					</ul>
+					<ul class="f_sns">
+						<li><a href="#" target="_blank"><span class="sns5">카카오톡 채널 바로가기</span></a></li>
+						<li><a href="#" target="_blank"><span class="sns1">sns 블로그</span></a></li>
+						<li><a href="#" target="_blank"><span class="sns2">sns 인스타그램</span></a></li>
+						<li><a href="#" target="_blank"><span class="sns3">sns 페이스북</span></a></li>
+						<li><a href="#" target="_blank"><span class="sns4">sns 유투브</span></a></li>
+					</ul>
+				</div>
+				<h1><img src="image/img/logo_black.png" alt="grow"/></h1>
+				<div class="f_info">
+					<div class="info01">
+						<p>(주)그로우코퍼레이션</p>
+						<ul>
+							<li>대표이사 : 노재규</li>
+							<li>사무실 : 서울특별시 서초구 남부순환로 2547, 3층(서초동)</li>
+							<li>사업자번호 : 133-87-01799</li>
+							<li>통신판매업 신고번호 : 2020-서울서초-4119</li>
+						</ul>
+					</div>
+					<div class="info02">
+						<p class="cs_go_wrap">
+							<a href="#">고객센터
+								<span class="cs_go">
+									<span class="line"></span>
+									<span class="line"></span>
+								</span>
+							</a>
+						</p>
+						<div>
+							<ul>
+								<li>카카오톡 문의 &nbsp; <a class="ico_f_kakao_cs" href="#" target='_blank'><img src="image/img/ico_f_kakaotalk_cs.png" alt="톡상담"></a></li>
+								<li>이메일  &nbsp; <a href="mailto:help@growcorp.co.kr">help@growcorp.co.kr</a></li>
+								<li>전화상담  &nbsp; <em>1670-9503</em></li>
+								<li>상담시간 : AM 9:00~PM 18:00 (점심: 12:00~13:00), 휴무: 토, 일/공휴일</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<ul class="f_txt">
+					<li>grow는 통신판매업과 통신판매중개업을 영위하고 있습니다. 통신판매중개자로서 중개하는 상품, 거래정보 및 거래 등에 대하여서는 책임지지 않습니다.</li>
+					<li>grow 사이트의 상품, 파트너, 강의정보, 컨텐츠, UI 등에 대한 무단 복제, 전송, 배포, 스크래핑 등의 행위는 저작권법, 콘텐츠사업 진흥법 등에 의해 엄격히 금지됩니다.</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<!-- //footer -->
+
+
+	<!--  검색 레이어  -->
+	<div class="layerpop" id="search_subject">
+		<div class="wrapper">
+			<div class="inbox">
+				<a href="javascript:;" class="btn_close_pop" onclick="closePopFn('#search_subject');">팝업닫기</a>
+				<h2>기관/강사 찾기</h2>
+				<div class="popcont no_border">
+					<div class="cont_box">
+						<div class="tab_wrap">
+							<ul class="tab_menu">
+								<li><a href="#searchcate"  class="active" onclick="commFnTab('#searchcate',this);return false;">카테고리로 찾기</a></li>
+								<li><a href="#searchabc"  onclick="commFnTab('#searchabc',this);return false;">가나다순 찾기</a></li>
+							</ul>
+							<div class="tab_cont">
+								<div class="cont active" id="searchcate"><!--  .cont#searchcate   -->
+									<div class="category_list form_wrap">
+										<p class="tit05 mt25">중고등교육</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<!--  기관 검색일 경우 .academy 안으로   -->
+												<div class="academy"> 
+													<!--  기본  --->
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="search_result_chktxt">시대인재학원</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<!--  기본  //  -->
+													<!--  new뱃지 포함할 경우 -->
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value="" ><label for=""><span class="badge_new">NEW</span><span class="search_result_chktxt">오르다어학원</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<!--  new뱃지 포함할 경우  //  -->
+													<!--  new뱃지 + 검색대상레이어에 포함할 경우 -->
+													<div class="chkbox on">
+														<input type="checkbox" id="steacher149238" name="scategory" value=""><label for="steacher149238"><span class="badge_new">NEW</span><span class="search_result_chktxt">강남하이퍼의대관</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<!--  new뱃지 + 검색대상레이어에 포함할 경우  END  //  -->
+												</div>
+												<!--  기관 검색일 경우 .academy  안으로  //  -->
+												<!--  강사 검색일 경우 .teacher  안으로   -->
+												<div class="teacher">
+													<!--  new뱃지 + 과목뱃지 + 검색대상레이어에 포함할 경우 -->
+													<div class="chkbox on">
+														<input type="checkbox" id="steacher149171" name="scategory" value=""><label for="steacher149171"><span class="badge_new">NEW</span><span class="badge_subj">영어</span><span class="search_result_chktxt">강원우</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<!--  new뱃지 + 과목뱃지 + 검색대상레이어에 포함할 경우  END  //  -->
+													<!--  과목뱃지만 포함할 경우 -->
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">국어</span><span class="search_result_chktxt">김문성</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">국영수</span><span class="search_result_chktxt">권민주</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">국어</span><span class="search_result_chktxt">김민정</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">공부법</span><span class="search_result_chktxt">김병진</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">영어</span><span class="search_result_chktxt">김소연</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">수학</span><span class="search_result_chktxt">김양준</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">수학</span><span class="search_result_chktxt">김예림</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">수학</span><span class="search_result_chktxt">김준</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">공부법</span><span class="search_result_chktxt">김태훈</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">영어</span><span class="search_result_chktxt">김소연</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<!--  과목뱃지만 포함할 경우  END  //  -->
+													<!--  과목뱃지 + 검색대상레이어에 포함할 경우 -->
+													<div class="chkbox on">
+														<input type="checkbox" id="steacher149187" name="scategory" value=""><label for="steacher149187"><span class="badge_subj">사회</span><span class="search_result_chktxt">이지영</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<!--   과목뱃지 + 검색대상레이어에 포함할 경우  END  //  -->
+												</div>
+												<!--  강사 검색일 경우 .teacher  안으로  //  -->
+											</div>
+										</div>
+										<p class="tit05 mt25">취미교양</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<div class="chkbox">
+													<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="search_result_chktxt">라이프</span><a href="javascript:;" class="chk_del"></a></label>
+												</div>
+												<div class="chkbox">
+													<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="search_result_chktxt">명사강연</span><a href="javascript:;" class="chk_del"></a></label>
+												</div>
+												<div class="chkbox">
+													<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="search_result_chktxt">멘토링</span><a href="javascript:;" class="chk_del"></a></label>
+												</div>
+												<div class="chkbox">
+													<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="search_result_chktxt">북토크</span><a href="javascript:;" class="chk_del"></a></label>
+												</div>
+											</div>
+										</div>
+										<p class="tit05 mt25">취업/직무</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<div class="chkbox">
+													<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="search_result_chktxt">외국어</span><a href="javascript:;" class="chk_del"></a></label>
+												</div>
+												<div class="chkbox">
+													<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="search_result_chktxt">자기계발</span><a href="javascript:;" class="chk_del"></a></label>
+												</div>
+												<div class="chkbox">
+													<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="search_result_chktxt">커리어/취업</span><a href="javascript:;" class="chk_del"></a></label>
+												</div>
+												<div class="chkbox">
+													<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="search_result_chktxt">비즈니스/마케팅</span><a href="javascript:;" class="chk_del"></a></label>
+												</div>
+											</div>
+										</div>
+										<p class="tit05 mt25">재테크</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<div class="chkbox">
+													<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="search_result_chktxt">주식</span><a href="javascript:;" class="chk_del"></a></label>
+												</div>
+												<div class="chkbox">
+													<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="search_result_chktxt">부동산</span><a href="javascript:;" class="chk_del"></a></label>
+												</div>
+												<div class="chkbox">
+													<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="search_result_chktxt">자산관리/코인</span><a href="javascript:;" class="chk_del"></a></label>
+												</div>
+												<div class="chkbox">
+													<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="search_result_chktxt">N잡</span><a href="javascript:;" class="chk_del"></a></label>
+												</div>
+											</div>
+										</div>
+									</div><!--  .category_list  END  //  -->
+								</div><!--  .cont#searchcate  END  //  -->
+
+
+								<div class="cont" id="searchabc"><!--  .cont#searchabc   -->
+									<div class="category_list form_wrap">
+										<div class="guide_bar_abc">
+											<ul>
+												<li class="bar"><a href="#guide_k0" class="on">ㄱ</a></li>
+												<li class="bar"><a href="#guide_k1">ㄴ</a></li>
+												<li class="bar"><a href="#guide_k2">ㄷ</a></li>
+												<li class="bar"><a href="#guide_k3">ㄹ</a></li>
+												<li class="bar"><a href="#guide_k4">ㅁ</a></li>
+												<li class="bar"><a href="#guide_k5">ㅂ</a></li>
+												<li class="bar"><a href="#guide_k6">ㅅ</a></li>
+												<li class="bar"><a href="#guide_k7">ㅇ</a></li>
+												<li class="bar"><a href="#guide_k8">ㅈ</a></li>
+												<li class="bar"><a href="#guide_k9">ㅊ</a></li>
+												<li class="bar"><a href="#guide_k10">ㅋ</a></li>
+												<li class="bar"><a href="#guide_k11">ㅌ</a></li>
+												<li class="bar"><a href="#guide_k12">ㅍ</a></li>
+												<li class="bar"><a href="#guide_k13">ㅎ</a></li>
+												<li class="bar"><a href="">A</a></li>
+												<li class="bar"><a href="">B</a></li>
+												<li class="bar"><a href="">C</a></li>
+												<li class="bar"><a href="">D</a></li>
+												<li class="bar"><a href="">E</a></li>
+												<li class="bar"><a href="">F</a></li>
+												<li class="bar"><a href="">G</a></li>
+												<li class="bar"><a href="">H</a></li>
+												<li class="bar"><a href="">I</a></li>
+												<li class="bar"><a href="">J</a></li>
+												<li class="bar"><a href="">K</a></li>
+												<li class="bar"><a href="">L</a></li>
+												<li class="bar"><a href="">M</a></li>
+												<li class="bar"><a href="">N</a></li>
+												<li class="bar"><a href="">O</a></li>
+												<li class="bar"><a href="">P</a></li>
+												<li class="bar"><a href="">Q</a></li>
+												<li class="bar"><a href="">R</a></li>
+												<li class="bar"><a href="">S</a></li>
+												<li class="bar"><a href="">T</a></li>
+												<li class="bar"><a href="">U</a></li>
+												<li class="bar"><a href="">V</a></li>
+												<li class="bar"><a href="">W</a></li>
+												<li class="bar"><a href="">X</a></li>
+												<li class="bar"><a href="">Y</a></li>
+												<li class="bar"><a href="">Z</a></li>
+											</ul>
+										</div>
+										<p class="tit05" id="guide_k0">ㄱ</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<!--  기관 검색일 경우 .academy 안으로   -->
+												<div class="academy"> 
+													<!--  기본  --->
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="search_result_chktxt">가이드라이브</span><a href="javascript:;" class="chk_del"></a></label>
+													</div><div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="search_result_chktxt">강남하이퍼의대관</span><a href="javascript:;" class="chk_del"></a></label>
+													</div><div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="search_result_chktxt">강연의날개</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<!--  기본  //  -->
+													<!--  new뱃지 + 검색대상레이어에 포함할 경우 -->
+													<div class="chkbox on">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_new">NEW</span><span class="search_result_chktxt">김종율아카데미</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<!--  new뱃지 + 검색대상레이어에 포함할 경우  END  //  -->
+												</div>
+												<!--  기관 검색일 경우 .academy  안으로  //  -->
+												<!--  강사 검색일 경우 .teacher  안으로   -->
+												<div class="teacher">
+													<!--  new뱃지 + 과목뱃지 + 검색대상레이어에 포함할 경우 -->
+													<div class="chkbox on">
+														<input type="checkbox" id="steacher149171" name="scategory" value=""><label for="steacher149171"><span class="badge_new">NEW</span><span class="badge_subj">영어</span><span class="search_result_chktxt">강원우</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<!--  new뱃지 + 과목뱃지 + 검색대상레이어에 포함할 경우  END  //  -->
+													<!--  과목뱃지만 포함할 경우 -->
+													<div class="chkbox on">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">라이프</span><span class="search_result_chktxt">강윤환</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">비즈니스/마케팅</span><span class="search_result_chktxt">강혁진</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">부동산</span><span class="search_result_chktxt">고상철</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">부동산</span><span class="search_result_chktxt">골목대장</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">국영수</span><span class="search_result_chktxt">권민주</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">멘토링</span><span class="search_result_chktxt">권혁필</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">라이프</span><span class="search_result_chktxt">그로우</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">부동산</span><span class="search_result_chktxt">김경필</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">비즈니스/마케팅</span><span class="search_result_chktxt">김광석</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">국어</span><span class="search_result_chktxt">김문성</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">공부법</span><span class="search_result_chktxt">김병진</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">국어</span><span class="search_result_chktxt">김민정</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">고1</span><span class="search_result_chktxt">김보건</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">비즈니스/마케팅</span><span class="search_result_chktxt">김상윤</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">비즈니스/마케팅</span><span class="search_result_chktxt">김선주</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">영어</span><span class="search_result_chktxt">김소연</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">수학</span><span class="search_result_chktxt">김양준</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">N잡</span><span class="search_result_chktxt">김연지</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">수학</span><span class="search_result_chktxt">김예림</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">자산관리/코인</span><span class="search_result_chktxt">김용태</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">북토크</span><span class="search_result_chktxt">김은아</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">수학</span><span class="search_result_chktxt">김준</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">멘토링</span><span class="search_result_chktxt">김준녕</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">공부법</span><span class="search_result_chktxt">김태훈</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">부동산</span><span class="search_result_chktxt">김형일</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">자기계발</span><span class="search_result_chktxt">김형철</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">커리어/취업</span><span class="search_result_chktxt">김호인</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<!--  과목뱃지만 포함할 경우  END  //  -->
+												</div>
+												<!--  강사 검색일 경우 .teacher  안으로  //  -->
+											</div>
+										</div>
+										<p class="tit05" id="guide_k1">ㄴ</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<div class="teacher"><!--  강사 검색일 경우 .teacher  안으로   -->
+													<div class="chkbox">
+														<input type="checkbox" id="steacher149171" name="scategory" value=""><label for="steacher149171"><span class="badge_subj">영어</span><span class="search_result_chktxt">나애경</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<div class="chkbox">
+														<input type="checkbox" id="steacher149171" name="scategory" value=""><label for="steacher149171"><span class="badge_subj">수학</span><span class="search_result_chktxt">남궁율</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<div class="chkbox on">
+														<input type="checkbox" id="steacher149171" name="scategory" value=""><label for="steacher149171"><span class="badge_subj">북토크</span><span class="search_result_chktxt">노성산</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+													<div class="chkbox">
+														<input type="checkbox" id="steacher149171" name="scategory" value=""><label for="steacher149171"><span class="badge_subj">비즈니스/마케팅</span><span class="search_result_chktxt">노준영</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+												</div><!--  강사 검색일 경우 .teacher  안으로  //  -->
+												
+											</div>
+										</div>
+										<p class="tit05" id="guide_k2">ㄷ</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<div class="teacher"><!--  강사 검색일 경우 .teacher  안으로   -->
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">영어</span><span class="search_result_chktxt">데이지</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+												</div><!--  강사 검색일 경우 .teacher  안으로  //  -->
+											</div>
+										</div>
+										<p class="tit05" id="guide_k3">ㄹ</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<div class="teacher"><!--  강사 검색일 경우 .teacher  안으로   -->
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">영어</span><span class="search_result_chktxt">데이지</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+												</div><!--  강사 검색일 경우 .teacher  안으로  //  -->
+											</div>
+										</div>
+										<p class="tit05" id="guide_k4">ㅁ</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<div class="teacher"><!--  강사 검색일 경우 .teacher  안으로   -->
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">영어</span><span class="search_result_chktxt">데이지</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+												</div><!--  강사 검색일 경우 .teacher  안으로  //  -->
+											</div>
+										</div>
+										<p class="tit05" id="guide_k5">ㅂ</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<div class="teacher"><!--  강사 검색일 경우 .teacher  안으로   -->
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">영어</span><span class="search_result_chktxt">데이지</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+												</div><!--  강사 검색일 경우 .teacher  안으로  //  -->
+											</div>
+										</div>
+										<p class="tit05" id="guide_k6">ㅅ</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<div class="teacher"><!--  강사 검색일 경우 .teacher  안으로   -->
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">영어</span><span class="search_result_chktxt">데이지</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+												</div><!--  강사 검색일 경우 .teacher  안으로  //  -->
+											</div>
+										</div>
+										<p class="tit05" id="guide_k7">ㅇ</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<div class="teacher"><!--  강사 검색일 경우 .teacher  안으로   -->
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">영어</span><span class="search_result_chktxt">데이지</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+												</div><!--  강사 검색일 경우 .teacher  안으로  //  -->
+											</div>
+										</div>
+										<p class="tit05" id="guide_k8">ㅈ</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<div class="teacher"><!--  강사 검색일 경우 .teacher  안으로   -->
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">영어</span><span class="search_result_chktxt">데이지</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+												</div><!--  강사 검색일 경우 .teacher  안으로  //  -->
+											</div>
+										</div>
+										<p class="tit05" id="guide_k9">ㅊ</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<div class="teacher"><!--  강사 검색일 경우 .teacher  안으로   -->
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">영어</span><span class="search_result_chktxt">데이지</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+												</div><!--  강사 검색일 경우 .teacher  안으로  //  -->
+											</div>
+										</div>
+										<p class="tit05" id="guide_k10">ㅋ</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<div class="teacher"><!--  강사 검색일 경우 .teacher  안으로   -->
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">영어</span><span class="search_result_chktxt">데이지</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+												</div><!--  강사 검색일 경우 .teacher  안으로  //  -->
+											</div>
+										</div>
+										<p class="tit05" id="guide_k11">ㅌ</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<div class="teacher"><!--  강사 검색일 경우 .teacher  안으로   -->
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">영어</span><span class="search_result_chktxt">데이지</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+												</div><!--  강사 검색일 경우 .teacher  안으로  //  -->
+											</div>
+										</div>
+										<p class="tit05" id="guide_k12">ㅍ</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<div class="teacher"><!--  강사 검색일 경우 .teacher  안으로   -->
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">영어</span><span class="search_result_chktxt">데이지</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+												</div><!--  강사 검색일 경우 .teacher  안으로  //  -->
+											</div>
+										</div>
+										<p class="tit05" id="guide_k13">ㅎ</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<div class="teacher"><!--  강사 검색일 경우 .teacher  안으로   -->
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">영어</span><span class="search_result_chktxt">데이지</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+												</div><!--  강사 검색일 경우 .teacher  안으로  //  -->
+											</div>
+										</div>
+										<p class="tit05" id="guide_e0">A</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<div class="teacher"><!--  강사 검색일 경우 .teacher  안으로   -->
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">영어</span><span class="search_result_chktxt">데이지</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+												</div><!--  강사 검색일 경우 .teacher  안으로  //  -->
+											</div>
+										</div>
+										<p class="tit05" id="guide_e1">B</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<div class="teacher"><!--  강사 검색일 경우 .teacher  안으로   -->
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">영어</span><span class="search_result_chktxt">데이지</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+												</div><!--  강사 검색일 경우 .teacher  안으로  //  -->
+											</div>
+										</div>
+										<p class="tit05" id="guide_e2">C</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<div class="teacher"><!--  강사 검색일 경우 .teacher  안으로   -->
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">영어</span><span class="search_result_chktxt">데이지</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+												</div><!--  강사 검색일 경우 .teacher  안으로  //  -->
+											</div>
+										</div>
+										<p class="tit05" id="guide_e3">D</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<div class="teacher"><!--  강사 검색일 경우 .teacher  안으로   -->
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">영어</span><span class="search_result_chktxt">데이지</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+												</div><!--  강사 검색일 경우 .teacher  안으로  //  -->
+											</div>
+										</div>
+										<p class="tit05" id="guide_e4">E</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<div class="teacher"><!--  강사 검색일 경우 .teacher  안으로   -->
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">영어</span><span class="search_result_chktxt">데이지</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+												</div><!--  강사 검색일 경우 .teacher  안으로  //  -->
+											</div>
+										</div>
+										<p class="tit05" id="guide_e5">F</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<div class="teacher"><!--  강사 검색일 경우 .teacher  안으로   -->
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">영어</span><span class="search_result_chktxt">데이지</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+												</div><!--  강사 검색일 경우 .teacher  안으로  //  -->
+											</div>
+										</div>
+										<p class="tit05" id="guide_e6">G</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<div class="teacher"><!--  강사 검색일 경우 .teacher  안으로   -->
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">영어</span><span class="search_result_chktxt">데이지</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+												</div><!--  강사 검색일 경우 .teacher  안으로  //  -->
+											</div>
+										</div>
+										<p class="tit05" id="guide_e7">H</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<div class="teacher"><!--  강사 검색일 경우 .teacher  안으로   -->
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">영어</span><span class="search_result_chktxt">데이지</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+												</div><!--  강사 검색일 경우 .teacher  안으로  //  -->
+											</div>
+										</div>
+										<p class="tit05" id="guide_e8">I</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<div class="teacher"><!--  강사 검색일 경우 .teacher  안으로   -->
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">영어</span><span class="search_result_chktxt">데이지</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+												</div><!--  강사 검색일 경우 .teacher  안으로  //  -->
+											</div>
+										</div>
+										<p class="tit05" id="guide_e9">J</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<div class="teacher"><!--  강사 검색일 경우 .teacher  안으로   -->
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">영어</span><span class="search_result_chktxt">데이지</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+												</div><!--  강사 검색일 경우 .teacher  안으로  //  -->
+											</div>
+										</div>
+										<p class="tit05" id="guide_e10">K</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<div class="teacher"><!--  강사 검색일 경우 .teacher  안으로   -->
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">영어</span><span class="search_result_chktxt">데이지</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+												</div><!--  강사 검색일 경우 .teacher  안으로  //  -->
+											</div>
+										</div>
+										<p class="tit05" id="guide_e11">L</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<div class="teacher"><!--  강사 검색일 경우 .teacher  안으로   -->
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">영어</span><span class="search_result_chktxt">데이지</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+												</div><!--  강사 검색일 경우 .teacher  안으로  //  -->
+											</div>
+										</div>
+										<p class="tit05" id="guide_e12">M</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<div class="teacher"><!--  강사 검색일 경우 .teacher  안으로   -->
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">영어</span><span class="search_result_chktxt">데이지</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+												</div><!--  강사 검색일 경우 .teacher  안으로  //  -->
+											</div>
+										</div>
+										<p class="tit05" id="guide_e13">N</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<div class="teacher"><!--  강사 검색일 경우 .teacher  안으로   -->
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">영어</span><span class="search_result_chktxt">데이지</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+												</div><!--  강사 검색일 경우 .teacher  안으로  //  -->
+											</div>
+										</div>
+										<p class="tit05" id="guide_e14">O</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<div class="teacher"><!--  강사 검색일 경우 .teacher  안으로   -->
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">영어</span><span class="search_result_chktxt">데이지</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+												</div><!--  강사 검색일 경우 .teacher  안으로  //  -->
+											</div>
+										</div>
+										<p class="tit05" id="guide_e15">P</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<div class="teacher"><!--  강사 검색일 경우 .teacher  안으로   -->
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">영어</span><span class="search_result_chktxt">데이지</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+												</div><!--  강사 검색일 경우 .teacher  안으로  //  -->
+											</div>
+										</div>
+										<p class="tit05" id="guide_e16">Q</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<div class="teacher"><!--  강사 검색일 경우 .teacher  안으로   -->
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">영어</span><span class="search_result_chktxt">데이지</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+												</div><!--  강사 검색일 경우 .teacher  안으로  //  -->
+											</div>
+										</div>
+										<p class="tit05" id="guide_e17">R</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<div class="teacher"><!--  강사 검색일 경우 .teacher  안으로   -->
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">영어</span><span class="search_result_chktxt">데이지</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+												</div><!--  강사 검색일 경우 .teacher  안으로  //  -->
+											</div>
+										</div>
+										<p class="tit05" id="guide_e18">S</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<div class="teacher"><!--  강사 검색일 경우 .teacher  안으로   -->
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">영어</span><span class="search_result_chktxt">데이지</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+												</div><!--  강사 검색일 경우 .teacher  안으로  //  -->
+											</div>
+										</div>
+										<p class="tit05" id="guide_e19">T</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<div class="teacher"><!--  강사 검색일 경우 .teacher  안으로   -->
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">영어</span><span class="search_result_chktxt">데이지</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+												</div><!--  강사 검색일 경우 .teacher  안으로  //  -->
+											</div>
+										</div>
+										<p class="tit05" id="guide_e20">U</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<div class="teacher"><!--  강사 검색일 경우 .teacher  안으로   -->
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">영어</span><span class="search_result_chktxt">데이지</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+												</div><!--  강사 검색일 경우 .teacher  안으로  //  -->
+											</div>
+										</div>
+										<p class="tit05" id="guide_e21">V</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<div class="teacher"><!--  강사 검색일 경우 .teacher  안으로   -->
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">영어</span><span class="search_result_chktxt">데이지</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+												</div><!--  강사 검색일 경우 .teacher  안으로  //  -->
+											</div>
+										</div>
+										<p class="tit05" id="guide_e22">W</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<div class="teacher"><!--  강사 검색일 경우 .teacher  안으로   -->
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">영어</span><span class="search_result_chktxt">데이지</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+												</div><!--  강사 검색일 경우 .teacher  안으로  //  -->
+											</div>
+										</div>
+										<p class="tit05" id="guide_e23">X</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<div class="teacher"><!--  강사 검색일 경우 .teacher  안으로   -->
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">영어</span><span class="search_result_chktxt">데이지</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+												</div><!--  강사 검색일 경우 .teacher  안으로  //  -->
+											</div>
+										</div>
+										<p class="tit05" id="guide_e24">Y</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<div class="teacher"><!--  강사 검색일 경우 .teacher  안으로   -->
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">영어</span><span class="search_result_chktxt">데이지</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+												</div><!--  강사 검색일 경우 .teacher  안으로  //  -->
+											</div>
+										</div>
+										<p class="tit05" id="guide_e25">Z</p>
+										<div class="form_item mt20">
+											<div class="chk_wrap">
+												<div class="teacher"><!--  강사 검색일 경우 .teacher  안으로   -->
+													<div class="chkbox">
+														<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_subj">영어</span><span class="search_result_chktxt">데이지</span><a href="javascript:;" class="chk_del"></a></label>
+													</div>
+												</div><!--  강사 검색일 경우 .teacher  안으로  //  -->
+											</div>
+										</div>
+									</div>
+								</div><!--  .cont#searchabc  END  //  -->
+							</div><!--  .tab_cont  END  //  -->
+						</div>
+					</div>
+				</div>
+
+				<!-- 검색 결과 -->
+				<div class="chked_wrap wid_full">
+					<div class="chked_list" id="chked_list">
+						
+						<span class="chked_left"></span>
+						<span class="chked_right"></span>
+
+						<div class="academy">
+							<div class="chkbox on">
+								<input type="checkbox" id="steacher149238" name="scategory" value=""><label for="steacher149238"><span class="badge_new">NEW</span><span class="search_result_chktxt">강남하이퍼의대관</span><a href="javascript:;" class="chk_del"></a></label>
+							</div>
+						</div>
+						<div class="teacher">
+							<div class="chkbox on">
+								<input type="checkbox" id="steacher149171" name="scategory" value=""><label for="steacher149171"><span class="badge_new">NEW</span><span class="badge_subj">영어</span><span class="search_result_chktxt">강원우</span><a href="javascript:;" class="chk_del"></a></label>
+							</div>
+						</div>
+						<div class="academy">
+							<div class="chkbox on">
+								<input type="checkbox" id="" name="scategory" value=""><label for=""><span class="badge_new">NEW</span><span class="search_result_chktxt">김종율아카데미</span><a href="javascript:;" class="chk_del"></a></label>
+							</div>
+						</div>
+						<div class="teacher">
+							<div class="chkbox on">
+								<input type="checkbox" id="steacher149187" name="scategory" value=""><label for="steacher149187"><span class="badge_subj">사회</span><span class="search_result_chktxt">이지영</span><a href="javascript:;" class="chk_del"></a></label>
+							</div>
+						</div>
+						<div class="academy">
+							<div class="chkbox on">
+								<input type="checkbox" id="steacher149238" name="scategory" value=""><label for="steacher149238"><span class="badge_new">NEW</span><span class="search_result_chktxt">강남하이퍼의대관</span><a href="javascript:;" class="chk_del"></a></label>
+							</div>
+						</div>
+						<div class="teacher">
+							<div class="chkbox on">
+								<input type="checkbox" id="steacher149171" name="scategory" value=""><label for="steacher149171"><span class="badge_new">NEW</span><span class="badge_subj">영어</span><span class="search_result_chktxt">강원우</span><a href="javascript:;" class="chk_del"></a></label>
+							</div>
+						</div>
+						<div class="teacher">
+							<div class="chkbox on">
+								<input type="checkbox" id="steacher149171" name="scategory" value=""><label for="steacher149171"><span class="badge_subj">라이프</span><span class="search_result_chktxt">강윤환</span><a href="javascript:;" class="chk_del"></a></label>
+							</div>
+						</div>
+						<div class="teacher">
+							<div class="chkbox on">
+								<input type="checkbox" id="steacher149171" name="scategory" value=""><label for="steacher149171"><span class="badge_subj">북토크</span><span class="search_result_chktxt">노성산</span><a href="javascript:;" class="chk_del"></a></label>
+							</div>
+						</div>	
+						<div class="teacher">
+							<div class="chkbox on">
+								<input type="checkbox" id="steacher149171" name="scategory" value=""><label for="steacher149171"><span class="badge_subj">라이프</span><span class="search_result_chktxt">설지용</span><a href="javascript:;" class="chk_del"></a></label>
+							</div>
+						</div>	
+						<div class="teacher">
+							<div class="chkbox on">
+								<input type="checkbox" id="steacher149187" name="scategory" value=""><label for="steacher149187"><span class="badge_subj">사회</span><span class="search_result_chktxt">이지영</span><a href="javascript:;" class="chk_del"></a></label>
+							</div>
+						</div>
+						<div class="academy">
+							<div class="chkbox on">
+								<input type="checkbox" id="steacher149238" name="scategory" value=""><label for="steacher149238"><span class="badge_new">NEW</span><span class="search_result_chktxt">강남하이퍼의대관</span><a href="javascript:;" class="chk_del"></a></label>
+							</div>
+						</div>
+						<div class="teacher">
+							<div class="chkbox on">
+								<input type="checkbox" id="steacher149171" name="scategory" value=""><label for="steacher149171"><span class="badge_new">NEW</span><span class="badge_subj">영어</span><span class="search_result_chktxt">강원우</span><a href="javascript:;" class="chk_del"></a></label>
+							</div>
+						</div>
+						<div class="teacher">
+							<div class="chkbox on">
+								<input type="checkbox" id="steacher149187" name="scategory" value=""><label for="steacher149187"><span class="badge_subj">사회</span><span class="search_result_chktxt">이지영</span><a href="javascript:;" class="chk_del"></a></label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 검색 결과 END //  -->
+				<div class="btn_wrap wid_full">
+					<button type="submit" class="btn_red">찾기</button>
+				</div>
+			</div>
+	</div>
+	</div>
+	<!-- 검색 레이어 END  -->
+
+</div>
+
+<!-- script -->
+<script type="text/javascript">
+$(function(){
+	var mainSwiper = new Swiper(".main_slider", {
+		loop:true,
+		autoplay:true,
+		autoplay: {
+    delay:1000,
+    disableOnInteraction: false
+		},
+		speed:1000,
+		pagination: {
+			el: ".main_slider .swiper-pagination.pagination_default",
+			type: "fraction",
+			clickable: true, 
+		},
+		navigation: {
+			nextEl: '.main_slider .swiper-button-next',
+			prevEl: '.main_slider .swiper-button-prev',
+		},
+	});
+	$(".pagination_fraction .swiper-pagination-total").html(mainSwiper.slides.length);
+	$(".pagination_fraction .swiper-pagination-current").html(mainSwiper.activeIndex + 1);
+	mainSwiper.on('slideChange', function(){
+		$(".pagination_fraction .swiper-pagination-current").html(mainSwiper.activeIndex + 1);
+	});
+	var sw = 0;
+	$('.main_pause').click(function(){
+			if(sw==0){
+					$('.main_pause').addClass('on');
+					mainSwiper.autoplay.stop();
+					sw = 1;
+			}else{
+					$('.main_pause').removeClass('on');
+					mainSwiper.autoplay.start();
+					sw = 0;
+			}
+	});
+
+	if($("#swp_prd_main_1 .swiper-slide").length > 3){
+		var swpPrdmain_1 = new Swiper("#swp_prd_main_1",{
+			autoplay:false,
+			loop:false,
+			slidesPerView: 3,
+			spaceBetween: 16,
+			navigation: {
+				nextEl: "#swp_prd_main_1 .swiper-button-next",
+				prevEl: "#swp_prd_main_1 .swiper-button-prev",
+			},
+			observer: true,
+			observeParents: true,
+			breakpoints: { 
+				670: {
+					slidesPerView: 2,
+					spaceBetween: 8,
+				}
+			}
+		});
+	}else{
+		$("#swp_prd_main_1 .swiper-button-next").hide();
+		$("#swp_prd_main_1 .swiper-button-prev").hide();
+	}
+
+	if($("#swp_prd_main_2 .swiper-slide").length > 3){
+		var swpPrdmain_2 = new Swiper("#swp_prd_main_2",{
+			autoplay:false,
+			loop:false,
+			slidesPerView: 3,
+			spaceBetween: 16,
+			navigation: {
+				nextEl: "#swp_prd_main_2 .swiper-button-next",
+				prevEl: "#swp_prd_main_2 .swiper-button-prev",
+			},
+			observer: true,
+			observeParents: true,
+			breakpoints: { 
+				670: {
+					slidesPerView: 2,
+					spaceBetween: 8,
+				}
+			}
+		});
+	}else{
+		$("#swp_prd_main_2 .swiper-button-next").hide();
+		$("#swp_prd_main_2 .swiper-button-prev").hide();
+	}
+
+	var swpPrdmain_3 = new Swiper("#swp_prd_main_3",{
+		slidesPerView: 1.038,
+		spaceBetween: 16,
+		autoplay:false,
+		loop:false,
+		speed:500,
+		delay:3000,
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		breakpoints: { 
+			670: {
+				slidesPerView: 2,
+				spaceBetween: 8,
+			},
+			768: { 
+				slidesPerView: 1.08
+			},
+			1024: { 
+				slidesPerView: 1.08, 
+				spaceBetween: 8,
+			},
+		}
+	});
+
+	var swpPrdmain_4 = undefined,
+	swiperOption = {
+		slidesPerView: 1.185,
+		spaceBetween: 16,
+		autoplay:false,
+		loop:false,
+		speed:500,
+		delay:3000,
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		}
+	}
+	swpPrdmain_4 = new Swiper("#swp_prd_main_4",swiperOption);
+
+	
+	var swpPrdmain_5 = new Swiper("#swp_prd_main_5",{
+		autoplay:false,
+		loop:false,
+		slidesPerView: 3,
+		spaceBetween: 16,
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+		observer: true,
+		observeParents: true,
+		breakpoints: { 
+			670: {
+				slidesPerView: 2,
+				spaceBetween: 8,
+			}
+		}
+	});
+	if( $("#swp_prd_main_5 .swiper-slide").length > 3 ){
+	}else{
+		$("#swp_prd_main_5 .swiper-button-next").hide();
+		$("#swp_prd_main_5 .swiper-button-prev").hide();
+	}
+	var swpPrdmain_6 = new Swiper("#swp_prd_main_6",{
+		slidesPerView: 6, 
+		spaceBetween: 16,
+		observer: true,
+		observeParents: true,
+		breakpoints: { 
+			670: {
+				slidesPerView: 2.45,
+				spaceBetween: 8,
+			},
+			768: { 
+				slidesPerView: 5,
+				spaceBetween:12,
+			},
+			1024: { 
+				slidesPerView: 6, 
+			},
+		}, 
+		navigation: {
+			nextEl: "#swp_prd_main_6 .swiper-button-next",
+			prevEl: "#swp_prd_main_6 .swiper-button-prev",
+		}, 
+	});
+	if( $("#swp_prd_main_6 .swiper-slide").length > 3 ){
+	}else{
+		$("#swp_prd_main_6 .swiper-button-next").hide();
+		$("#swp_prd_main_6 .swiper-button-prev").hide();
+	}
+
+	//tabmenu 클릭
+	$(".tab_menu > li > a").on("click",function(){
+		var tg = $(this).attr("href");
+		document.querySelector(tg + " .prd_slider").swiper.update();
+	});
+});
+
+	/* 검색 레이어 2021-12-17 */
+	$('#search_subject .chk_wrap .chkbox').each(function(i){
+		$(this).click(function(e){
+			e.preventDefault();
+			$(this).toggleClass('on');
+		});
+	});
+
+	$(function(){
+		var sch_el = $('.chked_list > div'); 
+		if( sch_el.length ){
+			$('.chked_wrap').css('display', 'block');
+		} else {
+			$('.chked_wrap').css('display', 'none');
+		}
+	});
+	$(".chked_list").on('mousewheel',function(e){
+		var wheelDelta = e.originalEvent.wheelDelta;
+		if(wheelDelta > 0){
+			$(this).scrollLeft(-wheelDelta + $(this).scrollLeft());
+			$('.chked_left').hide();
+			$('.chked_right').show();
+		}else{
+			$(this).scrollLeft(-wheelDelta + $(this).scrollLeft());
+			$('.chked_right').hide();
+			$('.chked_left').show();
+		} 
+	});
+	
+	// 가나다순 찾기 검색바 플로팅
+	var floatPosition = parseInt($(".guide_bar_abc").css('top'))
+	$('#search_subject.layerpop #searchabc .form_wrap').scroll(function() {
+			var currentTop = $(this).scrollTop();
+			var bannerTop = currentTop + 10 + "px";
+
+			if( currentTop == 0 ){
+				$(".guide_bar_abc").stop().animate({
+					"top" : floatPosition
+				}, 500);
+			}else{
+				$(".guide_bar_abc").stop().animate({
+					"top" : bannerTop
+				}, 500);
+			}	
+			//console.log(currentTop)
+	}).scroll();
+	$('.guide_bar_abc ul li a').each(function(i){
+		$(this).click(function(){
+			$('.guide_bar_abc ul li a').removeClass('on')
+			$(this).addClass('on');
+		});
+	});
+	// 가나다순 찾기 검색바 플로팅 END
+	/* // 검색 레이어 2021-12-17 END */
+</script>
+<!-- //script -->
+</body>
+</html>

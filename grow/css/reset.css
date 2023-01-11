@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+/** reset **/
+html,body{-webkit-text-size-adjust:100%;}
+body,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,hgroup,p,blockquote,figure,form,fieldset,input,legend,pre,abbr,button{margin:0;padding:0/*;line-height:1em;*/}
+body,button,input,select,table,textarea,pre{padding:0;margin:0/*;line-height:1em;*/}
+fieldset,iframe,img{border:none;outline:none;}
+img{vertical-align:top;}
+ol,ul,li{list-style:none;}
+table{table-layout:fixed;width:100%;border-collapse:collapse;border-spacing:0;}
+article,aside,footer,header,nav,main,section,summary,details,hgroup,figure,figcaption{display:block;}
+button{overflow:visible;border:none;font:inherit;line-height:inherit;color:inherit;background:none;cursor:pointer;border-radius:0}
+button:focus{outline:none;}
+button:disabled{cursor:default;}
+a,a:active,a:hover{outline:none;text-decoration:none;color:inherit;}
+strong{font-weight:700;}
+address,caption,cite,code,dfn,em,var{font-weight:normal;font-style:normal;}
+legend,caption{overflow:hidden;position:absolute;left:-9999px;width:0px;height:0px;text-indent:-9999px;font-size:0;line-height:0;color:transparent;}
+
+input,textarea,select{border:none;border-radius:0;box-shadow:none;outline:none;resize:none;appearance:none;-webkit-appearance:none;-moz-appearance:none;-o-appearance:none;font-family:inherit;}
+select::-ms-expand{
+  display:none; /* 화살표 없애기 for IE10, 11*/
+}
+::-webkit-input-placeholder {font-size:1.4rem;font-weight:400;letter-spacing:-0.05em;color:#bbb;} /* Chrome/Opera/Safari */
+::-moz-placeholder {font-size:1.4rem;font-weight:400;letter-spacing:-0.05em;color:#bbb;} /* Firefox 19+ */
+:-ms-input-placeholder {font-size:1.4rem;font-weight:400;letter-spacing:-0.05em;color:#bbb;} /* IE 10+ */
+:-moz-placeholder {font-size:1.4rem;font-weight:400;letter-spacing:-0.05em;color:#bbb;} /* Firefox 18- */
+/* clears the 'X' from Internet Explorer */
+input[type=search]::-ms-clear {display:none;width:0;height:0;}
+input[type=search]::-ms-reveal {display:none;width:0;height:0;}
+/* clears the 'X' from Chrome */
+input[type="search"]::-webkit-search-decoration {display:none;}
+input[type="search"]::-webkit-search-cancel-button {display:none;}
+input[type="search"]::-webkit-search-results-button {display:none;}
+input[type="search"]::-webkit-search-results-decoration {display:none;}
