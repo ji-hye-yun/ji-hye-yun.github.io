@@ -148,8 +148,8 @@ $(document).ready(function(){
     }
   });
   //검색창 : 입력 값 삭제 - e
-  makeFixedHeight();
-  modulePercentFn();
+  //makeFixedHeight();
+  //modulePercentFn();
 
   //마이페이지 토글 
   $('.btn_mypage').on('mouseenter', function(){
