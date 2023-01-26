@@ -242,7 +242,7 @@ main .section {
 
 main .section:nth-child(1) {
   min-height: 640px;
-  height: 100vh;
+  height: 80vh;
   background: #fff;
 }
 
@@ -711,7 +711,7 @@ main .section:nth-child(3) .portfolio .portfolio_box > ul > li:hover {
 }
 
 main .section:nth-child(3) .portfolio .portfolio_box > ul > li.on {
-  width: 69.7%;
+  width: 65%;
   border: 1px solid #000 !important;
   color: #111;
   -webkit-transition: 1s;
