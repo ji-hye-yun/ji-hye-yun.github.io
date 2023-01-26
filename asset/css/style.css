@@ -1339,7 +1339,7 @@ main .section:nth-child(4) .contact .email_wrap .email_btn {
     letter-spacing: -0.4px;
   }
   main .section:nth-child(2) .work .work_box ul li {
-    height: 42vh;
+    height: 30vh;
   }
   main .section:nth-child(2) .work .work_box ul li.on div.box a {
     width: 100%;
@@ -1348,7 +1348,7 @@ main .section:nth-child(4) .contact .email_wrap .email_btn {
     width: 100%;
   }
   main .section:nth-child(3) .portfolio .portfolio_box > ul > li {
-    height: 45vh;
+    height: 30vh;
   }
   main .section:nth-child(3) .portfolio .portfolio_box > ul > li div.box div:nth-child(2) {
     width: 100%;
@@ -1447,7 +1447,7 @@ main .section:nth-child(4) .contact .email_wrap .email_btn {
   }
   main .section:nth-child(2) .work .work_box ul li.on {
     width: 100%;
-    height: 53vh;
+    height: 28vh;
     border-bottom: 1px solid #000;
   }
   main .section:nth-child(3) {
@@ -1476,9 +1476,14 @@ main .section:nth-child(4) .contact .email_wrap .email_btn {
     border-left: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
   }
+  main .section:nth-child(3) .portfolio .portfolio_box > ul > li:nth-of-type(8) {
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-top: none;
+  }
   main .section:nth-child(3) .portfolio .portfolio_box > ul > li.on {
     width: 100%;
-    height: 58vh;
+    height: 28vh;
   }
   main .section:nth-child(3) .portfolio .portfolio_box > ul > li.on div.box div:nth-child(2) {
     width: 100%;
