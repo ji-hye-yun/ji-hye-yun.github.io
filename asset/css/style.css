@@ -413,6 +413,7 @@ main .section:nth-child(2) .work .work_box ul li div.box a {
   opacity: 0;
   -webkit-transition: 1s;
   transition: 1s;
+  will-change: transform;
   width: 80%;
   overflow: hidden;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 11px 10px 20px;
@@ -430,8 +431,8 @@ main .section:nth-child(2) .work .work_box ul li div.box span {
   -webkit-transform: scaleX(0) scaleY(0);
           transform: scaleX(0) scaleY(0);
   opacity: 0;
-  -webkit-transition: 1s;
-  transition: 1s;
+  /* -webkit-transition: 1s;
+  transition: 1s; */
   width: 80%;
   overflow: hidden;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 11px 10px 20px;
@@ -488,8 +489,8 @@ main .section:nth-child(2) .work .work_box ul li.on div.box a {
   -webkit-transform: scaleX(1) scaleY(1);
           transform: scaleX(1) scaleY(1);
   opacity: 1;
-  -webkit-transition: 1s;
-  transition: 1s;
+  /* -webkit-transition: 1s;
+  transition: 1s; */
   width: 80%;
 }
 
@@ -498,8 +499,8 @@ main .section:nth-child(2) .work .work_box ul li.on div.box span {
   -webkit-transform: scaleX(1) scaleY(1);
           transform: scaleX(1) scaleY(1);
   opacity: 1;
-  -webkit-transition: 1s;
-  transition: 1s;
+  /* -webkit-transition: 1s;
+  transition: 1s; */
   width: 80%;
 }
 
@@ -714,8 +715,8 @@ main .section:nth-child(3) .portfolio .portfolio_box > ul > li.on {
   width: 65%;
   border: 1px solid #000 !important;
   color: #111;
-  -webkit-transition: 1s;
-  transition: 1s;
+  /* -webkit-transition: 1s;
+  transition: 1s; */
 }
 
 main .section:nth-child(3) .portfolio .portfolio_box > ul > li.on div.box {
@@ -735,14 +736,14 @@ main .section:nth-child(3) .portfolio .portfolio_box > ul > li.on div.box div:nt
   font-size: 1.4rem;
   -webkit-transform: translateX(0rem) translateY(0rem) rotate(0deg);
           transform: translateX(0rem) translateY(0rem) rotate(0deg);
-  -webkit-transition: 1s;
-  transition: 1s;
+  /* -webkit-transition: 1s;
+  transition: 1s; */
 }
 
 main .section:nth-child(3) .portfolio .portfolio_box > ul > li.on div.box div:nth-child(1) p.box_p_3 {
   font-size: 14px;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  /* -webkit-transition: 0.6s;
+  transition: 0.6s; */
 }
 
 main .section:nth-child(3) .portfolio .portfolio_box > ul > li.on div.box div:nth-child(1) p.box_p_4 {
@@ -751,14 +752,14 @@ main .section:nth-child(3) .portfolio .portfolio_box > ul > li.on div.box div:nt
 
 main .section:nth-child(3) .portfolio .portfolio_box > ul > li.on div.box div:nth-child(1) p.box_p_4 span.browsericon {
   opacity: 1;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  /* -webkit-transition: 0.3s;
+  transition: 0.3s; */
 }
 
 main .section:nth-child(3) .portfolio .portfolio_box > ul > li.on div.box div:nth-child(1) p.box_p_5 {
   font-size: 14px;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  /* -webkit-transition: 0.6s;
+  transition: 0.6s; */
 }
 
 main .section:nth-child(3) .portfolio .portfolio_box > ul > li.on div.box div:nth-child(2) {
@@ -766,8 +767,8 @@ main .section:nth-child(3) .portfolio .portfolio_box > ul > li.on div.box div:nt
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
   opacity: 1;
-  -webkit-transition: 1s;
-  transition: 1s;
+  /* -webkit-transition: 1s;
+  transition: 1s; */
   width: 54%;
 }
 
