@@ -242,7 +242,7 @@ main .section {
 
 main .section:nth-child(1) {
   min-height: 640px;
-  height: 80vh;
+  height: 92vh;
   background: #fff;
 }
 
@@ -672,13 +672,13 @@ main .section:nth-child(3) .portfolio .portfolio_box > ul > li div.box div:nth-c
 main .section:nth-child(3) .portfolio .portfolio_box > ul > li div.box div:nth-child(2) {
   float: right;
   -webkit-transform: scaleX(0);
-          transform: scaleX(0);
+  transform: scaleX(0);
   opacity: 0;
   -webkit-transition: linear 1s;
   transition: linear 1s;
   width: 50%;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 11px 10px 20px;
-          box-shadow: rgba(0, 0, 0, 0.3) 11px 10px 20px;
+  box-shadow: rgba(0, 0, 0, 0.3) 11px 10px 20px;
 }
 
 main .section:nth-child(3) .portfolio .portfolio_box > ul > li div.box div:nth-child(2) a {
